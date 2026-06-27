@@ -1,0 +1,501 @@
+scenario_id,market,date,replay_cutoff_time,outcome_end_time,previous_day_high,previous_day_low,weekly_high,weekly_low,opening_range_high,opening_range_low,vwap,setup_type,hidden_outcome,difficulty
+qr_qqq_0000,QQQ,2023-09-08,10:15,16:00,485.04,475.6,487.78,472.73,483.59,478.5,481.01,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0001,QQQ,2025-10-09,10:15,16:00,481.96,478.31,483.51,476.78,481.08,478.92,480.32,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0002,QQQ,2023-04-24,10:00,16:00,484.57,475.67,486.71,474.34,483.9,478.64,480.59,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_qqq_0003,QQQ,2023-04-12,10:15,16:00,479.85,471.13,481.11,467.53,478.77,473.75,475.78,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_qqq_0004,QQQ,2023-03-07,10:15,16:00,484.74,479.0,486.84,476.34,483.52,479.39,481.83,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_qqq_0005,QQQ,2024-07-22,10:00,16:00,482.22,478.18,483.98,477.34,481.85,478.99,480.43,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_qqq_0006,QQQ,2025-05-17,09:45,16:00,480.47,471.79,482.12,468.84,478.25,473.91,476.36,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_qqq_0007,QQQ,2023-02-04,09:45,16:00,483.62,479.39,485.03,478.0,483.16,480.24,481.8,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0008,QQQ,2025-08-01,10:30,16:00,480.98,473.21,482.51,471.77,478.59,474.38,476.31,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_qqq_0009,QQQ,2024-10-10,09:45,16:00,481.25,474.74,483.36,474.04,479.85,476.41,477.69,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_qqq_0010,QQQ,2025-02-19,10:15,16:00,481.93,474.74,482.88,471.46,481.59,477.1,479.25,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0011,QQQ,2024-02-27,10:15,16:00,486.17,479.56,488.12,477.15,484.44,481.16,482.42,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_qqq_0012,QQQ,2025-03-03,10:15,16:00,482.89,479.67,483.36,479.02,481.68,479.92,480.66,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_qqq_0013,QQQ,2025-01-11,10:30,16:00,480.27,471.87,482.82,470.46,479.35,474.6,476.51,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_qqq_0014,QQQ,2024-02-06,10:00,16:00,483.72,472.93,485.73,469.01,480.99,475.84,477.66,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_qqq_0015,QQQ,2024-08-25,09:45,16:00,484.55,481.01,486.23,480.09,483.97,481.22,482.28,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0016,QQQ,2024-07-25,10:30,16:00,481.77,476.19,483.17,474.56,480.99,477.86,479.13,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0017,QQQ,2024-10-24,09:45,16:00,487.48,479.65,490.22,477.09,484.68,480.59,482.62,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_qqq_0018,QQQ,2025-01-12,10:00,16:00,480.63,477.81,481.51,476.9,480.01,478.57,479.45,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0019,QQQ,2025-06-02,10:30,16:00,480.77,475.16,482.57,473.85,478.88,475.28,477.3,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_qqq_0020,QQQ,2023-01-13,09:45,16:00,480.96,471.85,483.7,470.35,478.47,474.24,475.87,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_qqq_0021,QQQ,2024-05-08,10:00,16:00,489.37,480.51,492.33,479.04,486.34,481.69,483.34,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_qqq_0022,QQQ,2025-03-03,10:30,16:00,485.53,480.16,486.92,477.82,484.3,481.34,482.8,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_qqq_0023,QQQ,2025-12-25,10:00,16:00,482.29,479.32,483.46,478.62,481.86,480.27,480.92,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_qqq_0024,QQQ,2025-09-25,10:00,16:00,483.14,478.83,485.16,477.45,481.83,479.15,480.64,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_qqq_0025,QQQ,2024-08-28,10:15,16:00,484.46,479.87,485.06,479.01,483.26,480.4,482.15,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_qqq_0026,QQQ,2023-01-21,10:00,16:00,483.7,479.4,484.7,478.74,482.33,480.19,481.23,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_qqq_0027,QQQ,2023-07-13,10:15,16:00,479.93,476.85,480.83,475.45,479.61,477.79,478.5,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_qqq_0028,QQQ,2025-10-28,10:30,16:00,483.03,480.06,483.85,478.14,482.94,480.32,481.52,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_qqq_0029,QQQ,2023-08-24,10:30,16:00,483.23,480.44,484.47,479.28,482.84,480.52,481.68,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_qqq_0030,QQQ,2024-01-07,10:00,16:00,485.3,479.12,488.36,476.6,484.25,479.26,481.57,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_qqq_0031,QQQ,2024-07-22,10:30,16:00,482.0,477.87,482.55,477.31,481.03,478.91,480.0,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0032,QQQ,2023-04-05,10:15,16:00,484.84,475.49,488.28,471.99,482.04,477.27,479.74,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0033,QQQ,2024-07-02,10:15,16:00,480.59,476.08,481.84,474.72,479.32,476.54,477.67,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0034,QQQ,2024-07-10,10:30,16:00,484.01,478.48,484.77,477.62,483.01,479.51,481.26,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0035,QQQ,2024-10-22,10:15,16:00,482.33,479.42,484.19,477.22,482.26,479.51,480.97,chop,Range-bound chop; no clean follow-through.,beginner
+qr_qqq_0036,QQQ,2025-10-12,10:15,16:00,485.86,478.41,489.58,476.1,485.3,480.57,483.01,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_qqq_0037,QQQ,2024-07-04,10:15,16:00,481.25,477.65,482.16,476.88,480.07,478.15,479.35,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_qqq_0038,QQQ,2024-10-02,10:00,16:00,484.78,479.49,486.45,477.92,483.17,480.2,482.06,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_qqq_0039,QQQ,2023-12-28,10:30,16:00,482.67,478.12,484.29,476.58,482.63,479.34,480.6,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_qqq_0040,QQQ,2023-01-08,09:45,16:00,484.71,478.56,486.94,476.1,484.03,479.01,482.08,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0041,QQQ,2025-01-06,10:00,16:00,480.54,469.06,483.79,466.89,477.2,471.55,474.78,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_qqq_0042,QQQ,2023-03-16,10:00,16:00,481.34,479.02,481.76,478.62,481.19,479.74,480.53,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_qqq_0043,QQQ,2023-12-24,10:15,16:00,478.7,472.42,481.63,470.24,478.17,473.81,475.79,chop,Range-bound chop; no clean follow-through.,advanced
+qr_qqq_0044,QQQ,2024-07-11,10:15,16:00,484.18,479.9,485.43,478.75,482.78,480.4,481.88,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_qqq_0045,QQQ,2023-11-07,10:00,16:00,483.89,474.37,485.01,472.4,482.78,477.46,480.02,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_qqq_0046,QQQ,2023-07-14,10:00,16:00,483.3,475.41,485.74,473.09,480.63,476.34,477.99,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_qqq_0047,QQQ,2024-07-09,10:15,16:00,485.77,476.67,487.04,474.78,484.2,479.17,481.02,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0048,QQQ,2024-08-23,09:45,16:00,483.85,477.88,485.53,476.81,482.38,478.3,480.04,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_qqq_0049,QQQ,2023-05-25,09:45,16:00,481.22,476.78,482.83,476.14,479.95,477.8,479.03,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_qqq_0050,QQQ,2023-10-12,10:30,16:00,480.09,476.07,481.16,475.56,479.81,477.39,478.47,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0051,QQQ,2025-03-23,10:00,16:00,484.59,473.02,487.36,471.75,480.98,475.33,478.21,chop,Range-bound chop; no clean follow-through.,advanced
+qr_qqq_0052,QQQ,2023-06-19,09:45,16:00,482.35,480.09,483.33,479.61,481.88,480.12,481.18,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_qqq_0053,QQQ,2024-02-19,10:15,16:00,485.32,477.28,487.79,476.32,483.09,479.39,481.43,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_qqq_0054,QQQ,2024-06-01,10:15,16:00,489.28,481.39,491.24,478.6,487.42,482.13,484.14,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_qqq_0055,QQQ,2023-01-12,10:30,16:00,480.02,476.39,481.89,474.64,479.77,477.22,478.33,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0056,QQQ,2024-01-01,09:45,16:00,481.67,476.13,482.54,474.98,479.73,476.57,478.43,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_qqq_0057,QQQ,2023-09-22,10:15,16:00,483.47,476.92,485.27,475.6,481.68,477.27,479.79,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_qqq_0058,QQQ,2023-09-25,10:15,16:00,483.48,476.24,485.82,475.06,482.01,478.17,480.48,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_qqq_0059,QQQ,2025-12-14,09:45,16:00,480.26,476.14,481.0,475.45,479.13,477.17,477.9,chop,Range-bound chop; no clean follow-through.,advanced
+qr_qqq_0060,QQQ,2024-08-11,10:30,16:00,480.08,470.43,482.43,466.35,479.11,473.81,476.13,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_qqq_0061,QQQ,2025-02-09,10:15,16:00,485.0,479.31,486.9,477.38,483.58,480.95,482.51,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_qqq_0062,QQQ,2024-09-08,10:15,16:00,482.68,476.09,483.81,475.03,481.35,476.59,478.92,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_qqq_0063,QQQ,2023-12-02,10:15,16:00,482.4,474.7,484.15,472.49,480.6,476.07,478.09,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_qqq_0064,QQQ,2023-10-27,09:45,16:00,485.26,479.43,487.19,475.59,485.04,480.07,482.59,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_qqq_0065,QQQ,2024-05-09,10:30,16:00,485.92,478.41,488.01,476.23,483.85,479.05,481.59,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0066,QQQ,2025-07-02,09:45,16:00,482.23,478.03,482.83,477.52,481.19,479.09,479.94,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0067,QQQ,2024-10-09,10:30,16:00,479.65,474.9,481.26,473.9,478.99,475.89,477.84,chop,Range-bound chop; no clean follow-through.,beginner
+qr_qqq_0068,QQQ,2024-11-23,10:15,16:00,487.27,476.87,490.13,474.9,484.76,479.83,482.75,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_qqq_0069,QQQ,2025-12-17,09:45,16:00,481.62,476.94,482.66,475.02,480.75,477.87,479.26,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_qqq_0070,QQQ,2023-02-26,09:45,16:00,483.23,476.88,485.9,475.31,481.32,477.22,478.94,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_qqq_0071,QQQ,2025-01-12,10:15,16:00,484.87,478.8,486.81,477.12,483.2,480.41,481.86,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0072,QQQ,2023-03-27,10:00,16:00,485.7,477.84,487.96,476.16,482.98,478.81,480.81,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0073,QQQ,2024-05-14,10:00,16:00,485.97,480.49,488.0,479.29,484.1,481.21,482.98,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0074,QQQ,2025-10-22,10:15,16:00,480.1,475.78,480.99,475.11,479.44,477.2,478.6,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_qqq_0075,QQQ,2025-08-25,10:30,16:00,486.75,479.4,488.24,475.88,486.19,481.42,483.98,chop,Range-bound chop; no clean follow-through.,advanced
+qr_qqq_0076,QQQ,2024-03-02,10:00,16:00,480.45,475.97,481.08,474.56,479.41,477.23,478.46,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_qqq_0077,QQQ,2024-06-05,10:00,16:00,481.17,475.55,483.78,474.3,481.06,476.74,478.81,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_qqq_0078,QQQ,2024-02-13,09:45,16:00,480.77,476.68,481.76,474.99,479.98,476.85,478.63,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_qqq_0079,QQQ,2025-03-02,09:45,16:00,482.76,480.32,483.31,479.34,482.13,480.67,481.42,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_qqq_0080,QQQ,2025-03-22,10:15,16:00,482.12,473.23,483.41,469.73,480.93,476.3,478.99,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0081,QQQ,2024-12-27,10:00,16:00,484.24,478.87,487.8,477.92,484.12,479.57,482.49,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_qqq_0082,QQQ,2023-08-28,10:00,16:00,480.55,478.03,482.1,476.79,480.48,478.42,479.39,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_qqq_0083,QQQ,2024-09-14,10:00,16:00,485.01,475.84,489.04,474.55,481.54,476.43,478.96,chop,Range-bound chop; no clean follow-through.,beginner
+qr_qqq_0084,QQQ,2025-09-10,09:45,16:00,480.67,476.19,482.06,475.63,479.87,477.7,478.87,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_qqq_0085,QQQ,2024-04-16,09:45,16:00,480.62,478.26,481.09,477.44,480.31,478.35,479.22,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_qqq_0086,QQQ,2023-08-06,10:00,16:00,485.89,477.58,488.37,475.07,484.59,480.46,482.04,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_qqq_0087,QQQ,2023-05-25,10:30,16:00,482.3,473.99,483.89,472.34,479.68,474.28,477.45,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_qqq_0088,QQQ,2023-02-01,10:15,16:00,480.7,471.91,483.91,470.31,478.39,474.18,476.65,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_qqq_0089,QQQ,2023-03-18,09:45,16:00,484.74,479.32,485.8,477.42,482.99,480.01,481.14,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_qqq_0090,QQQ,2025-06-10,10:30,16:00,484.81,473.73,486.47,472.59,482.17,477.13,479.78,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_qqq_0091,QQQ,2024-06-23,10:30,16:00,482.39,476.84,484.3,475.71,481.38,478.08,479.35,chop,Range-bound chop; no clean follow-through.,advanced
+qr_qqq_0092,QQQ,2024-05-21,09:45,16:00,485.52,479.69,487.2,477.53,484.05,481.12,482.36,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_qqq_0093,QQQ,2023-12-06,10:30,16:00,484.04,475.58,486.53,474.5,481.77,477.91,479.76,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_qqq_0094,QQQ,2024-02-24,09:45,16:00,488.74,478.91,492.71,475.56,485.76,480.35,483.3,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_qqq_0095,QQQ,2023-11-04,09:45,16:00,480.74,477.67,481.82,477.12,480.21,478.65,479.4,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0096,QQQ,2024-01-01,09:45,16:00,487.31,480.18,489.45,478.08,486.31,482.09,484.37,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_qqq_0097,QQQ,2025-09-13,09:45,16:00,487.96,477.45,490.99,474.06,485.25,479.61,483.12,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0098,QQQ,2023-12-09,10:00,16:00,481.02,473.35,483.3,470.35,480.09,475.17,477.75,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0099,QQQ,2025-06-13,09:45,16:00,480.17,477.09,481.28,476.36,479.93,477.93,478.65,chop,Range-bound chop; no clean follow-through.,advanced
+qr_qqq_0100,QQQ,2025-11-27,09:45,16:00,481.39,479.26,482.33,478.7,480.86,479.35,480.19,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_qqq_0101,QQQ,2025-08-09,10:00,16:00,481.93,477.87,483.52,477.05,481.48,478.61,480.05,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_qqq_0102,QQQ,2025-11-22,09:45,16:00,482.31,476.4,484.18,474.62,482.13,478.64,480.41,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_qqq_0103,QQQ,2023-03-28,10:00,16:00,485.08,480.49,486.47,479.34,484.08,481.31,483.04,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0104,QQQ,2024-01-07,09:45,16:00,483.5,476.55,485.94,474.26,481.22,477.76,479.14,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_qqq_0105,QQQ,2024-06-21,09:45,16:00,485.74,477.24,488.33,475.0,484.79,479.19,481.43,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_qqq_0106,QQQ,2024-03-13,10:00,16:00,489.82,479.18,493.1,475.49,486.83,481.94,485.09,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0107,QQQ,2025-08-02,09:45,16:00,482.24,479.96,483.68,478.75,481.96,480.05,481.15,chop,Range-bound chop; no clean follow-through.,advanced
+qr_qqq_0108,QQQ,2024-02-08,10:15,16:00,487.91,481.19,491.36,477.34,487.08,482.08,484.23,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_qqq_0109,QQQ,2024-05-09,09:45,16:00,481.18,474.71,482.68,471.56,480.92,476.58,478.1,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_qqq_0110,QQQ,2025-10-18,10:00,16:00,484.81,477.61,486.2,475.74,482.94,479.71,480.97,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_qqq_0111,QQQ,2023-12-05,10:00,16:00,483.0,478.31,484.26,477.24,482.42,479.92,481.15,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0112,QQQ,2023-07-17,09:45,16:00,485.05,476.07,486.04,472.32,482.04,477.19,479.86,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_qqq_0113,QQQ,2024-02-07,10:30,16:00,480.66,475.1,482.01,472.98,479.25,475.19,477.04,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0114,QQQ,2023-05-03,09:45,16:00,482.72,478.78,483.85,477.4,481.96,478.98,480.15,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0115,QQQ,2023-12-27,10:00,16:00,479.06,472.96,481.87,469.85,478.63,473.53,475.67,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_qqq_0116,QQQ,2025-05-12,09:45,16:00,482.68,478.68,483.82,477.16,481.81,478.91,480.08,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_qqq_0117,QQQ,2025-11-10,10:30,16:00,481.3,475.57,483.0,474.39,479.78,477.0,478.78,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_qqq_0118,QQQ,2025-11-12,10:00,16:00,484.36,473.75,488.46,472.61,481.09,475.41,478.54,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_qqq_0119,QQQ,2024-07-20,09:45,16:00,481.55,478.51,482.06,477.47,481.09,479.42,480.2,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0120,QQQ,2024-04-08,10:00,16:00,488.37,479.93,490.32,476.37,485.52,480.19,483.55,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0121,QQQ,2023-10-13,10:00,16:00,483.68,479.4,484.99,477.82,482.25,479.49,481.04,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0122,QQQ,2023-09-14,10:30,16:00,489.43,481.37,492.26,479.96,487.19,482.13,485.32,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0123,QQQ,2024-06-25,09:45,16:00,485.22,476.6,488.5,472.93,482.92,477.67,480.4,chop,Range-bound chop; no clean follow-through.,beginner
+qr_qqq_0124,QQQ,2025-12-23,10:15,16:00,481.32,477.7,482.45,476.47,480.92,478.33,479.47,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_qqq_0125,QQQ,2024-07-07,10:30,16:00,481.25,474.88,483.26,472.77,480.0,476.31,478.57,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_qqq_0126,QQQ,2024-09-02,10:00,16:00,482.1,478.26,483.46,477.03,481.7,479.25,480.83,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_qqq_0127,QQQ,2025-05-16,10:30,16:00,479.4,473.35,480.55,471.86,478.8,475.21,477.23,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_qqq_0128,QQQ,2025-08-01,10:30,16:00,482.81,478.43,483.87,477.63,482.23,479.68,480.88,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_qqq_0129,QQQ,2025-03-11,10:00,16:00,484.88,478.18,487.87,474.81,483.61,478.38,481.75,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_qqq_0130,QQQ,2023-12-09,10:15,16:00,484.54,478.15,486.39,475.85,483.19,480.14,481.39,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0131,QQQ,2025-05-06,10:00,16:00,483.24,472.26,484.49,471.08,480.36,475.55,477.76,chop,Range-bound chop; no clean follow-through.,beginner
+qr_qqq_0132,QQQ,2025-01-10,10:00,16:00,484.28,478.83,485.85,477.82,482.56,479.56,480.77,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_qqq_0133,QQQ,2023-03-28,10:00,16:00,485.61,477.18,489.1,475.35,484.5,479.13,482.18,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_qqq_0134,QQQ,2024-05-06,10:00,16:00,482.48,474.39,485.86,473.45,481.89,477.22,479.42,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_qqq_0135,QQQ,2023-08-08,10:15,16:00,487.57,479.58,489.68,475.48,486.85,481.45,484.15,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0136,QQQ,2023-09-24,09:45,16:00,480.14,476.46,482.03,474.11,479.9,476.55,478.12,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_qqq_0137,QQQ,2024-08-20,10:30,16:00,481.53,471.64,483.05,468.96,479.19,474.35,476.87,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_qqq_0138,QQQ,2024-01-23,10:15,16:00,482.85,478.85,484.28,477.67,482.4,480.05,481.38,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_qqq_0139,QQQ,2023-05-15,09:45,16:00,482.31,479.11,483.23,477.97,481.1,479.29,480.21,chop,Range-bound chop; no clean follow-through.,beginner
+qr_qqq_0140,QQQ,2025-11-03,10:30,16:00,491.38,480.43,495.08,477.88,487.95,482.64,484.6,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_qqq_0141,QQQ,2024-12-21,10:15,16:00,487.17,479.13,490.84,477.49,486.78,481.76,483.52,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_qqq_0142,QQQ,2025-01-21,10:15,16:00,480.48,475.45,481.62,474.35,479.37,476.86,478.38,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_qqq_0143,QQQ,2025-09-01,10:00,16:00,480.89,475.37,482.09,474.55,479.4,476.99,478.02,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0144,QQQ,2025-09-09,10:30,16:00,480.73,477.24,481.53,476.0,480.4,478.35,479.23,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0145,QQQ,2025-08-24,10:15,16:00,483.92,479.38,485.5,477.78,482.73,479.97,481.15,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_qqq_0146,QQQ,2024-10-26,09:45,16:00,483.37,479.85,484.97,479.31,482.95,480.41,481.59,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_qqq_0147,QQQ,2023-11-25,10:15,16:00,487.59,479.76,489.0,475.96,486.45,481.46,483.21,chop,Range-bound chop; no clean follow-through.,advanced
+qr_qqq_0148,QQQ,2024-08-02,10:00,16:00,479.97,476.31,480.56,475.66,479.67,477.69,478.93,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_qqq_0149,QQQ,2024-05-04,10:30,16:00,486.87,480.14,490.36,477.26,485.91,480.31,482.29,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_qqq_0150,QQQ,2025-07-08,09:45,16:00,480.24,474.63,481.86,472.82,479.23,475.99,477.76,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_qqq_0151,QQQ,2025-04-12,10:30,16:00,481.26,475.93,482.16,475.36,479.62,476.8,478.25,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0152,QQQ,2023-07-10,10:30,16:00,480.63,475.91,481.17,475.17,479.37,477.19,478.0,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_qqq_0153,QQQ,2025-01-03,09:45,16:00,483.8,480.01,484.87,479.24,482.69,480.81,481.89,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0154,QQQ,2024-04-19,10:30,16:00,482.61,477.6,484.33,475.87,482.25,477.83,479.57,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_qqq_0155,QQQ,2023-07-08,09:45,16:00,484.98,473.77,488.57,471.26,482.02,476.67,478.99,chop,Range-bound chop; no clean follow-through.,advanced
+qr_qqq_0156,QQQ,2024-11-22,10:30,16:00,486.75,476.96,487.65,474.8,483.97,479.79,481.78,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_qqq_0157,QQQ,2024-04-09,10:15,16:00,483.62,476.15,485.52,473.85,481.21,476.62,479.08,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_qqq_0158,QQQ,2024-10-10,10:30,16:00,481.02,473.7,482.13,470.63,479.48,474.7,477.46,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_qqq_0159,QQQ,2025-01-19,10:15,16:00,481.93,468.72,483.88,465.94,478.12,472.56,474.7,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_qqq_0160,QQQ,2023-09-06,09:45,16:00,488.36,478.96,492.13,476.26,487.11,482.02,485.03,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0161,QQQ,2025-06-13,09:45,16:00,487.58,480.43,489.58,478.92,485.59,480.45,483.01,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_qqq_0162,QQQ,2023-10-08,10:15,16:00,483.0,479.15,484.15,477.19,481.73,479.18,480.16,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_qqq_0163,QQQ,2024-02-13,10:00,16:00,479.24,473.98,480.73,471.8,478.23,474.63,476.75,chop,Range-bound chop; no clean follow-through.,beginner
+qr_qqq_0164,QQQ,2023-09-10,10:30,16:00,485.41,478.6,487.21,476.01,484.31,480.25,482.12,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_qqq_0165,QQQ,2025-05-01,10:00,16:00,480.28,477.67,481.39,476.9,479.94,478.46,479.1,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_qqq_0166,QQQ,2024-05-01,09:45,16:00,480.74,475.3,482.31,473.0,478.96,475.68,476.97,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_qqq_0167,QQQ,2024-03-08,09:45,16:00,482.35,479.34,482.89,478.9,481.41,479.94,480.85,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_qqq_0168,QQQ,2023-08-04,09:45,16:00,482.93,479.14,484.55,478.14,482.4,480.24,481.34,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0169,QQQ,2023-01-17,10:30,16:00,486.61,480.51,489.8,477.84,485.85,480.68,483.73,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0170,QQQ,2024-10-28,10:30,16:00,485.83,480.01,487.85,478.59,483.7,480.47,481.64,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0171,QQQ,2025-07-01,10:30,16:00,482.65,479.24,483.42,478.71,481.6,480.1,480.91,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_qqq_0172,QQQ,2024-09-14,10:00,16:00,481.86,476.93,482.67,475.21,480.67,478.42,479.33,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_qqq_0173,QQQ,2025-06-06,10:30,16:00,485.34,478.02,486.5,475.59,482.54,478.03,479.98,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_qqq_0174,QQQ,2025-07-27,10:00,16:00,484.81,476.97,486.26,475.42,483.56,479.68,482.01,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_qqq_0175,QQQ,2025-11-24,10:00,16:00,480.99,478.19,481.41,477.87,480.49,479.01,479.85,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0176,QQQ,2023-01-17,10:00,16:00,481.67,479.26,482.43,478.82,480.82,479.35,480.05,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_qqq_0177,QQQ,2025-01-24,10:15,16:00,489.64,477.76,493.77,476.34,486.79,481.41,484.24,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0178,QQQ,2023-05-04,10:15,16:00,483.04,475.12,485.88,471.6,482.23,476.94,479.83,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_qqq_0179,QQQ,2025-10-05,09:45,16:00,489.16,479.41,491.13,476.9,487.11,482.07,484.87,chop,Range-bound chop; no clean follow-through.,beginner
+qr_qqq_0180,QQQ,2024-01-14,09:45,16:00,479.83,476.55,481.33,475.27,479.34,477.25,478.45,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_qqq_0181,QQQ,2023-03-12,10:00,16:00,481.49,475.99,483.76,475.33,479.67,476.62,477.84,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_qqq_0182,QQQ,2023-12-23,09:45,16:00,481.9,477.82,483.17,476.38,481.31,478.74,480.27,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_qqq_0183,QQQ,2024-04-19,10:00,16:00,479.62,473.43,481.89,470.63,478.63,474.45,476.58,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_qqq_0184,QQQ,2023-05-15,10:15,16:00,481.15,474.19,482.82,473.03,480.46,475.64,478.42,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_qqq_0185,QQQ,2025-01-14,10:00,16:00,480.69,470.35,483.28,466.95,477.5,472.19,474.06,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_qqq_0186,QQQ,2024-05-04,10:15,16:00,481.5,474.01,483.67,473.15,480.99,476.88,478.72,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_qqq_0187,QQQ,2024-05-25,10:15,16:00,480.58,475.15,483.47,473.42,479.81,475.27,477.96,chop,Range-bound chop; no clean follow-through.,beginner
+qr_qqq_0188,QQQ,2023-12-18,09:45,16:00,484.07,480.26,486.27,479.47,483.26,480.49,481.87,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_qqq_0189,QQQ,2023-02-25,10:15,16:00,483.79,477.84,485.09,476.18,482.31,477.85,480.0,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_qqq_0190,QQQ,2023-12-12,10:00,16:00,482.16,473.76,485.17,471.5,482.06,476.35,478.48,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_qqq_0191,QQQ,2023-04-19,10:15,16:00,480.29,477.04,481.57,475.67,479.41,477.12,478.3,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_qqq_0192,QQQ,2024-11-03,10:00,16:00,484.64,475.28,487.97,470.85,481.52,475.94,478.0,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_qqq_0193,QQQ,2025-02-04,09:45,16:00,484.72,480.01,485.57,478.77,483.49,480.37,481.7,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_qqq_0194,QQQ,2025-12-05,10:15,16:00,486.07,478.53,488.73,476.37,484.19,480.65,482.04,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_qqq_0195,QQQ,2025-05-19,10:30,16:00,487.7,478.71,491.91,477.59,486.15,480.83,484.02,chop,Range-bound chop; no clean follow-through.,beginner
+qr_qqq_0196,QQQ,2024-01-04,10:15,16:00,484.0,475.77,487.34,473.4,482.35,477.33,480.32,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_qqq_0197,QQQ,2023-01-09,10:15,16:00,481.47,475.64,483.63,474.99,480.39,477.41,478.81,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_qqq_0198,QQQ,2024-10-05,09:45,16:00,485.53,475.05,488.38,473.34,483.06,478.33,481.05,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_qqq_0199,QQQ,2024-09-21,10:15,16:00,481.53,474.85,483.02,472.1,480.58,476.98,478.9,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_spy_0200,SPY,2023-01-28,10:30,16:00,524.12,519.63,526.48,517.62,523.07,519.95,521.13,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_spy_0201,SPY,2024-08-23,10:30,16:00,524.5,518.03,526.92,515.91,522.7,519.28,521.45,chop,Range-bound chop; no clean follow-through.,beginner
+qr_spy_0202,SPY,2023-07-14,09:45,16:00,523.72,514.41,526.52,511.32,521.6,517.21,519.38,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_spy_0203,SPY,2024-05-11,10:15,16:00,523.32,519.36,523.86,518.69,523.01,520.69,522.19,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_spy_0204,SPY,2023-02-24,10:15,16:00,525.69,519.23,528.5,518.23,524.18,520.33,521.8,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_spy_0205,SPY,2025-11-01,09:45,16:00,521.08,516.41,521.84,514.0,520.76,517.22,519.2,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_spy_0206,SPY,2024-11-17,10:30,16:00,526.0,520.12,527.12,518.31,524.56,520.88,522.18,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_spy_0207,SPY,2025-01-09,10:00,16:00,528.32,521.16,532.27,517.97,527.53,521.85,524.35,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_spy_0208,SPY,2025-02-21,09:45,16:00,522.35,513.13,524.22,509.57,520.4,515.63,517.89,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_spy_0209,SPY,2023-08-22,10:00,16:00,525.31,519.0,528.72,517.11,525.09,520.63,523.25,chop,Range-bound chop; no clean follow-through.,beginner
+qr_spy_0210,SPY,2024-07-06,10:30,16:00,522.71,518.44,523.96,517.09,521.38,519.02,519.99,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_spy_0211,SPY,2024-07-17,10:30,16:00,519.82,514.82,521.13,513.98,519.64,515.75,517.26,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_spy_0212,SPY,2025-04-25,10:15,16:00,527.62,518.02,531.67,513.69,527.57,521.54,524.48,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_spy_0213,SPY,2023-05-15,10:30,16:00,525.84,516.97,529.41,515.29,522.93,518.05,520.45,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_spy_0214,SPY,2025-11-25,09:45,16:00,529.92,519.58,533.64,516.51,527.35,521.67,525.01,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_spy_0215,SPY,2025-06-22,10:30,16:00,522.09,519.4,522.92,518.09,521.66,519.8,520.74,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_spy_0216,SPY,2025-01-16,10:00,16:00,525.21,515.39,527.45,513.12,522.6,518.23,519.92,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_spy_0217,SPY,2024-08-04,10:00,16:00,522.6,517.16,524.92,515.32,520.98,517.96,519.03,chop,Range-bound chop; no clean follow-through.,beginner
+qr_spy_0218,SPY,2024-12-10,10:00,16:00,521.16,517.58,522.25,516.25,519.96,517.97,519.08,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_spy_0219,SPY,2024-12-16,09:45,16:00,526.99,518.64,529.46,517.12,526.06,520.85,524.01,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_spy_0220,SPY,2024-10-23,09:45,16:00,527.56,518.78,532.13,516.67,526.76,520.77,523.33,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_spy_0221,SPY,2025-12-25,10:15,16:00,524.63,519.73,526.36,518.87,523.56,521.02,521.94,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_spy_0222,SPY,2023-06-02,10:30,16:00,525.35,516.86,528.29,515.56,523.32,517.97,520.76,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_spy_0223,SPY,2024-12-22,10:30,16:00,519.17,513.9,522.7,510.81,518.57,513.96,516.74,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_spy_0224,SPY,2023-02-21,10:15,16:00,524.88,520.27,526.45,517.67,523.74,520.4,521.84,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_spy_0225,SPY,2024-12-19,10:00,16:00,520.65,512.74,523.04,508.62,520.61,515.12,517.7,chop,Range-bound chop; no clean follow-through.,advanced
+qr_spy_0226,SPY,2024-08-17,09:45,16:00,523.48,513.37,524.73,510.47,520.61,516.2,517.93,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_spy_0227,SPY,2023-05-07,10:00,16:00,521.84,517.89,522.2,517.0,520.65,518.91,519.78,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_spy_0228,SPY,2023-05-08,10:15,16:00,521.37,517.63,522.46,516.17,520.33,518.5,519.61,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_spy_0229,SPY,2024-05-24,09:45,16:00,527.56,515.17,531.68,513.65,524.29,518.27,521.74,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_spy_0230,SPY,2023-04-10,09:45,16:00,526.07,514.45,529.77,512.48,524.03,517.88,520.41,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_spy_0231,SPY,2025-01-24,09:45,16:00,522.7,516.82,524.25,515.34,520.79,517.19,519.02,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_spy_0232,SPY,2025-10-19,10:00,16:00,523.74,518.95,525.61,518.26,522.16,519.78,520.92,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_spy_0233,SPY,2024-04-12,10:30,16:00,521.07,517.97,521.63,517.27,519.86,518.07,518.95,chop,Range-bound chop; no clean follow-through.,advanced
+qr_spy_0234,SPY,2025-07-05,09:45,16:00,521.1,510.53,523.22,507.19,519.14,514.01,516.43,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_spy_0235,SPY,2025-01-27,10:30,16:00,523.6,517.54,526.41,516.81,523.39,519.84,522.08,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_spy_0236,SPY,2023-01-06,09:45,16:00,521.98,516.19,524.44,514.26,519.71,516.22,518.28,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_spy_0237,SPY,2025-08-21,10:30,16:00,525.52,520.34,527.56,519.57,524.2,521.39,522.45,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_spy_0238,SPY,2023-08-07,10:30,16:00,520.17,516.95,521.36,516.33,519.64,517.65,518.46,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_spy_0239,SPY,2023-06-23,10:00,16:00,522.67,518.33,524.81,517.63,521.81,518.86,519.95,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_spy_0240,SPY,2023-02-22,10:15,16:00,524.14,517.73,526.63,515.68,522.04,518.69,519.94,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_spy_0241,SPY,2025-08-06,10:30,16:00,526.69,519.92,528.28,517.82,525.63,520.49,522.46,chop,Range-bound chop; no clean follow-through.,advanced
+qr_spy_0242,SPY,2025-09-22,10:15,16:00,523.39,520.23,524.89,518.75,523.01,520.88,522.16,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_spy_0243,SPY,2025-09-08,10:15,16:00,525.43,517.5,528.08,514.48,522.92,518.3,520.6,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_spy_0244,SPY,2025-05-16,10:15,16:00,524.25,517.88,525.83,516.92,522.3,519.5,520.98,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_spy_0245,SPY,2024-11-08,10:15,16:00,521.29,516.75,522.34,514.44,520.95,517.39,519.48,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_spy_0246,SPY,2025-12-09,09:45,16:00,523.81,519.11,525.6,518.35,522.33,519.81,521.04,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_spy_0247,SPY,2024-06-08,09:45,16:00,524.07,519.21,524.72,518.53,523.69,520.72,522.05,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_spy_0248,SPY,2024-12-23,10:15,16:00,524.11,515.77,526.96,511.26,522.21,516.14,519.78,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_spy_0249,SPY,2025-08-16,10:30,16:00,521.75,511.93,524.4,508.31,519.21,513.98,516.09,chop,Range-bound chop; no clean follow-through.,advanced
+qr_spy_0250,SPY,2025-01-17,10:30,16:00,521.43,515.97,522.8,513.96,520.88,517.09,518.47,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_spy_0251,SPY,2025-03-23,10:30,16:00,525.85,518.71,527.81,517.48,525.63,519.59,523.45,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_spy_0252,SPY,2023-07-01,09:45,16:00,525.22,516.15,529.4,512.67,524.79,519.43,521.48,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_spy_0253,SPY,2023-05-26,10:15,16:00,518.95,510.01,520.58,505.99,518.43,513.31,515.96,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_spy_0254,SPY,2023-10-17,10:15,16:00,522.35,516.81,524.12,515.03,520.99,518.43,519.69,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_spy_0255,SPY,2025-07-20,10:15,16:00,522.54,513.38,524.74,511.58,522.49,516.46,519.76,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_spy_0256,SPY,2023-01-25,10:30,16:00,520.78,511.63,524.08,508.18,518.65,513.94,516.87,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_spy_0257,SPY,2023-04-13,10:00,16:00,524.25,516.5,526.33,514.12,522.31,517.84,519.92,chop,Range-bound chop; no clean follow-through.,beginner
+qr_spy_0258,SPY,2024-04-08,10:30,16:00,524.78,518.31,526.77,517.24,523.78,519.48,521.45,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_spy_0259,SPY,2025-04-27,10:15,16:00,523.55,519.44,524.02,518.39,523.02,520.73,521.89,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_spy_0260,SPY,2025-04-22,09:45,16:00,521.79,519.49,522.77,518.25,521.74,519.61,520.89,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_spy_0261,SPY,2023-02-27,09:45,16:00,521.48,517.97,521.99,516.93,521.15,519.18,519.9,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_spy_0262,SPY,2025-07-15,10:30,16:00,525.64,518.6,527.25,516.06,523.65,519.88,521.99,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_spy_0263,SPY,2025-01-23,10:15,16:00,523.34,515.32,524.92,513.49,522.51,518.16,519.97,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_spy_0264,SPY,2023-06-22,10:00,16:00,522.54,517.93,523.76,515.23,521.57,517.97,519.57,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_spy_0265,SPY,2023-11-04,10:30,16:00,525.36,515.57,527.08,514.47,522.98,517.77,519.99,chop,Range-bound chop; no clean follow-through.,advanced
+qr_spy_0266,SPY,2025-06-15,09:45,16:00,521.97,513.34,523.38,509.87,519.68,514.3,516.84,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_spy_0267,SPY,2024-02-28,09:45,16:00,520.67,517.75,521.75,517.01,519.84,517.89,518.78,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_spy_0268,SPY,2023-03-12,10:30,16:00,523.73,519.63,524.61,518.69,522.9,520.93,522.12,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_spy_0269,SPY,2023-03-11,09:45,16:00,527.61,517.09,530.38,514.43,524.92,519.88,522.41,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_spy_0270,SPY,2025-02-11,10:00,16:00,523.79,519.0,525.69,517.4,523.79,520.25,522.26,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_spy_0271,SPY,2025-03-21,10:15,16:00,528.05,520.93,530.64,518.46,527.6,521.93,524.54,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_spy_0272,SPY,2024-03-15,09:45,16:00,522.28,515.99,524.82,514.17,520.53,516.82,519.15,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_spy_0273,SPY,2025-03-14,10:00,16:00,522.89,519.81,523.26,519.23,521.72,520.05,520.82,chop,Range-bound chop; no clean follow-through.,advanced
+qr_spy_0274,SPY,2023-12-05,10:15,16:00,522.0,510.34,526.61,508.78,518.61,512.45,515.23,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_spy_0275,SPY,2025-04-26,10:00,16:00,527.75,519.31,530.04,516.64,525.1,520.3,522.83,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_spy_0276,SPY,2024-03-07,10:15,16:00,525.85,517.07,529.42,515.08,524.54,520.08,522.06,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_spy_0277,SPY,2023-07-01,10:30,16:00,526.35,514.84,529.42,513.05,522.97,517.25,519.42,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_spy_0278,SPY,2025-05-14,10:00,16:00,521.87,511.46,523.15,509.55,518.91,514.49,516.62,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_spy_0279,SPY,2024-05-16,10:30,16:00,520.52,509.12,521.82,505.0,517.71,512.5,514.55,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_spy_0280,SPY,2023-06-12,10:30,16:00,522.0,512.49,524.54,511.49,519.15,515.07,517.42,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_spy_0281,SPY,2025-04-04,10:30,16:00,526.73,517.09,529.93,514.8,525.69,520.29,523.07,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_spy_0282,SPY,2025-12-19,10:30,16:00,522.04,519.03,523.0,517.85,521.21,519.48,520.43,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_spy_0283,SPY,2023-09-19,10:00,16:00,521.41,513.21,525.02,512.07,520.23,515.65,518.0,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_spy_0284,SPY,2024-05-20,10:15,16:00,523.16,518.88,523.65,518.34,522.48,520.19,521.36,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_spy_0285,SPY,2025-12-27,09:45,16:00,524.62,518.85,527.93,517.4,523.36,519.0,521.05,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_spy_0286,SPY,2025-07-15,10:15,16:00,524.31,514.65,527.49,512.82,523.7,517.5,520.59,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_spy_0287,SPY,2025-08-09,10:15,16:00,521.71,518.11,523.17,517.16,521.14,518.93,520.32,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_spy_0288,SPY,2023-10-10,10:15,16:00,518.52,513.57,521.79,512.31,518.19,513.63,516.55,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_spy_0289,SPY,2023-09-02,10:00,16:00,524.94,519.81,526.18,517.85,523.35,519.91,522.1,chop,Range-bound chop; no clean follow-through.,beginner
+qr_spy_0290,SPY,2025-04-11,10:15,16:00,521.85,517.16,522.64,516.52,519.97,517.28,518.56,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_spy_0291,SPY,2024-02-09,10:30,16:00,522.76,519.66,523.73,518.72,521.69,519.92,520.71,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_spy_0292,SPY,2025-02-01,10:00,16:00,523.52,518.92,524.38,518.17,522.64,519.53,520.72,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_spy_0293,SPY,2023-04-13,09:45,16:00,526.81,518.05,528.05,516.58,524.43,519.63,522.66,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_spy_0294,SPY,2024-03-05,10:00,16:00,528.52,520.99,530.24,517.58,526.38,521.2,523.22,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_spy_0295,SPY,2024-02-28,10:30,16:00,520.78,518.27,522.03,517.39,520.23,518.61,519.44,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_spy_0296,SPY,2024-11-03,10:30,16:00,518.99,513.44,520.87,512.34,518.38,514.44,516.95,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_spy_0297,SPY,2023-11-18,10:00,16:00,524.24,514.82,525.55,511.52,523.49,518.1,520.69,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_spy_0298,SPY,2025-05-05,09:45,16:00,522.96,517.57,523.79,516.51,521.29,518.35,519.9,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_spy_0299,SPY,2025-01-21,10:30,16:00,519.71,513.06,521.31,511.96,518.12,514.25,515.99,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_spy_0300,SPY,2025-10-18,10:30,16:00,523.69,517.5,526.13,515.36,521.3,517.54,519.59,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_spy_0301,SPY,2023-12-18,10:00,16:00,524.03,513.26,528.34,509.03,520.44,515.03,517.27,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_spy_0302,SPY,2023-07-11,10:00,16:00,525.02,518.51,527.72,516.25,522.72,519.29,520.54,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_spy_0303,SPY,2023-11-13,10:00,16:00,520.49,514.06,521.72,511.59,519.92,515.88,518.05,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_spy_0304,SPY,2023-05-03,09:45,16:00,524.98,519.92,526.18,517.44,523.36,520.21,521.48,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_spy_0305,SPY,2024-05-04,09:45,16:00,521.36,515.98,522.11,515.02,520.31,517.58,518.86,chop,Range-bound chop; no clean follow-through.,advanced
+qr_spy_0306,SPY,2023-12-27,10:15,16:00,522.8,518.36,524.54,517.63,521.59,519.07,520.3,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_spy_0307,SPY,2024-09-17,09:45,16:00,522.08,513.08,523.67,509.41,519.26,513.66,515.86,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_spy_0308,SPY,2024-11-07,09:45,16:00,521.69,516.87,523.48,515.31,520.35,518.11,519.29,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_spy_0309,SPY,2023-06-25,10:00,16:00,521.0,516.47,522.3,515.55,519.98,517.22,518.48,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_spy_0310,SPY,2024-06-19,10:30,16:00,521.22,517.73,521.72,517.1,520.26,517.87,518.8,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_spy_0311,SPY,2025-07-06,09:45,16:00,523.34,516.46,524.26,513.74,521.12,516.89,518.65,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_spy_0312,SPY,2025-11-12,09:45,16:00,520.66,513.33,522.82,509.84,518.43,513.78,515.57,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_spy_0313,SPY,2023-01-28,09:45,16:00,521.58,515.59,522.18,514.56,519.87,517.17,518.14,chop,Range-bound chop; no clean follow-through.,beginner
+qr_spy_0314,SPY,2023-05-03,10:15,16:00,523.94,517.11,525.47,514.57,523.61,519.37,521.71,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_spy_0315,SPY,2025-06-18,10:00,16:00,520.03,516.93,520.62,516.12,519.3,517.7,518.64,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_spy_0316,SPY,2024-05-08,10:00,16:00,522.38,512.56,524.07,510.46,519.26,514.65,517.11,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_spy_0317,SPY,2023-11-16,09:45,16:00,527.04,515.04,529.05,511.91,523.44,518.17,521.03,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_spy_0318,SPY,2023-07-07,09:45,16:00,528.94,521.09,531.18,519.6,526.99,522.07,524.8,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_spy_0319,SPY,2024-03-07,09:45,16:00,520.02,514.42,522.39,512.98,519.15,515.91,517.1,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_spy_0320,SPY,2023-03-25,10:15,16:00,523.05,516.63,526.28,514.48,521.2,516.86,518.41,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_spy_0321,SPY,2025-03-05,10:15,16:00,524.0,515.28,525.89,513.64,521.84,517.42,519.15,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_spy_0322,SPY,2023-09-14,09:45,16:00,522.47,518.39,523.62,517.14,521.86,519.82,521.04,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_spy_0323,SPY,2024-04-25,10:30,16:00,526.94,515.18,531.14,513.13,523.89,517.8,521.23,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_spy_0324,SPY,2025-01-10,10:15,16:00,522.82,517.22,524.24,516.42,522.5,518.69,520.3,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_spy_0325,SPY,2024-01-04,10:30,16:00,526.68,519.59,529.8,516.81,525.01,520.7,522.88,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_spy_0326,SPY,2023-10-06,10:00,16:00,527.64,520.34,529.38,518.02,527.55,521.91,523.99,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_spy_0327,SPY,2023-08-18,10:00,16:00,521.31,517.38,522.45,516.2,520.65,518.22,519.53,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_spy_0328,SPY,2024-11-17,10:15,16:00,522.59,519.68,522.98,518.64,521.82,520.08,520.81,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_spy_0329,SPY,2024-01-09,10:00,16:00,523.59,517.72,526.93,515.45,523.09,518.69,520.59,chop,Range-bound chop; no clean follow-through.,advanced
+qr_spy_0330,SPY,2023-08-06,10:15,16:00,521.55,518.96,523.26,517.8,521.48,519.17,520.21,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_spy_0331,SPY,2024-01-04,10:00,16:00,524.04,517.5,526.32,515.31,523.22,519.24,520.74,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_spy_0332,SPY,2023-05-13,09:45,16:00,522.75,515.84,525.24,514.8,520.5,516.44,517.94,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_spy_0333,SPY,2024-04-27,10:00,16:00,525.25,517.8,526.97,515.99,522.9,519.51,521.46,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_spy_0334,SPY,2023-12-01,09:45,16:00,524.01,520.07,525.59,519.04,523.07,521.02,522.29,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_spy_0335,SPY,2024-09-14,10:00,16:00,520.21,513.36,523.32,511.08,519.68,515.35,516.93,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_spy_0336,SPY,2025-07-02,10:00,16:00,530.17,519.96,535.09,515.16,527.16,520.94,524.67,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_spy_0337,SPY,2025-06-23,10:00,16:00,521.07,518.21,522.24,517.24,521.02,519.35,520.16,chop,Range-bound chop; no clean follow-through.,advanced
+qr_spy_0338,SPY,2023-10-16,10:15,16:00,525.35,519.75,527.65,518.2,523.35,520.13,521.82,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_spy_0339,SPY,2023-12-23,10:30,16:00,524.18,517.0,527.51,516.1,522.86,518.47,520.21,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_spy_0340,SPY,2023-01-21,10:15,16:00,521.54,517.74,522.01,516.03,520.57,518.27,519.62,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_spy_0341,SPY,2023-02-16,10:15,16:00,519.52,514.13,520.54,511.8,518.76,515.06,516.99,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_spy_0342,SPY,2023-05-10,10:15,16:00,522.93,517.7,524.89,516.89,521.27,518.66,520.29,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_spy_0343,SPY,2024-05-02,10:30,16:00,524.61,519.81,526.73,518.19,524.06,521.06,522.75,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_spy_0344,SPY,2023-10-19,09:45,16:00,528.61,519.01,529.9,518.05,526.72,521.96,524.24,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_spy_0345,SPY,2025-04-01,10:30,16:00,522.76,517.4,523.75,516.68,521.15,518.32,519.86,chop,Range-bound chop; no clean follow-through.,advanced
+qr_spy_0346,SPY,2024-11-27,10:30,16:00,520.54,517.66,521.32,516.54,520.04,518.14,519.12,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_spy_0347,SPY,2024-10-24,09:45,16:00,520.4,515.32,521.95,513.3,519.24,515.38,516.85,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_spy_0348,SPY,2025-02-16,10:15,16:00,523.63,517.15,525.53,515.31,522.39,519.23,520.72,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_spy_0349,SPY,2024-06-18,10:15,16:00,527.75,520.41,529.25,516.98,526.18,521.81,524.15,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_nq_0350,NQ,2024-11-24,09:45,16:00,18677.92,18362.1,18732.65,18319.4,18593.27,18447.95,18516.05,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_nq_0351,NQ,2024-06-26,10:30,16:00,18586.9,18419.0,18637.26,18328.56,18577.56,18432.72,18497.35,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_nq_0352,NQ,2024-11-15,10:00,16:00,18694.42,18438.07,18776.73,18340.03,18605.58,18462.64,18519.55,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_nq_0353,NQ,2025-10-14,10:15,16:00,18645.23,18294.23,18758.42,18200.58,18587.39,18383.35,18467.66,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_nq_0354,NQ,2024-08-02,10:00,16:00,18781.04,18270.5,18953.62,18215.75,18632.13,18412.31,18507.44,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_nq_0355,NQ,2025-02-02,10:30,16:00,18688.05,18356.95,18806.85,18209.98,18636.12,18427.32,18543.54,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_nq_0356,NQ,2024-11-05,10:15,16:00,18825.28,18495.04,18909.73,18389.87,18751.95,18581.77,18689.2,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_nq_0357,NQ,2024-06-17,10:15,16:00,18559.49,18409.64,18588.48,18384.09,18540.42,18443.9,18495.45,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_nq_0358,NQ,2025-12-23,09:45,16:00,18474.01,18263.85,18524.8,18196.63,18452.32,18333.59,18398.97,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_nq_0359,NQ,2023-11-17,10:15,16:00,18648.26,18428.15,18736.89,18397.69,18632.44,18501.17,18581.89,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_nq_0360,NQ,2025-12-18,10:30,16:00,18490.91,18297.89,18517.63,18200.73,18467.54,18337.81,18410.32,chop,Range-bound chop; no clean follow-through.,advanced
+qr_nq_0361,NQ,2025-08-15,10:15,16:00,18787.75,18287.77,18925.8,18226.97,18642.25,18426.37,18555.67,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_nq_0362,NQ,2025-08-20,10:00,16:00,18589.35,18492.04,18631.51,18458.22,18574.87,18512.3,18540.69,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_nq_0363,NQ,2025-06-06,09:45,16:00,18533.82,18215.5,18571.26,18137.58,18440.69,18299.62,18382.64,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_nq_0364,NQ,2025-01-01,10:15,16:00,18663.09,18378.56,18717.64,18296.33,18573.64,18417.39,18516.82,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_nq_0365,NQ,2023-12-12,09:45,16:00,18587.48,18326.92,18641.09,18236.58,18490.8,18339.66,18421.61,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_nq_0366,NQ,2025-03-26,10:15,16:00,18550.63,18371.12,18600.07,18336.4,18494.66,18399.88,18455.42,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_nq_0367,NQ,2024-11-19,09:45,16:00,18567.03,18499.74,18587.31,18487.16,18564.35,18504.59,18531.85,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_nq_0368,NQ,2023-09-16,10:15,16:00,18758.39,18538.2,18869.37,18421.64,18746.7,18559.72,18672.96,chop,Range-bound chop; no clean follow-through.,advanced
+qr_nq_0369,NQ,2024-01-11,10:00,16:00,18644.01,18377.54,18723.69,18322.76,18589.08,18454.74,18521.96,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_nq_0370,NQ,2024-01-23,10:15,16:00,18519.47,18323.19,18581.91,18231.67,18503.07,18355.55,18445.22,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_nq_0371,NQ,2024-10-12,10:15,16:00,18577.08,18399.85,18601.1,18353.24,18532.36,18453.35,18496.33,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_nq_0372,NQ,2024-06-14,10:30,16:00,18521.22,18343.6,18565.36,18317.5,18464.09,18373.47,18410.93,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_nq_0373,NQ,2025-03-06,10:00,16:00,18553.06,18220.85,18655.37,18136.09,18452.77,18261.03,18383.52,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_nq_0374,NQ,2025-08-14,10:15,16:00,18775.7,18454.68,18850.61,18361.17,18704.45,18532.13,18642.44,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_nq_0375,NQ,2025-03-23,10:30,16:00,18572.95,18471.24,18603.65,18434.7,18564.4,18508.55,18543.2,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_nq_0376,NQ,2024-05-05,10:30,16:00,18458.35,18164.3,18503.61,18047.02,18430.97,18266.37,18334.42,chop,Range-bound chop; no clean follow-through.,beginner
+qr_nq_0377,NQ,2024-11-23,10:15,16:00,18561.62,18191.28,18728.96,18102.28,18520.57,18304.44,18398.56,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_nq_0378,NQ,2024-05-19,10:15,16:00,18695.1,18401.67,18772.04,18268.75,18624.33,18456.13,18548.26,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_nq_0379,NQ,2024-05-04,10:00,16:00,18476.34,18209.6,18512.99,18101.01,18435.38,18296.31,18351.04,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_nq_0380,NQ,2024-12-02,10:00,16:00,18725.23,18431.37,18800.97,18388.17,18667.26,18525.33,18612.54,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_nq_0381,NQ,2025-02-18,10:15,16:00,18686.66,18444.15,18752.04,18358.5,18619.45,18494.29,18550.81,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_nq_0382,NQ,2023-04-15,10:30,16:00,18551.0,18437.64,18575.06,18388.56,18519.25,18452.85,18488.14,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_nq_0383,NQ,2023-10-25,09:45,16:00,18661.58,18229.24,18709.83,18179.75,18528.7,18321.34,18415.59,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_nq_0384,NQ,2023-06-21,10:00,16:00,18612.32,18486.02,18637.89,18461.02,18597.83,18521.56,18552.67,chop,Range-bound chop; no clean follow-through.,beginner
+qr_nq_0385,NQ,2023-01-02,10:00,16:00,18849.68,18503.39,18978.61,18435.38,18767.31,18547.21,18660.45,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_nq_0386,NQ,2024-05-03,10:15,16:00,18629.89,18394.75,18682.82,18315.47,18557.35,18448.49,18505.5,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_nq_0387,NQ,2023-01-23,10:15,16:00,18432.64,18151.02,18561.91,18061.99,18407.25,18208.05,18316.32,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_nq_0388,NQ,2024-08-07,10:30,16:00,18693.21,18391.83,18774.66,18306.11,18663.69,18457.3,18532.02,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_nq_0389,NQ,2024-03-27,10:15,16:00,18682.57,18341.12,18785.68,18200.26,18631.84,18448.4,18539.36,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_nq_0390,NQ,2023-01-15,10:30,16:00,18662.15,18484.05,18728.86,18397.59,18646.89,18514.25,18592.55,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_nq_0391,NQ,2024-06-07,10:00,16:00,18818.6,18494.13,18935.11,18351.93,18745.38,18545.06,18641.8,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_nq_0392,NQ,2023-10-16,10:00,16:00,18697.35,18406.9,18805.81,18341.63,18645.6,18453.01,18559.7,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_nq_0393,NQ,2025-05-03,10:15,16:00,18804.49,18476.97,18916.36,18368.28,18767.06,18573.9,18643.88,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_nq_0394,NQ,2023-10-03,10:00,16:00,18703.14,18438.56,18776.95,18363.69,18682.43,18533.14,18613.29,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_nq_0395,NQ,2023-10-14,10:30,16:00,18602.74,18443.77,18662.7,18407.77,18590.36,18477.24,18532.8,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_nq_0396,NQ,2023-06-14,10:30,16:00,18595.98,18398.18,18650.66,18326.29,18574.22,18455.07,18521.52,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_nq_0397,NQ,2024-07-21,09:45,16:00,18620.82,18453.11,18649.92,18417.31,18603.96,18498.21,18560.27,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_nq_0398,NQ,2024-08-09,10:00,16:00,18574.21,18348.8,18642.29,18271.16,18542.56,18401.94,18482.45,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_nq_0399,NQ,2023-04-25,10:30,16:00,18511.89,18412.04,18542.79,18359.54,18509.58,18426.96,18473.82,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_nq_0400,NQ,2024-09-02,10:00,16:00,18690.05,18481.49,18722.87,18432.86,18662.82,18550.49,18622.42,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_nq_0401,NQ,2024-07-08,09:45,16:00,18643.86,18403.97,18721.1,18360.46,18577.26,18443.38,18493.04,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_nq_0402,NQ,2023-05-12,10:00,16:00,18759.06,18384.61,18880.3,18331.56,18672.24,18484.01,18556.12,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_nq_0403,NQ,2024-01-13,10:00,16:00,18831.02,18463.57,18910.67,18312.2,18781.73,18560.91,18700.19,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_nq_0404,NQ,2024-12-17,10:00,16:00,18717.42,18281.25,18763.43,18121.47,18568.56,18353.75,18461.89,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_nq_0405,NQ,2025-06-27,10:15,16:00,18557.81,18411.71,18579.31,18332.27,18550.48,18449.95,18490.85,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_nq_0406,NQ,2025-11-17,10:15,16:00,18501.37,18361.29,18571.67,18330.68,18499.75,18409.48,18466.39,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_nq_0407,NQ,2023-07-21,10:00,16:00,18523.4,18154.83,18582.04,18098.24,18460.07,18242.98,18356.72,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_nq_0408,NQ,2025-03-10,10:30,16:00,18552.65,18330.42,18613.66,18240.93,18470.87,18353.99,18424.27,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_nq_0409,NQ,2025-09-12,10:00,16:00,18527.53,18367.79,18587.5,18278.68,18500.21,18383.65,18434.13,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_nq_0410,NQ,2025-10-03,10:30,16:00,18735.45,18524.12,18770.48,18450.34,18668.58,18541.66,18608.56,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_nq_0411,NQ,2025-08-24,10:30,16:00,18798.78,18489.33,18881.22,18367.31,18684.14,18518.95,18588.39,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_nq_0412,NQ,2023-10-13,10:00,16:00,18692.87,18446.46,18748.76,18397.69,18661.92,18526.75,18588.44,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_nq_0413,NQ,2023-05-26,10:00,16:00,18565.82,18433.5,18609.56,18396.75,18539.64,18475.28,18499.08,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_nq_0414,NQ,2025-03-08,09:45,16:00,18636.18,18522.84,18662.0,18501.36,18595.85,18528.88,18565.62,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_nq_0415,NQ,2025-09-20,09:45,16:00,18717.05,18421.72,18776.43,18311.23,18661.83,18472.68,18550.72,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_nq_0416,NQ,2024-05-20,10:30,16:00,18626.81,18317.86,18699.2,18226.33,18539.98,18392.26,18478.57,chop,Range-bound chop; no clean follow-through.,beginner
+qr_nq_0417,NQ,2023-01-17,10:00,16:00,18687.42,18478.07,18743.26,18433.38,18650.24,18521.65,18590.18,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_nq_0418,NQ,2025-12-10,10:00,16:00,18787.82,18418.61,18859.03,18375.01,18751.6,18539.41,18636.67,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_nq_0419,NQ,2025-06-12,10:00,16:00,18710.91,18412.99,18844.94,18308.72,18591.22,18417.47,18510.1,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_nq_0420,NQ,2025-05-01,10:30,16:00,18515.68,18344.03,18586.9,18315.59,18450.59,18345.47,18408.22,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_nq_0421,NQ,2023-11-26,09:45,16:00,18657.06,18488.34,18730.97,18423.9,18627.75,18522.8,18567.73,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_nq_0422,NQ,2024-02-24,10:00,16:00,18537.67,18410.9,18554.98,18366.69,18498.39,18416.87,18467.18,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_nq_0423,NQ,2023-03-10,10:15,16:00,18604.07,18317.22,18651.29,18257.2,18552.79,18354.75,18466.29,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_nq_0424,NQ,2025-03-03,10:00,16:00,18557.23,18190.45,18600.47,18056.39,18417.81,18211.68,18313.08,chop,Range-bound chop; no clean follow-through.,beginner
+qr_nq_0425,NQ,2024-08-20,10:00,16:00,18471.06,18298.41,18515.7,18220.99,18459.71,18308.81,18364.95,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_nq_0426,NQ,2024-11-17,09:45,16:00,18832.16,18481.89,18894.5,18366.13,18728.68,18569.41,18669.25,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_nq_0427,NQ,2023-03-26,10:00,16:00,18723.71,18524.47,18767.91,18469.82,18678.8,18556.66,18615.89,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_nq_0428,NQ,2024-02-25,09:45,16:00,18506.51,18340.33,18533.95,18281.12,18474.89,18392.03,18425.94,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_nq_0429,NQ,2023-12-14,10:00,16:00,18715.99,18486.71,18816.62,18419.48,18625.93,18495.69,18574.36,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_nq_0430,NQ,2024-02-07,10:30,16:00,18571.42,18423.29,18600.82,18389.97,18524.65,18434.76,18486.48,trend day up,Steady trend day up; pullbacks are shallow.,intermediate
+qr_nq_0431,NQ,2023-04-03,10:30,16:00,18595.13,18340.41,18649.02,18216.05,18546.09,18386.34,18483.43,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_nq_0432,NQ,2023-01-16,10:30,16:00,18544.55,18251.36,18640.67,18128.38,18503.08,18342.21,18427.52,chop,Range-bound chop; no clean follow-through.,beginner
+qr_nq_0433,NQ,2025-07-04,10:30,16:00,18660.55,18415.47,18700.77,18339.96,18641.92,18490.13,18546.96,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_nq_0434,NQ,2025-02-11,10:30,16:00,18672.8,18493.59,18716.53,18459.85,18615.05,18512.53,18576.79,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_nq_0435,NQ,2025-10-16,10:15,16:00,18499.89,18337.64,18564.14,18299.94,18479.53,18388.39,18427.86,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_nq_0436,NQ,2023-11-10,10:00,16:00,18648.15,18438.19,18770.77,18320.37,18614.84,18456.51,18557.56,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_nq_0437,NQ,2023-02-21,09:45,16:00,18586.82,18416.61,18634.75,18365.22,18547.21,18453.36,18500.17,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_nq_0438,NQ,2025-02-10,09:45,16:00,18599.32,18452.04,18618.51,18429.91,18549.24,18453.89,18499.06,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_nq_0439,NQ,2023-05-28,10:00,16:00,18596.92,18457.76,18645.76,18407.87,18557.35,18480.54,18513.96,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_nq_0440,NQ,2025-11-18,10:30,16:00,18526.06,18441.48,18563.6,18426.06,18520.72,18452.92,18482.63,chop,Range-bound chop; no clean follow-through.,beginner
+qr_nq_0441,NQ,2024-09-15,10:00,16:00,18579.04,18414.61,18618.48,18381.7,18522.24,18432.06,18485.0,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_nq_0442,NQ,2023-04-07,10:00,16:00,18700.33,18498.27,18745.34,18434.99,18618.2,18499.96,18548.82,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_nq_0443,NQ,2024-09-01,10:30,16:00,18665.93,18375.52,18737.85,18272.17,18599.48,18455.91,18508.7,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_nq_0444,NQ,2024-11-21,10:30,16:00,18615.49,18407.97,18694.18,18349.15,18557.02,18438.55,18496.49,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_nq_0445,NQ,2024-04-05,10:15,16:00,18587.94,18406.03,18620.67,18350.02,18539.96,18449.06,18499.3,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_nq_0446,NQ,2024-02-05,10:30,16:00,18715.68,18354.57,18863.61,18224.02,18588.6,18400.74,18466.78,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_nq_0447,NQ,2023-09-20,10:30,16:00,18495.47,18356.53,18530.94,18342.67,18468.49,18401.86,18433.87,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_nq_0448,NQ,2023-04-23,09:45,16:00,18529.66,18405.9,18582.32,18360.33,18522.75,18425.5,18463.52,chop,Range-bound chop; no clean follow-through.,advanced
+qr_nq_0449,NQ,2025-12-15,10:15,16:00,18925.43,18519.14,18972.55,18439.75,18805.22,18591.87,18727.11,trend day down,Trend day down; rallies fail at VWAP.,beginner
+qr_es_0450,ES,2025-10-27,10:30,16:00,5235.99,5151.96,5249.99,5125.43,5211.21,5171.28,5195.47,VWAP rejection,VWAP rejection; lower highs form.,intermediate
+qr_es_0451,ES,2023-10-03,10:30,16:00,5227.6,5156.58,5267.87,5130.15,5210.0,5158.8,5186.28,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_es_0452,ES,2025-02-06,10:00,16:00,5250.45,5173.83,5281.0,5150.37,5229.28,5189.73,5213.95,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_es_0453,ES,2023-03-17,10:30,16:00,5269.93,5187.24,5283.04,5159.52,5246.94,5193.54,5219.92,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_es_0454,ES,2023-01-23,09:45,16:00,5290.83,5202.33,5325.12,5168.09,5266.32,5219.99,5247.42,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_es_0455,ES,2024-03-05,10:15,16:00,5209.99,5169.67,5224.57,5160.87,5202.56,5178.81,5187.25,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_es_0456,ES,2024-06-06,10:30,16:00,5224.88,5183.59,5231.16,5163.86,5209.82,5184.94,5200.18,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_es_0457,ES,2024-10-15,10:30,16:00,5214.13,5193.16,5226.66,5181.59,5212.34,5195.03,5205.94,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_es_0458,ES,2024-08-03,10:00,16:00,5201.88,5132.0,5234.52,5103.35,5182.34,5136.77,5161.34,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_es_0459,ES,2025-02-10,10:15,16:00,5258.27,5182.84,5294.12,5160.66,5245.57,5197.44,5217.4,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_es_0460,ES,2023-05-14,10:00,16:00,5207.0,5159.34,5212.68,5141.57,5193.73,5169.2,5178.34,ORB long,Breakout holds above OR high; trend continues toward session highs.,advanced
+qr_es_0461,ES,2025-06-18,10:15,16:00,5240.22,5194.92,5251.01,5187.44,5237.55,5210.37,5226.37,fakeout,Break above OR fails; price reverses back into range.,advanced
+qr_es_0462,ES,2024-02-14,10:30,16:00,5217.08,5193.87,5229.78,5185.45,5216.27,5199.77,5209.48,chop,Range-bound chop; no clean follow-through.,beginner
+qr_es_0463,ES,2025-05-25,09:45,16:00,5224.97,5116.28,5245.67,5078.45,5216.91,5156.48,5194.81,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_es_0464,ES,2023-08-03,10:30,16:00,5217.91,5171.67,5228.46,5158.99,5217.28,5184.0,5198.49,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_es_0465,ES,2024-08-05,10:30,16:00,5202.1,5144.67,5215.32,5129.1,5187.48,5157.66,5170.46,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_es_0466,ES,2024-02-17,09:45,16:00,5268.08,5189.6,5309.46,5147.84,5247.08,5194.79,5219.95,VWAP rejection,VWAP rejection; lower highs form.,advanced
+qr_es_0467,ES,2025-08-06,10:15,16:00,5204.09,5144.49,5218.07,5126.31,5186.58,5150.19,5168.86,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_es_0468,ES,2025-07-19,10:15,16:00,5183.42,5101.13,5210.8,5071.3,5180.23,5132.52,5151.92,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_es_0469,ES,2023-10-20,10:15,16:00,5203.21,5153.23,5212.96,5143.24,5190.08,5158.91,5173.88,fakeout,Break above OR fails; price reverses back into range.,beginner
+qr_es_0470,ES,2023-02-01,10:00,16:00,5270.61,5207.77,5289.05,5194.91,5255.99,5214.59,5229.36,chop,Range-bound chop; no clean follow-through.,beginner
+qr_es_0471,ES,2025-07-12,09:45,16:00,5244.08,5153.54,5259.49,5137.66,5231.53,5183.91,5211.01,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_es_0472,ES,2024-01-10,10:30,16:00,5221.44,5180.89,5232.7,5171.33,5216.09,5194.55,5207.11,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_es_0473,ES,2024-06-09,10:30,16:00,5198.42,5158.15,5213.57,5141.08,5191.87,5170.22,5184.22,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_es_0474,ES,2024-03-28,10:15,16:00,5245.27,5167.53,5259.53,5159.72,5226.0,5191.53,5213.44,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_es_0475,ES,2025-11-13,10:15,16:00,5205.61,5183.71,5212.76,5178.28,5204.38,5188.58,5197.67,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner
+qr_es_0476,ES,2023-08-24,09:45,16:00,5233.32,5136.79,5257.19,5120.85,5223.94,5165.84,5189.97,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_es_0477,ES,2025-06-19,09:45,16:00,5207.51,5167.78,5218.52,5162.4,5194.69,5175.78,5184.61,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_es_0478,ES,2023-02-24,09:45,16:00,5207.54,5144.13,5219.97,5128.11,5192.91,5149.82,5167.15,chop,Range-bound chop; no clean follow-through.,intermediate
+qr_es_0479,ES,2023-04-01,10:30,16:00,5223.29,5172.8,5247.44,5152.03,5221.64,5190.73,5203.46,trend day up,Steady trend day up; pullbacks are shallow.,beginner
+qr_es_0480,ES,2025-03-10,09:45,16:00,5232.58,5188.7,5246.92,5170.38,5228.06,5203.68,5218.96,trend day down,Trend day down; rallies fail at VWAP.,advanced
+qr_es_0481,ES,2025-02-21,10:00,16:00,5212.83,5186.78,5219.07,5173.76,5209.58,5193.2,5200.43,ORB short,Breakdown below OR low; sellers control through midday.,beginner
+qr_es_0482,ES,2023-09-23,10:30,16:00,5206.84,5182.3,5211.0,5169.39,5201.73,5184.04,5190.97,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_es_0483,ES,2024-07-09,09:45,16:00,5239.68,5192.66,5254.34,5179.63,5225.5,5203.13,5211.43,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,advanced
+qr_es_0484,ES,2023-03-12,09:45,16:00,5200.16,5136.08,5213.39,5123.67,5196.28,5160.41,5182.47,ORB long,Breakout holds above OR high; trend continues toward session highs.,beginner
+qr_es_0485,ES,2024-06-10,10:00,16:00,5234.62,5176.72,5264.5,5166.8,5231.17,5191.19,5214.77,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_es_0486,ES,2024-12-01,09:45,16:00,5237.38,5184.33,5258.27,5170.68,5219.52,5189.47,5202.35,chop,Range-bound chop; no clean follow-through.,beginner
+qr_es_0487,ES,2024-03-02,10:00,16:00,5260.65,5177.67,5284.7,5147.37,5242.54,5204.28,5218.46,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_es_0488,ES,2024-08-13,10:00,16:00,5232.37,5184.16,5246.93,5164.39,5217.35,5187.78,5203.81,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_es_0489,ES,2024-11-19,09:45,16:00,5223.13,5195.27,5235.29,5186.48,5221.45,5200.92,5211.06,ORB short,Breakdown below OR low; sellers control through midday.,intermediate
+qr_es_0490,ES,2023-04-26,09:45,16:00,5280.41,5189.21,5316.92,5170.23,5252.06,5205.94,5234.3,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_es_0491,ES,2025-11-03,10:30,16:00,5213.67,5163.92,5221.11,5151.58,5206.93,5178.23,5195.35,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,intermediate
+qr_es_0492,ES,2023-02-24,09:45,16:00,5241.51,5185.87,5258.68,5173.29,5239.28,5203.4,5223.83,ORB long,Breakout holds above OR high; trend continues toward session highs.,intermediate
+qr_es_0493,ES,2025-04-11,10:00,16:00,5226.99,5185.49,5231.8,5178.56,5213.87,5193.61,5205.12,fakeout,Break above OR fails; price reverses back into range.,intermediate
+qr_es_0494,ES,2025-05-11,10:30,16:00,5226.67,5118.13,5272.96,5087.39,5216.35,5156.57,5195.23,chop,Range-bound chop; no clean follow-through.,beginner
+qr_es_0495,ES,2023-02-22,10:30,16:00,5234.42,5127.02,5264.57,5084.6,5220.93,5161.61,5194.14,trend day up,Steady trend day up; pullbacks are shallow.,advanced
+qr_es_0496,ES,2025-08-20,09:45,16:00,5219.84,5112.66,5260.1,5096.9,5204.03,5147.92,5175.2,trend day down,Trend day down; rallies fail at VWAP.,intermediate
+qr_es_0497,ES,2023-11-22,10:30,16:00,5218.23,5123.33,5257.51,5091.29,5202.53,5144.45,5174.21,ORB short,Breakdown below OR low; sellers control through midday.,advanced
+qr_es_0498,ES,2024-06-26,09:45,16:00,5321.93,5209.23,5338.75,5168.21,5289.46,5228.64,5259.45,VWAP rejection,VWAP rejection; lower highs form.,beginner
+qr_es_0499,ES,2024-04-23,10:00,16:00,5215.68,5140.8,5250.11,5119.46,5188.7,5144.79,5173.09,VWAP reclaim,Price reclaims VWAP and holds; buyers step in.,beginner

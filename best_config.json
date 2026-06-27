@@ -1,0 +1,50 @@
+{
+  "warning": "Research only \u2014 not predictive of future performance. Do not auto-trade.",
+  "params": {
+    "direction_filter": "short",
+    "r_target": 3.0,
+    "max_trades_per_day": 1,
+    "min_rvol": 1.1,
+    "stop_style": "opposite_or",
+    "fixed_stop_percent": 0.5,
+    "vwap_filter": true,
+    "spy_confirmation": true,
+    "daily_trend_qqq_ema20_filter": false,
+    "or_size_filter_enabled": false,
+    "enable_entry_cutoff": false,
+    "entry_cutoff_time": "11:00"
+  },
+  "params_label": "dir=short|R=3.0|maxTr=1|rvol=1.10|stop=opposite_or|vwap=Y|spy=Y|trend=N|orSz=N|cut=off",
+  "final_score": -500.0,
+  "train_robustness": 49.0050530079453,
+  "test_robustness": -112.20754000380593,
+  "consistency_ratio": -2.289713674743163,
+  "train_period": {
+    "start": "2025-01-02",
+    "end": "2025-12-12"
+  },
+  "test_period": {
+    "start": "2025-12-15",
+    "end": "2026-05-13"
+  },
+  "train_summary": {
+    "total_trades": 32.0,
+    "win_rate": 0.4688,
+    "avg_r": 0.3067,
+    "total_pnl": 9778.4117,
+    "expectancy": 305.5754,
+    "profit_factor": 1.9546,
+    "max_drawdown": -3924.46,
+    "avg_or_size": 3.7121
+  },
+  "test_summary": {
+    "total_trades": 11.0,
+    "win_rate": 0.5455,
+    "avg_r": 0.0126,
+    "total_pnl": 142.3064,
+    "expectancy": 12.9369,
+    "profit_factor": 1.0599,
+    "max_drawdown": -1319.39,
+    "avg_or_size": 4.2085
+  }
+}

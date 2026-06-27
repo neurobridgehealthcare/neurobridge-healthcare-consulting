@@ -1,0 +1,30 @@
+{
+  "user_id": "default",
+  "xp": 200,
+  "scenarios_completed": 1,
+  "boss_battles_won": 0,
+  "boss_battles_failed": 0,
+  "boss_pending": false,
+  "current_streak": 0,
+  "longest_streak": 0,
+  "last_training_date": "",
+  "scenarios_today": 1,
+  "lessons_today": 0,
+  "replays_today": 1,
+  "career_rank": "Training Desk Intern",
+  "last_xp_breakdown": [
+    "+25 XP \u2014 scenario completed",
+    "+25 XP \u2014 full checklist",
+    "+50 XP \u2014 correct trade / no-trade decision",
+    "+25 XP \u2014 correct risk/reward read",
+    "+50 XP \u2014 correct no-trade pass",
+    "+25 XP \u2014 useful journal note"
+  ],
+  "last_xp_total": 200,
+  "last_badges_earned": [
+    "First Scenario Completed",
+    "No-Trade Master",
+    "Risk Protector",
+    "Journal Builder"
+  ]
+}

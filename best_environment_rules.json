@@ -1,0 +1,260 @@
+{
+  "warning": "Research only \u2014 rule-based environment tags, not predictive of future performance.",
+  "best_combinations": [
+    {
+      "time_bucket": "9:45-10:00",
+      "regime": "Mean Reversion",
+      "total_trades": 4,
+      "profit_factor": 4.849,
+      "expectancy": 958.02,
+      "total_pnl": 3832.08,
+      "robustness_score": 3.14
+    },
+    {
+      "time_bucket": "10:00-10:30",
+      "regime": "Gap Down Continuation",
+      "total_trades": 3,
+      "profit_factor": 1.0794,
+      "expectancy": 26.43,
+      "total_pnl": 79.29,
+      "robustness_score": -107.92
+    },
+    {
+      "time_bucket": "9:45-10:00",
+      "regime": "Gap Down Continuation",
+      "total_trades": 3,
+      "profit_factor": 0.0,
+      "expectancy": -356.3,
+      "total_pnl": -1068.9,
+      "robustness_score": -180.5
+    },
+    {
+      "time_bucket": "10:00-10:30",
+      "regime": "Mean Reversion",
+      "total_trades": 3,
+      "profit_factor": 0.0595,
+      "expectancy": -350.19,
+      "total_pnl": -1050.56,
+      "robustness_score": -188.64
+    }
+  ],
+  "top_time_buckets": [
+    {
+      "dimension": "time_bucket",
+      "bucket": "12:00+",
+      "total_trades": 2,
+      "win_rate": 0.5,
+      "total_pnl": 1673.62,
+      "expectancy": 836.81,
+      "profit_factor": 6.1851,
+      "max_drawdown": -322.78,
+      "robustness_score": -19.69
+    },
+    {
+      "dimension": "time_bucket",
+      "bucket": "10:00-10:30",
+      "total_trades": 8,
+      "win_rate": 0.625,
+      "total_pnl": 1785.34,
+      "expectancy": 223.17,
+      "profit_factor": 1.8437,
+      "max_drawdown": -1995.66,
+      "robustness_score": -46.79
+    },
+    {
+      "dimension": "time_bucket",
+      "bucket": "9:45-10:00",
+      "total_trades": 9,
+      "win_rate": 0.3333,
+      "total_pnl": 769.93,
+      "expectancy": 85.55,
+      "profit_factor": 1.1897,
+      "max_drawdown": -1996.56,
+      "robustness_score": -103.3
+    },
+    {
+      "dimension": "time_bucket",
+      "bucket": "11:00-12:00",
+      "total_trades": 3,
+      "win_rate": 0.3333,
+      "total_pnl": -492.54,
+      "expectancy": -164.18,
+      "profit_factor": 0.5761,
+      "max_drawdown": -997.88,
+      "robustness_score": -168.97
+    },
+    {
+      "dimension": "time_bucket",
+      "bucket": "10:30-11:00",
+      "total_trades": 2,
+      "win_rate": 0.0,
+      "total_pnl": -1999.18,
+      "expectancy": -999.59,
+      "profit_factor": 0.0,
+      "max_drawdown": -1999.18,
+      "robustness_score": -199.4
+    }
+  ],
+  "top_regimes": [
+    {
+      "dimension": "regime",
+      "bucket": "Trend Up",
+      "total_trades": 3,
+      "win_rate": 0.6667,
+      "total_pnl": 2077.06,
+      "expectancy": 692.35,
+      "profit_factor": 3.0821,
+      "max_drawdown": -997.58,
+      "robustness_score": -25.62
+    },
+    {
+      "dimension": "regime",
+      "bucket": "Mean Reversion",
+      "total_trades": 11,
+      "win_rate": 0.4545,
+      "total_pnl": 1964.47,
+      "expectancy": 178.59,
+      "profit_factor": 1.5458,
+      "max_drawdown": -1322.38,
+      "robustness_score": -35.05
+    },
+    {
+      "dimension": "regime",
+      "bucket": "Trend Down",
+      "total_trades": 2,
+      "win_rate": 0.5,
+      "total_pnl": 680.49,
+      "expectancy": 340.25,
+      "profit_factor": 1.6819,
+      "max_drawdown": -997.88,
+      "robustness_score": -77.03
+    },
+    {
+      "dimension": "regime",
+      "bucket": "Gap Down Continuation",
+      "total_trades": 7,
+      "win_rate": 0.2857,
+      "total_pnl": -1989.19,
+      "expectancy": -284.17,
+      "profit_factor": 0.3515,
+      "max_drawdown": -2007.52,
+      "robustness_score": -156.88
+    },
+    {
+      "dimension": "regime",
+      "bucket": "Gap Up Continuation",
+      "total_trades": 1,
+      "win_rate": 0.0,
+      "total_pnl": -995.67,
+      "expectancy": -995.67,
+      "profit_factor": 0.0,
+      "max_drawdown": -995.67,
+      "robustness_score": -202.2
+    }
+  ],
+  "top_premarket_trends": [
+    {
+      "dimension": "premarket_trend",
+      "bucket": "up",
+      "total_trades": 5,
+      "win_rate": 0.4,
+      "total_pnl": 1878.32,
+      "expectancy": 375.66,
+      "profit_factor": 1.8878,
+      "max_drawdown": -2115.67,
+      "robustness_score": -54.87
+    },
+    {
+      "dimension": "premarket_trend",
+      "bucket": "down",
+      "total_trades": 19,
+      "win_rate": 0.4211,
+      "total_pnl": -141.15,
+      "expectancy": -7.43,
+      "profit_factor": 0.9813,
+      "max_drawdown": -4990.1,
+      "robustness_score": -121.17
+    }
+  ],
+  "top_or_quality": [
+    {
+      "dimension": "or_candle_quality",
+      "bucket": "bullish_moderate_body",
+      "total_trades": 5,
+      "win_rate": 0.8,
+      "total_pnl": 3585.6,
+      "expectancy": 717.12,
+      "profit_factor": 12.1086,
+      "max_drawdown": -322.78,
+      "robustness_score": 7.72
+    },
+    {
+      "dimension": "or_candle_quality",
+      "bucket": "bearish_moderate_body",
+      "total_trades": 3,
+      "win_rate": 0.6667,
+      "total_pnl": 3673.2,
+      "expectancy": 1224.4,
+      "profit_factor": 1107.3864,
+      "max_drawdown": -3.32,
+      "robustness_score": -3.67
+    },
+    {
+      "dimension": "or_candle_quality",
+      "bucket": "bullish_weak_body",
+      "total_trades": 3,
+      "win_rate": 0.6667,
+      "total_pnl": 146.86,
+      "expectancy": 48.95,
+      "profit_factor": 1.1472,
+      "max_drawdown": -997.88,
+      "robustness_score": -104.25
+    },
+    {
+      "dimension": "or_candle_quality",
+      "bucket": "bearish_strong_body",
+      "total_trades": 8,
+      "win_rate": 0.25,
+      "total_pnl": -1560.25,
+      "expectancy": -195.03,
+      "profit_factor": 0.6308,
+      "max_drawdown": -3556.09,
+      "robustness_score": -151.74
+    },
+    {
+      "dimension": "or_candle_quality",
+      "bucket": "bearish_weak_body",
+      "total_trades": 3,
+      "win_rate": 0.0,
+      "total_pnl": -2115.07,
+      "expectancy": -705.02,
+      "profit_factor": 0.0,
+      "max_drawdown": -2115.07,
+      "robustness_score": -179.83
+    }
+  ],
+  "top_relative_strength": [
+    {
+      "dimension": "relative_strength",
+      "bucket": "QQQ stronger",
+      "total_trades": 14,
+      "win_rate": 0.5,
+      "total_pnl": 3239.85,
+      "expectancy": 231.42,
+      "profit_factor": 1.5921,
+      "max_drawdown": -2993.24,
+      "robustness_score": -22.71
+    },
+    {
+      "dimension": "relative_strength",
+      "bucket": "QQQ weaker",
+      "total_trades": 10,
+      "win_rate": 0.3,
+      "total_pnl": -1502.68,
+      "expectancy": -150.27,
+      "profit_factor": 0.6411,
+      "max_drawdown": -3516.85,
+      "robustness_score": -145.44
+    }
+  ]
+}

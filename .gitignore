@@ -1,0 +1,43 @@
+# Secrets — never commit real keys
+.env
+
+# Local logs (optional: remove these lines if you want to commit logs)
+paper_orders.csv
+backtest_trades.csv
+fathers_hand_journal.csv
+fathers_hand_progress.json
+fathers_hand_training_log.csv
+fathers_hand_scenarios.csv
+fathers_hand_scenario_registry.json
+fathers_hand_replay_log.csv
+fathers_hand_checklist_log.csv
+fathers_hand_coach_report.csv
+fathers_hand_skill_history.csv
+fathers_hand_market_context_log.csv
+fathers_hand_futures_context_log.csv
+fathers_hand_structure_log.csv
+fathers_hand_pattern_log.csv
+fathers_hand_trend_day_log.csv
+fathers_hand_trade_mgmt_log.csv
+trade_readiness_journal.csv
+trade_readiness_progress.json
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

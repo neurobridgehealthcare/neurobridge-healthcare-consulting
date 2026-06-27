@@ -1,0 +1,25 @@
+dimension,bucket,time_bucket,regime,total_trades,win_rate,total_pnl,expectancy,profit_factor,max_drawdown,robustness_score
+time_bucket,12:00+,,,2,0.5,1673.62,836.81,6.1851,-322.78,-19.69
+time_bucket,10:00-10:30,,,8,0.625,1785.34,223.17,1.8437,-1995.66,-46.79
+time_bucket,9:45-10:00,,,9,0.3333,769.93,85.55,1.1897,-1996.56,-103.3
+time_bucket,11:00-12:00,,,3,0.3333,-492.54,-164.18,0.5761,-997.88,-168.97
+time_bucket,10:30-11:00,,,2,0.0,-1999.18,-999.59,0.0,-1999.18,-199.4
+regime,Trend Up,,,3,0.6667,2077.06,692.35,3.0821,-997.58,-25.62
+regime,Mean Reversion,,,11,0.4545,1964.47,178.59,1.5458,-1322.38,-35.05
+regime,Trend Down,,,2,0.5,680.49,340.25,1.6819,-997.88,-77.03
+regime,Gap Down Continuation,,,7,0.2857,-1989.19,-284.17,0.3515,-2007.52,-156.88
+regime,Gap Up Continuation,,,1,0.0,-995.67,-995.67,0.0,-995.67,-202.2
+premarket_trend,up,,,5,0.4,1878.32,375.66,1.8878,-2115.67,-54.87
+premarket_trend,down,,,19,0.4211,-141.15,-7.43,0.9813,-4990.1,-121.17
+or_candle_quality,bullish_moderate_body,,,5,0.8,3585.6,717.12,12.1086,-322.78,7.72
+or_candle_quality,bearish_moderate_body,,,3,0.6667,3673.2,1224.4,1107.3864,-3.32,-3.67
+or_candle_quality,bullish_weak_body,,,3,0.6667,146.86,48.95,1.1472,-997.88,-104.25
+or_candle_quality,bearish_strong_body,,,8,0.25,-1560.25,-195.03,0.6308,-3556.09,-151.74
+or_candle_quality,bearish_weak_body,,,3,0.0,-2115.07,-705.02,0.0,-2115.07,-179.83
+or_candle_quality,bullish_strong_body,,,2,0.0,-1993.18,-996.59,0.0,-1993.18,-199.4
+relative_strength,QQQ stronger,,,14,0.5,3239.85,231.42,1.5921,-2993.24,-22.71
+relative_strength,QQQ weaker,,,10,0.3,-1502.68,-150.27,0.6411,-3516.85,-145.44
+best_combo,,9:45-10:00,Mean Reversion,4,,3832.08,958.02,4.849,,3.14
+best_combo,,10:00-10:30,Gap Down Continuation,3,,79.29,26.43,1.0794,,-107.92
+best_combo,,9:45-10:00,Gap Down Continuation,3,,-1068.9,-356.3,0.0,,-180.5
+best_combo,,10:00-10:30,Mean Reversion,3,,-1050.56,-350.19,0.0595,,-188.64

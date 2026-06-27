@@ -1,0 +1,24 @@
+{
+  "earned": [
+    {
+      "id": "first_scenario",
+      "name": "First Scenario Completed",
+      "earned_at": "2026-06-08T15:02:27.767179+00:00"
+    },
+    {
+      "id": "no_trade_master",
+      "name": "No-Trade Master",
+      "earned_at": "2026-06-08T15:02:27.767466+00:00"
+    },
+    {
+      "id": "risk_protector",
+      "name": "Risk Protector",
+      "earned_at": "2026-06-08T15:02:27.767667+00:00"
+    },
+    {
+      "id": "journal_builder",
+      "name": "Journal Builder",
+      "earned_at": "2026-06-08T15:02:27.767848+00:00"
+    }
+  ]
+}
