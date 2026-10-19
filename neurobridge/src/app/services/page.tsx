@@ -8,7 +8,7 @@ import { Container, Section, SectionHeader } from "@/components/ui/Section";
 export const metadata = {
   title: "Offerings",
   description:
-    "IONM expert calls, device and software reviews, hospital program development, TMS Clinic Accelerator, training, de-identified technical review, and CNIM tutoring. Starting prices listed.",
+    "IONM expert calls, device and software reviews, hospital program development, TMS Clinic Accelerator, training, de-identified technical review, CNIM tutoring, and secondary technical support for IONM teams.",
 };
 
 export default function ServicesPage() {

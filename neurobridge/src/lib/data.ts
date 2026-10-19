@@ -11,8 +11,10 @@ import {
   FileSearch,
   FileText,
   GraduationCap,
+  Headset,
   Hospital,
   LineChart,
+  ListChecks,
   MessagesSquare,
   Microscope,
   Newspaper,
@@ -48,6 +50,7 @@ export type Offering = {
   description: string;
   icon: LucideIcon;
   price: string;
+  href?: string;
   details?: string[];
 };
 
@@ -189,6 +192,41 @@ export const offeringGroups: {
       },
     ],
   },
+  {
+    id: "team-support",
+    eyebrow: "Secondary",
+    title: "Support for IONM teams",
+    description:
+      "Part-time technical support and operations help for groups that already monitor. These sit behind the expert, program, TMS, and training work above. Brandon is a CNIM and R. EP T.",
+    items: [
+      {
+        title: "Remote Neurophysiology Support & Case Review",
+        description:
+          "Remote technical neurophysiology support for IONM teams: second-look case and data review, protocol and setup guidance, and backup technical support. Professional interpretation stays with the supervising physician.",
+        icon: Headset,
+        price: "Inquire",
+        href: "/contact?interest=Remote%20Neurophysiology%20Support%20%26%20Case%20Review",
+        details: [
+          "Technical support, review, protocol and setup guidance, and backup for the team",
+          "Second-look review of de-identified case material and data",
+          "Professional interpretation stays with the supervising physician",
+        ],
+      },
+      {
+        title: "Fractional Clinical Lead for Small IONM Groups",
+        description:
+          "Part-time clinical leadership for small neuromonitoring groups: protocols, technologist training and onboarding, quality review, documentation standards, and audit readiness. Professional interpretation stays with the supervising physician.",
+        icon: ListChecks,
+        price: "Inquire",
+        href: "/contact?interest=Fractional%20Clinical%20Lead%20for%20Small%20IONM%20Groups",
+        details: [
+          "Protocols, technologist training and onboarding, and documentation standards",
+          "Quality review and audit readiness for a small group",
+          "Professional interpretation stays with the supervising physician",
+        ],
+      },
+    ],
+  },
 ];
 
 export const featuredOfferings: Offering[] = [
@@ -203,6 +241,7 @@ export const additionalOfferings: Offering[] = [
   offeringGroups[3].items[0],
   offeringGroups[3].items[1],
   offeringGroups[3].items[2],
+  ...offeringGroups[4].items,
 ];
 
 export const audiences = [
@@ -563,9 +602,9 @@ export const homePage = {
   },
   expanded: {
     eyebrow: "Also offered",
-    title: "Reviews, build-outs, training, and tutoring",
+    title: "Reviews, build-outs, training, and team support",
     description:
-      "Product reviews, program build-out, training packages, de-identified technical review, and CNIM exam tutoring.",
+      "Product reviews, program build-out, training packages, de-identified technical review, CNIM exam tutoring, and secondary support for IONM teams.",
   },
   ventures: {
     eyebrow: "Ventures",
@@ -786,6 +825,8 @@ export const contactPage = {
     "Training or SOP package",
     "De-identified technical case review",
     "CNIM exam tutoring",
+    "Remote Neurophysiology Support & Case Review",
+    "Fractional Clinical Lead for Small IONM Groups",
     "Something else",
   ],
 };

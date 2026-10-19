@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 type ServiceCardProps = {
@@ -6,6 +7,7 @@ type ServiceCardProps = {
   description: string;
   icon: LucideIcon;
   price?: string;
+  href?: string;
   details?: string[];
   tier?: "s" | "a" | "additional";
   className?: string;
@@ -16,6 +18,7 @@ export function ServiceCard({
   description,
   icon: Icon,
   price,
+  href,
   details,
   tier,
   className,
@@ -39,7 +42,15 @@ export function ServiceCard({
       <p className="mt-3 flex-1 text-sm leading-relaxed text-navy-700/70">
         {description}
       </p>
-      {price && (
+      {price && href && (
+        <Link
+          href={href}
+          className="mt-4 inline-flex text-sm font-semibold text-teal-700 hover:text-teal-600"
+        >
+          {price}
+        </Link>
+      )}
+      {price && !href && (
         <p className="mt-4 text-sm font-semibold text-teal-700">{price}</p>
       )}
       {details && details.length > 0 && (
