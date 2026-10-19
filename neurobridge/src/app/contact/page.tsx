@@ -11,8 +11,19 @@ export const metadata = {
     "Email Brandon Garrison at garrison839@gmail.com about IONM consulting, program development, TMS launch support, or training. The form opens an email draft and does not send it for you.",
 };
 
-export default function ContactPage() {
+export default async function ContactPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ interest?: string | string[] }>;
+}) {
   const { hero, sidebar, form, interests } = contactPage;
+  const params = await searchParams;
+  const requested = Array.isArray(params.interest)
+    ? params.interest[0]
+    : params.interest;
+  const defaultInterest = interests.includes(requested ?? "")
+    ? requested
+    : undefined;
 
   return (
     <>
@@ -129,6 +140,7 @@ export default function ContactPage() {
                     email={siteConfig.email}
                     interests={interests}
                     messagePlaceholder={form.messagePlaceholder}
+                    defaultInterest={defaultInterest}
                   />
                 </div>
               </div>

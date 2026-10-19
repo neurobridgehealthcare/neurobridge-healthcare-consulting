@@ -223,6 +223,7 @@ export default function HomePage() {
                 description={service.description}
                 icon={service.icon}
                 price={service.price}
+                href={service.href}
               />
             ))}
           </div>
