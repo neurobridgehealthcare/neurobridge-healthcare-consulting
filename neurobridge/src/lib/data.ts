@@ -3,192 +3,244 @@ import {
   Activity,
   Award,
   BookOpen,
+  Brain,
+  Building2,
   ClipboardCheck,
   Cpu,
+  Eye,
+  FileSearch,
   FileText,
-  Globe,
   GraduationCap,
-  Handshake,
   Hospital,
-  Layers,
   LineChart,
+  MessagesSquare,
   Microscope,
-  Monitor,
-  Network,
-  Scan,
+  Newspaper,
   ShieldCheck,
-  Stethoscope,
-  Target,
-  TrendingUp,
   Users,
-  Zap,
 } from "lucide-react";
 
 export const siteConfig = {
   name: "NeuroBridge Healthcare Consulting",
   shortName: "NeuroBridge",
-  tagline: "Neurophysiology Program Development & Clinical Operations",
+  tagline: "IONM consulting, program development, and related ventures",
   description:
-    "NeuroBridge partners with hospitals, surgeons, and healthcare systems to develop, implement, and sustain intraoperative neuromonitoring and neurophysiology programs — through clinical oversight, quality assurance, training pathways, and operational infrastructure.",
-  email: "contact@neurobridgehealth.com",
+    "NeuroBridge is Brandon Garrison’s practice (CNIM, R. EP T.) for IONM expert consulting, hospital program development, TMS clinic launches, and training. Not medical diagnosis or physician oversight.",
+  email: "garrison839@gmail.com",
+  phoneDisplay: "(678) 488-4288",
+  phoneHref: "tel:+16784884288",
+  location: "Macon, Georgia",
+  disclaimer:
+    "NeuroBridge Healthcare Consulting provides technical and operational consulting. It does not provide medical diagnosis, treatment recommendations, or physician oversight. Interpretation of neuromonitoring, and any physician-of-record role, belong to a licensed physician.",
 };
 
 export const navigation = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
+  { label: "Offerings", href: "/services" },
   { label: "Solutions", href: "/solutions" },
   { label: "About", href: "/about" },
-  { label: "Case Studies", href: "/case-studies" },
-  { label: "Schedule Consultation", href: "/contact" },
+  { label: "Ventures", href: "/ventures" },
+  { label: "Contact", href: "/contact" },
 ];
 
-export type Service = {
+export type Offering = {
   title: string;
   description: string;
   icon: LucideIcon;
+  price: string;
+  details?: string[];
 };
 
-export const sTierServices: Service[] = [
+export const offeringGroups: {
+  id: string;
+  eyebrow: string;
+  title: string;
+  description: string;
+  items: Offering[];
+}[] = [
   {
-    title: "Remote Neurophysiology Oversight",
+    id: "expert-advisory",
+    eyebrow: "Expert Advisory",
+    title: "Expert calls and product reviews",
     description:
-      "Clinical oversight for intraoperative neuromonitoring programs — supporting protocol adherence, case review, and coordination with surgical teams in real time.",
-    icon: Monitor,
+      "For expert networks, med-device and software companies, and investors who need a practicing technologist’s account of how intraoperative neuromonitoring actually runs.",
+    items: [
+      {
+        title: "IONM expert consulting",
+        description:
+          "Advisory calls on operating-room workflow, coordination with surgery and anesthesia, in-house versus outsourced models, technologist staffing and training, equipment and software usability, and reimbursement pressure as seen from the field. Confidential information about a current or former employer is out of scope.",
+        icon: MessagesSquare,
+        price: "Starting at $150/hr",
+        details: [
+          "30–60 minute calls, with optional written notes",
+          "Expert-network calls are typically quoted from $200/hr",
+          "Not available for questions about an employer, its customers, or non-public information",
+        ],
+      },
+      {
+        title: "Device and software product reviews",
+        description:
+          "A walkthrough of a device or software workflow against a real case flow, with a written note of the main risks and follow-up time with the team building it.",
+        icon: Cpu,
+        price: "Starting at $750",
+        details: [
+          "Starter reviews start at $750. A standard review starts at $1,500",
+          "Deeper reviews with a follow-up are scoped separately",
+          "Vendor-neutral. Employer protocols, pricing, and methods are not reused",
+        ],
+      },
+    ],
   },
   {
-    title: "Quality Assurance & Clinical Auditing",
+    id: "program-development",
+    eyebrow: "IONM Program Development",
+    title: "Hospital programs, including international work",
     description:
-      "Structured QA programs, case audits, and performance review to maintain clinical standards, identify gaps, and support continuous improvement.",
-    icon: ShieldCheck,
+      "Feasibility first, then a build-out when the assessment supports one. International work, including Caribbean programs, covers SOPs, equipment selection, workflow, training, and quality assurance.",
+    items: [
+      {
+        title: "IONM program feasibility assessment",
+        description:
+          "A remote review of case volume and mix, staffing, in-house versus outsourced options, an equipment list, and the physician-oversight model a licensed physician would have to provide. The deliverable is a written report and a readout call.",
+        icon: Hospital,
+        price: "Starting at $1,500",
+        details: [
+          "Remote assessments are typically $1,500–$3,000. Travel is quoted separately",
+          "Licensing questions are flagged for local counsel. This is not legal advice",
+          "A Jamaica and Cayman Islands effort is in development and has no signed client",
+        ],
+      },
+      {
+        title: "IONM program build-out",
+        description:
+          "For hospitals that have completed a feasibility assessment. Standard operating procedures, workflow, a training plan, vendor selection, a quality-assurance framework, and launch support.",
+        icon: Building2,
+        price: "Starting at $3,000/month",
+        details: [
+          "Typically $3,000–$5,000 per month, plus travel. Contact for scope",
+          "Physician interpretation and oversight are not included",
+          "Those roles stay with a licensed physician, not with NeuroBridge",
+        ],
+      },
+    ],
   },
   {
-    title: "Intraoperative Neuromonitoring Program Development",
+    id: "tms",
+    eyebrow: "TMS Clinic Accelerator",
+    title: "Help launching a TMS service",
     description:
-      "Program design from feasibility assessment through clinical launch — including workflow architecture, staffing models, governance structure, and implementation planning.",
-    icon: Activity,
+      "For psychiatry and behavioral-health practices planning transcranial magnetic stimulation. The work draws on experience planning a TMS clinic launch. That clinic did not open, and this is not a claim of having operated one.",
+    items: [
+      {
+        title: "TMS feasibility",
+        description:
+          "A fixed assessment of room and workflow, device options, staffing, payer and prior-authorization basics, a referral plan, and a go or no-go model.",
+        icon: Brain,
+        price: "Starting at $1,500",
+        details: [
+          "Typically $1,500–$3,000",
+          "Training, billing setup, and launch support are quoted after this assessment",
+          "Draws on clinic-launch planning. Not a claim of having operated a TMS clinic",
+        ],
+      },
+    ],
+  },
+  {
+    id: "training",
+    eyebrow: "Training and Review",
+    title: "SOPs, technical review, and CNIM tutoring",
+    description:
+      "Training materials, a technologist-level look at de-identified cases, and exam tutoring. Custom materials are written for the client and owned by the client.",
+    items: [
+      {
+        title: "Training and SOP packages",
+        description:
+          "A module, an onboarding pack, or a competency checklist for an IONM team, hospital, or training program. Built from general professional knowledge, not from an employer’s materials.",
+        icon: FileText,
+        price: "Starting at $900",
+        details: [
+          "A single module starts at $900",
+          "An onboarding pack is typically quoted from $2,500",
+          "Custom and client-owned",
+        ],
+      },
+      {
+        title: "De-identified technical case review",
+        description:
+          "A technologist-level review of de-identified setup, montage, documentation, and alert-communication workflow against published guidelines. A scoped review can include de-identified signal data or model output.",
+        icon: FileSearch,
+        price: "Starting at $150/hr",
+        details: [
+          "Also offered at $500 per case packet",
+          "Send no patient identifiers and no medical-record dumps",
+          "Not a diagnosis, medical opinion, or standard-of-care opinion",
+        ],
+      },
+      {
+        title: "CNIM exam tutoring",
+        description:
+          "Tutoring for candidates preparing for the CNIM exam, including question review across a short series of sessions.",
+        icon: GraduationCap,
+        price: "Starting at $400",
+        details: [
+          "A five-session series starts at $400",
+          "Teaching support only. No exam result is promised",
+        ],
+      },
+    ],
   },
 ];
 
-export const aTierServices: Service[] = [
-  {
-    title: "Standard Operating Procedure Development",
-    description:
-      "Institution-specific SOPs developed against surgical volume, case mix, and clinical requirements — forming the foundation of consistent IONM delivery.",
-    icon: FileText,
-  },
-  {
-    title: "Clinical Operations Consulting",
-    description:
-      "Operational planning for case scheduling, workflow integration, equipment utilization, and coordination across surgical and support departments.",
-    icon: Layers,
-  },
-  {
-    title: "Personnel Development & Training Programs",
-    description:
-      "Defined training pathways for neurophysiology technologists — from structured onboarding through progressive clinical competency.",
-    icon: Users,
-  },
-  {
-    title: "CNIM Preparation Programs",
-    description:
-      "Targeted preparation for CNIM certification candidates, including clinical case review, competency assessment, and examination readiness support.",
-    icon: Award,
-  },
-  {
-    title: "Equipment Selection & Implementation Planning",
-    description:
-      "Vendor-neutral guidance on IONM equipment evaluation, procurement planning, and integration into existing clinical and operational workflows.",
-    icon: Cpu,
-  },
-  {
-    title: "Competency Benchmark Development",
-    description:
-      "Competency frameworks and assessment criteria aligned with institutional standards, case complexity, and program maturity.",
-    icon: Target,
-  },
+export const featuredOfferings: Offering[] = [
+  offeringGroups[0].items[0],
+  offeringGroups[1].items[0],
+  offeringGroups[2].items[0],
 ];
 
-export const additionalServices: Service[] = [
-  {
-    title: "Hospital Program Assessments",
-    description:
-      "Structured assessment of existing or planned neurophysiology programs — evaluating clinical readiness, operational gaps, and implementation priorities.",
-    icon: Hospital,
-  },
-  {
-    title: "Physician Partnership Development",
-    description:
-      "Support for aligning IONM services with surgeon practices and surgical service lines — establishing clinical expectations and operational coordination.",
-    icon: Handshake,
-  },
-  {
-    title: "Service Line Expansion Planning",
-    description:
-      "Planning for IONM coverage across additional surgical specialties, procedural types, or institutional locations.",
-    icon: TrendingUp,
-  },
-  {
-    title: "Educational Curriculum Development",
-    description:
-      "Curriculum design for neurophysiology education, continuing professional development, and institutional training programs.",
-    icon: BookOpen,
-  },
-  {
-    title: "Healthcare Startup Consulting",
-    description:
-      "Advisory for investors and organizations entering neurophysiology markets — covering operational planning, infrastructure requirements, and implementation feasibility.",
-    icon: Zap,
-  },
+export const additionalOfferings: Offering[] = [
+  offeringGroups[0].items[1],
+  offeringGroups[1].items[1],
+  offeringGroups[3].items[0],
+  offeringGroups[3].items[1],
+  offeringGroups[3].items[2],
 ];
 
 export const audiences = [
   {
-    title: "Hospitals",
+    title: "Expert networks and investors",
     description:
-      "Program development and clinical infrastructure for institutions building or strengthening IONM services.",
-    icon: Hospital,
-  },
-  {
-    title: "Spine Surgeons",
-    description:
-      "Clinical oversight and program support aligned with spine surgical volume, case complexity, and service line requirements.",
-    icon: Scan,
-  },
-  {
-    title: "Neurosurgeons",
-    description:
-      "Neurophysiology infrastructure for skull base, tumor, cranial nerve, and vascular neurosurgical procedures.",
-    icon: Microscope,
-  },
-  {
-    title: "Neurophysiology Trainees",
-    description:
-      "Structured clinical development, CNIM preparation, and competency-based training pathways.",
-    icon: GraduationCap,
-  },
-  {
-    title: "Universities",
-    description:
-      "Academic program design, curriculum development, and clinical training infrastructure for neurophysiology education.",
-    icon: BookOpen,
-  },
-  {
-    title: "Healthcare Investors",
-    description:
-      "Operational due diligence, market assessment, and infrastructure planning for neurophysiology ventures and service line investments.",
+      "Practitioner insight on IONM workflow, staffing, technology, and what the work looks like from the operating room.",
     icon: LineChart,
   },
   {
-    title: "Government Healthcare Systems",
+    title: "Med-device and software teams",
     description:
-      "Regional and national IONM infrastructure development for public healthcare systems and emerging market health ministries.",
-    icon: Globe,
+      "Workflow and usability reviews from someone who runs the modalities the product is meant to support.",
+    icon: Microscope,
   },
   {
-    title: "Existing Neurophysiology Organizations",
+    title: "Hospitals and surgical programs",
     description:
-      "Quality assurance review, operational assessment, and clinical governance improvement for established IONM providers.",
-    icon: Network,
+      "Feasibility and build-out for new or expanding IONM services, including international and Caribbean programs.",
+    icon: Hospital,
+  },
+  {
+    title: "Psychiatry and behavioral health",
+    description:
+      "Feasibility and launch support for practices adding transcranial magnetic stimulation.",
+    icon: Brain,
+  },
+  {
+    title: "IONM teams and training programs",
+    description:
+      "SOP packages, onboarding materials, and de-identified technical review. Not medical opinions.",
+    icon: Users,
+  },
+  {
+    title: "CNIM candidates",
+    description:
+      "Exam tutoring and question review for people preparing for CNIM certification.",
+    icon: BookOpen,
   },
 ];
 
@@ -197,340 +249,358 @@ export const processSteps = [
     step: "01",
     title: "Assess",
     description:
-      "Review surgical volume, staffing capacity, equipment, clinical workflow, and program readiness against institutional objectives.",
+      "Review volume, case mix, staffing, equipment, and workflow against the goal of the call, product, or program. Feasibility comes before a build-out or a full TMS launch.",
     icon: ClipboardCheck,
   },
   {
     step: "02",
     title: "Build",
     description:
-      "Develop SOPs, training pathways, equipment plans, competency standards, and the operational structure required for clinical launch.",
-    icon: Layers,
+      "Write the SOPs, workflow, training plan, equipment shortlist, and quality checks the engagement calls for. Materials for a client are scoped to that client.",
+    icon: FileText,
   },
   {
     step: "03",
-    title: "Support",
+    title: "Launch support",
     description:
-      "Provide ongoing clinical oversight, QA review, continuing education, and long-term guidance as the program matures.",
-    icon: Stethoscope,
+      "Support training, technical review, and the first operating period. Physician interpretation stays with a licensed physician. NeuroBridge does not provide it.",
+    icon: ShieldCheck,
   },
 ];
 
 export const solutions = [
   {
-    title: "New Program Launch",
+    title: "Expert advisory",
     description:
-      "Structured program development for hospitals initiating intraoperative neuromonitoring services — from feasibility analysis through first clinical cases.",
+      "Calls and written reviews for expert networks, investors, and teams building IONM devices or software.",
     features: [
-      "Feasibility assessment and business case support",
-      "Equipment evaluation and procurement planning",
-      "Staff recruitment and training pathway design",
-      "SOP and clinical protocol development",
-      "Surgeon and department engagement planning",
+      "Expert calls starting at $150/hr",
+      "Device and software reviews starting at $750",
+      "Optional notes the buyer can keep",
+      "No employer confidential information",
+      "No diagnosis and no physician oversight",
     ],
-    icon: Zap,
+    icon: MessagesSquare,
   },
   {
-    title: "Program Optimization",
+    title: "New IONM program",
     description:
-      "Clinical and operational review for established IONM programs seeking to improve quality, consistency, and service line performance.",
+      "A feasibility assessment, then a build-out if the report supports standing the service up. Includes international and Caribbean programs.",
     features: [
-      "Clinical audit and QA program review",
-      "Workflow and case flow assessment",
-      "Competency benchmarking and gap analysis",
-      "Technology and equipment evaluation",
-      "Personnel development planning",
+      "Remote feasibility starting at $1,500",
+      "SOPs, workflow, training, and QA",
+      "Vendor-neutral equipment selection",
+      "Physician oversight identified as a physician’s role",
+      "Jamaica and Cayman Islands: in development, no signed client",
     ],
-    icon: TrendingUp,
+    icon: Hospital,
   },
   {
-    title: "Regional Infrastructure",
+    title: "TMS Clinic Accelerator",
     description:
-      "Multi-site and system-level neurophysiology infrastructure for healthcare networks, government systems, and emerging market regions.",
+      "Launch support for psychiatry and behavioral-health practices adding TMS, starting with a feasibility assessment.",
     features: [
-      "Regional service model and coverage planning",
-      "Training academy and workforce development",
-      "Centralized quality assurance framework",
-      "Equipment standardization across sites",
-      "Sustainable staffing and oversight models",
+      "Feasibility starting at $1,500",
+      "Equipment, workflow, staffing, and training",
+      "Billing setup is part of the launch scope, not the feasibility fee",
+      "Full launch package quoted only after a paid feasibility",
+      "Based on launch planning, not on operating a clinic",
     ],
-    icon: Globe,
+    icon: Brain,
   },
   {
-    title: "Surgeon Partnership",
+    title: "Training and technical review",
     description:
-      "Clinical and operational support aligned with individual surgeon practices and high-volume neurosurgical or spine programs.",
+      "SOP and onboarding packages, de-identified technical case review, and CNIM exam tutoring.",
     features: [
-      "Procedure-specific monitoring protocols",
-      "Case workflow and scheduling coordination",
-      "Remote clinical oversight support",
-      "Performance review and case documentation",
-      "Continuing education for clinical teams",
+      "Training modules starting at $900",
+      "De-identified review starting at $150/hr",
+      "CNIM tutoring starting at $400",
+      "Client-owned materials",
+      "Technical review is not a medical opinion",
     ],
-    icon: Handshake,
+    icon: GraduationCap,
   },
 ];
 
-export const caseStudies = [
+export const ventures = [
   {
-    title: "Jamaica & Cayman Islands Neurophysiology Development Initiative",
-    status: "In Development" as const,
-    region: "Caribbean",
+    id: "connectome",
+    title: "Connectome.news",
+    kicker: "Media and research arm",
+    status: "Live",
     summary:
-      "A physician-supported initiative to establish sustainable intraoperative neuromonitoring services — including equipment planning, personnel training, SOP development, quality assurance frameworks, and clinical oversight infrastructure.",
-    highlights: [
-      "Regional IONM infrastructure and service planning",
-      "Personnel training and competency pathway development",
-      "Clinical protocol and SOP development",
-      "Equipment selection and implementation support",
-      "Ongoing clinical oversight framework",
+      "Connectome.news is a neuroscience discovery and news platform. It is NeuroBridge’s media and research arm, separate from client consulting.",
+    href: "https://connectome.news",
+    hrefLabel: "Visit connectome.news",
+    points: [
+      "Neuroscience discovery and news",
+      "Editorial work is separate from consulting engagements",
+      "No readership or sponsorship figures are claimed here",
     ],
+    icon: Newspaper,
+  },
+  {
+    id: "focus",
+    title: "FOCUS",
+    kicker: "Functional Ocular Control Unit System",
+    status: "In development",
+    summary:
+      "FOCUS is a clinician-originated concept, at prototype stage, for intraoperative visual evoked potential stimulation under the eyelid during skull-base and orbital surgery. It is in development.",
+    href: null,
+    hrefLabel: null,
+    points: [
+      "Concept only. Not a product for sale",
+      "No clinical performance, safety, or regulatory claims",
+      "No prototype specifications are published here",
+    ],
+    icon: Eye,
   },
 ];
 
 export const founder = {
-  name: "Brandon Garrison, CNIM",
+  name: "Brandon Garrison, CNIM, R. EP T.",
   shortName: "Brandon Garrison",
-  title: "Founder & Principal Consultant",
+  title: "Founder",
   credentials: [
     {
       abbr: "CNIM",
-      full: "Certified in Neurophysiologic Intraoperative Monitoring",
+      full: "Certified in Neurophysiologic Intraoperative Monitoring (ABRET)",
     },
     {
-      abbr: "R.EPT",
-      full: "Registered Electrophysiology Technologist",
+      abbr: "R. EP T.",
+      full: "Registered Evoked Potential Technologist (ABRET)",
     },
   ],
-  bio: "Brandon Garrison is a CNIM-certified surgical neurophysiologist with experience in intraoperative neuromonitoring, neurophysiology education, clinical operations, and program development. His clinical background includes high-acuity neurosurgical and spine environments — including Cleveland Clinic and Lenox Hill Hospital — with experience in complex spine, skull base, tumor, and cranial nerve monitoring procedures.",
+  bio: "Brandon Garrison, CNIM, R. EP T., is the founder of NeuroBridge Healthcare Consulting and a practicing surgical neurophysiologist. He is a technologist, not a physician. NeuroBridge is the umbrella for his consulting, training, and related ventures.",
   story: {
-    eyebrow: "Founder Story",
-    title: "Clinical Practice to Program Infrastructure",
+    eyebrow: "Career",
+    title: "Operating-room practice, then a consulting practice",
     paragraphs: [
-      "Brandon Garrison built his career in intraoperative neuromonitoring across high-acuity neurosurgical and spine environments — including Cleveland Clinic and Lenox Hill Hospital. His clinical work spans complex spine, skull base, tumor, and cranial nerve monitoring procedures, with direct responsibility for real-time neuromonitoring support in demanding surgical settings.",
-      "Through that clinical foundation, he developed expertise beyond the operating room: neurophysiology education, clinical operations, competency development, and the structural requirements that allow IONM programs to function reliably within hospital systems.",
-      "NeuroBridge Healthcare Consulting was established to apply that experience at the institutional level — helping hospitals, surgeons, and healthcare systems develop the clinical oversight, quality assurance, training pathways, and operational infrastructure required for sustainable neurophysiology services.",
+      "Brandon has worked in intraoperative neuromonitoring since August 2019. Confirmed roles are National Neuromonitoring Services (August 2019–December 2020), Neuro Protective Solutions (August 2021–February 28, 2023), Cleveland Clinic (March 8, 2023–January 2025), and Guardion Medical (February 2025–present).",
+      "Case work on his resume includes neuro, vascular, and skull-base procedures; spine, including spinal cord tumors and scoliosis; peripheral-nerve cases; ECoG; awake and asleep brain mapping; and DBS neurophysiology. Modalities include SSEP, MEP, EMG, and EEG. At National Neuromonitoring Services he supervised and trained other practitioners across 250+ procedures, under real-time online physician supervision of the monitoring.",
+      "Work at Lenox Hill Hospital was part of the Neuro Protective Solutions role. Lenox Hill is not a separate employer. Since February 2025 he has practiced IONM with Guardion Medical in Macon, Georgia. That employment is separate from NeuroBridge and is not an endorsement of this consulting practice.",
     ],
   },
   timeline: [
     {
-      period: "Clinical Practice",
+      period: "February 2025 – present",
+      organization: "Guardion Medical",
+      role: "IONM Specialist",
+      location: "Macon, Georgia",
+      description:
+        "Intraoperative neuromonitoring for brain, spine, and peripheral-nerve surgery, using SSEP, MEP, EMG, and EEG.",
+      note: "Current employment, listed for career context only. Guardion Medical does not endorse NeuroBridge.",
+    },
+    {
+      period: "March 8, 2023 – January 2025",
       organization: "Cleveland Clinic",
-      role: "Surgical Neurophysiologist",
+      role: "IONM Specialist",
+      location: "Cleveland, Ohio",
       description:
-        "Intraoperative neuromonitoring in a high-acuity academic medical center — supporting complex neurosurgical and spine procedures across a major institutional environment.",
+        "Neurosurgical and orthopedic cases, including spinal cord tumors, scoliosis correction, microdiscectomy, and carpal tunnel release. Work included ECoG, awake and asleep brain mapping, and DBS neurophysiology, across multiple hospital systems.",
     },
     {
-      period: "Clinical Practice",
-      organization: "Lenox Hill Hospital",
-      role: "Surgical Neurophysiologist",
+      period: "August 2021 – February 28, 2023",
+      organization: "Neuro Protective Solutions",
+      role: "CNIM IOM Surgical Neurotechnologist",
+      location: "Hauppauge, New York",
       description:
-        "IONM support for neurosurgical and spine surgical service lines — including skull base, tumor, cranial nerve, and complex spine monitoring cases.",
+        "Monitoring for a broad range of complex procedures, and working relationships with surgical teams.",
+      note: "Includes work at Lenox Hill Hospital through Neuro Protective Solutions. Lenox Hill is not a separate employer.",
     },
     {
-      period: "Program Development",
-      organization: "Neurophysiology Education & Operations",
-      role: "Clinical Operations & Training",
+      period: "August 2019 – December 2020",
+      organization: "National Neuromonitoring Services",
+      role: "CNIM IOM Surgical Neurotechnologist",
+      location: "Columbus, Ohio",
       description:
-        "Development of training pathways, clinical competency frameworks, and operational support structures for neurophysiology teams and program staff.",
+        "Acquired and monitored data under real-time online IONM physician supervision. Supervised and trained other practitioners, took part in performance reviews, and supported compliance documentation across 250+ procedures.",
     },
     {
-      period: "Present",
-      organization: "NeuroBridge Healthcare Consulting",
-      role: "Founder & Principal Consultant",
-      description:
-        "Advisory and program development for hospitals, surgeons, healthcare systems, and emerging market regions — including current infrastructure initiatives in Jamaica and the Cayman Islands.",
+      period: "2019",
+      organization: "Baldwin Wallace University",
+      role: "B.S. Neuroscience",
+      location: "Berea, Ohio",
+      description: "Bachelor of Science in Neuroscience, completed in 2019.",
     },
+  ],
+  specialties: [
+    "Neuro, vascular, and skull-base procedures",
+    "Spine, including spinal cord tumors and scoliosis",
+    "Peripheral nerve, including microdiscectomy and carpal tunnel release",
+    "Electrocorticography (ECoG)",
+    "Awake and asleep brain mapping",
+    "DBS neurophysiology",
+    "SSEP, MEP, EMG, and EEG",
   ],
   areasOfFocus: [
     {
-      title: "Program Development",
+      title: "Expert advisory",
       description:
-        "Feasibility assessment, implementation planning, and clinical launch support for new and expanding IONM programs.",
+        "Calls and product reviews for expert networks, med-device and software companies, and investors.",
     },
     {
-      title: "Clinical Oversight",
+      title: "IONM program development",
       description:
-        "Remote neuromonitoring oversight, protocol adherence, and real-time clinical coordination with surgical teams.",
+        "Feasibility and build-out for hospitals, including SOPs, equipment selection, workflow, training, and QA.",
     },
     {
-      title: "Quality Assurance",
+      title: "TMS clinic launches",
       description:
-        "Structured QA programs, case audits, and performance review to maintain clinical standards and support improvement.",
+        "Feasibility and launch planning for psychiatry and behavioral-health practices adding TMS.",
     },
     {
-      title: "Training Pathways",
+      title: "Training and SOPs",
       description:
-        "Technologist development, CNIM preparation support, and continuing education for neurophysiology personnel.",
+        "Client-owned modules, onboarding packs, and competency checklists.",
     },
     {
-      title: "SOP & Protocol Development",
+      title: "Technical case review",
       description:
-        "Institution-specific standard operating procedures and clinical protocols aligned with surgical volume and case mix.",
+        "De-identified review of setup, documentation, and workflow. Not a medical opinion.",
     },
     {
-      title: "Global Healthcare Systems",
+      title: "CNIM tutoring",
       description:
-        "Neurophysiology infrastructure development for emerging market health systems and multi-site regional programs.",
+        "Exam preparation for CNIM candidates. No result is promised.",
     },
   ],
-  vision: {
-    eyebrow: "Vision",
-    title: "Sustainable Neurophysiology Infrastructure",
+  orientation: {
+    eyebrow: "Scope",
+    title: "Technical and operational consulting",
     statement:
-      "NeuroBridge exists to help institutions build neurophysiology programs that perform reliably in clinical practice — not only at launch, but over time. That requires defined clinical oversight, quality assurance systems, training infrastructure, and operational frameworks that hospitals and surgeons can depend on.",
+      "NeuroBridge helps organizations with the workflow, the training, the documents, and the program design around intraoperative neuromonitoring and related services.",
     supporting:
-      "Our work is oriented toward long-term program sustainability — supporting hospitals, surgical service lines, and healthcare systems as they develop, implement, and maintain intraoperative neuromonitoring services at scale.",
+      "It does not diagnose patients, interpret studies as a physician, or take a physician-of-record role. Those responsibilities stay with a licensed physician.",
   },
-  highlights: [
-    {
-      title: "Clinical Background",
-      text: "CNIM-certified surgical neurophysiologist with experience across complex spine, skull base, tumor, and cranial nerve monitoring procedures.",
-    },
-    {
-      title: "Institutional Experience",
-      text: "Clinical experience in high-acuity neurosurgical and spine environments, including Cleveland Clinic and Lenox Hill Hospital.",
-    },
-    {
-      title: "Program Development",
-      text: "Background in neurophysiology education, clinical operations, and IONM program infrastructure development for hospitals and healthcare systems.",
-    },
-  ],
 };
 
-export const developmentNote =
-  "NeuroBridge is currently supporting neurophysiology infrastructure development initiatives, with an initial focus on Jamaica and the Cayman Islands.";
-
 export const credibilityStrip = [
-  { label: "CNIM-Certified Clinical Leadership", icon: Award },
-  { label: "Neurophysiology Program Development", icon: Layers },
-  { label: "IONM Training & Clinical Oversight", icon: Monitor },
-  { label: "Global Healthcare Systems Advisory", icon: Globe },
+  { label: "CNIM and R. EP T.", icon: Award },
+  { label: "IONM practice since 2019", icon: Activity },
+  { label: "Program design and training", icon: FileText },
+  { label: "Not physician oversight", icon: ShieldCheck },
 ];
 
 export const problemSection = {
-  eyebrow: "The Challenge",
-  title: "The Problem We Solve",
+  eyebrow: "The work",
+  title: "Where a technologist’s view is the missing piece",
   description:
-    "Many hospitals and surgical teams recognize the clinical value of intraoperative neuromonitoring but lack the infrastructure to implement it safely and at scale. NeuroBridge helps institutions move from intent to execution — by developing the clinical, operational, educational, and quality systems that reliable neurophysiology services require.",
+    "Hospitals, device teams, and investors often need someone who has run the case, not only read about it. NeuroBridge is that consulting practice: technical and operational help, scoped in writing, without crossing into diagnosis or physician oversight.",
   painPoints: [
-    "No defined clinical protocols or standard operating procedures",
-    "Insufficient training pathways and competency standards",
-    "No structured quality assurance or audit framework",
-    "No implementation plan from feasibility to clinical operations",
+    "A program is planned before the workflow, staffing, and SOPs exist",
+    "A device or software team needs the case flow checked by someone who monitors",
+    "An investor or expert network needs field context without confidential employer information",
+    "A psychiatry practice wants a TMS launch plan and does not have the operating details yet",
   ],
   callout:
-    "NeuroBridge addresses the gap between clinical intent and the infrastructure required for sustainable IONM delivery.",
+    "Engagements are scoped before work starts. NeuroBridge does not provide medical diagnosis or physician oversight.",
 };
 
 export const whyNeuroBridge = [
   {
-    title: "Clinical Expertise",
+    title: "Dual ABRET certification",
     description:
-      "CNIM-certified leadership with direct experience in high-acuity neurosurgical and spine monitoring environments.",
-    icon: Stethoscope,
+      "CNIM (Certified in Neurophysiologic Intraoperative Monitoring) and R. EP T. (Registered Evoked Potential Technologist).",
+    icon: Award,
   },
   {
-    title: "Training Infrastructure",
+    title: "Still in the operating room",
     description:
-      "Defined training pathways for technologist development, CNIM preparation, and continuing clinical education.",
-    icon: GraduationCap,
+      "A practicing IONM technologist, with case work across brain, spine, vascular, skull-base, and peripheral-nerve surgery.",
+    icon: Activity,
   },
   {
-    title: "SOP & QA Development",
+    title: "Program documents, not slogans",
     description:
-      "Institution-specific protocols, competency frameworks, and quality assurance programs built for clinical consistency.",
+      "Feasibility reports, SOPs, training plans, equipment shortlists, and quality checks a hospital can actually use.",
+    icon: ClipboardCheck,
+  },
+  {
+    title: "Medtech and investor calls",
+    description:
+      "Workflow, usability, and staffing context for people building or evaluating IONM products and services.",
+    icon: Cpu,
+  },
+  {
+    title: "A hard scope line",
+    description:
+      "Technical and operational consulting only. No diagnosis, no treatment advice, and no physician oversight.",
     icon: ShieldCheck,
-  },
-  {
-    title: "Remote Oversight Capability",
-    description:
-      "Clinical oversight and QA review for programs that require expert guidance without full on-site staffing.",
-    icon: Monitor,
-  },
-  {
-    title: "Global Implementation Experience",
-    description:
-      "Program development experience across domestic institutions and emerging market healthcare systems.",
-    icon: Globe,
   },
 ];
 
 export const homePage = {
   hero: {
-    badge: "Neurophysiology Program Development & Clinical Operations",
-    headlineAccent: "Neurophysiology Programs",
+    badge: "Brandon Garrison, CNIM, R. EP T. · Founder",
+    headlineBefore: "Consulting for",
+    headlineAccent: "intraoperative neuromonitoring",
+    headlineAfter: "programs, products, and the people building them.",
     subheadline:
-      "NeuroBridge develops and supports intraoperative neuromonitoring and neurophysiology programs for hospitals and surgical service lines — spanning clinical oversight, quality assurance, training pathway design, SOP development, and the operational infrastructure required for sustainable IONM services.",
+      "NeuroBridge Healthcare Consulting is the professional home for Brandon Garrison’s work: expert calls, device and software reviews, hospital IONM programs, TMS clinic launch support, training, and related ventures.",
+    disclaimer:
+      "Technical and operational consulting only. Not medical diagnosis or physician oversight.",
   },
   coreServices: {
-    eyebrow: "Core Services",
-    title: "Clinical Infrastructure for IONM Programs",
+    eyebrow: "Offerings",
+    title: "What NeuroBridge does",
     description:
-      "Remote oversight, quality assurance, and program development services — structured to support hospitals and surgeons at every stage of neurophysiology service delivery.",
+      "Three places to start. Every engagement is scoped in writing. Published prices are starting points, not a quote.",
   },
   whoWeServe: {
-    eyebrow: "Who We Serve",
-    title: "Institutions Across the Healthcare Landscape",
+    eyebrow: "Who it’s for",
+    title: "Buyers who need operating-room context",
     description:
-      "Hospitals, surgeons, academic centers, investors, and government healthcare systems — at every stage of neurophysiology program development.",
+      "Expert networks, medtech teams, hospitals, psychiatry practices, training programs, and CNIM candidates.",
   },
   approach: {
-    eyebrow: "Our Approach",
-    title: "From Concept to Clinical Operations",
+    eyebrow: "How an engagement runs",
+    title: "Assess, build, then support the launch",
     description:
-      "A defined three-phase methodology for assessing readiness, building infrastructure, and supporting sustainable clinical operations.",
+      "Feasibility or a defined call comes first. Build-out and full launch packages are separate scopes. Physician oversight is never part of the scope.",
   },
   expanded: {
-    eyebrow: "Expanded Capabilities",
-    title: "Operational & Strategic Support",
+    eyebrow: "Also offered",
+    title: "Reviews, build-outs, training, and tutoring",
     description:
-      "Additional consulting across clinical operations, personnel development, physician partnerships, and service line planning.",
+      "Product reviews, program build-out, training packages, de-identified technical review, and CNIM exam tutoring.",
+  },
+  ventures: {
+    eyebrow: "Ventures",
+    title: "Connectome.news and FOCUS",
+    description:
+      "NeuroBridge is also the home for a neuroscience news platform and an early device concept. Neither is a client result.",
   },
   whySection: {
     eyebrow: "Why NeuroBridge",
-    title: "Built for Institutional Requirements",
+    title: "A practicing CNIM, consulting under his own name",
     description:
-      "NeuroBridge works with hospitals and healthcare systems that need defined clinical systems, structured training pathways, and operational frameworks — not general guidance alone.",
+      "The firm is Brandon Garrison’s umbrella for consulting, training, and ventures. It is not a physician group and it does not speak for any employer.",
   },
 };
 
 export const servicesPage = {
   hero: {
-    eyebrow: "Services",
-    title: "Neurophysiology Consulting Services",
+    eyebrow: "Offerings",
+    title: "Consulting, programs, training, and review",
     description:
-      "Structured consulting across clinical oversight, quality assurance, program development, and operational infrastructure — scoped to the maturity and objectives of each institution.",
+      "Expert calls, device and software reviews, IONM program development, TMS clinic launch support, training packages, de-identified technical review, and CNIM tutoring.",
   },
-  sTier: {
-    eyebrow: "Core Services",
-    title: "Clinical & Program Infrastructure",
-    description:
-      "Foundational services that establish clinical governance, quality standards, and the structural basis for sustainable IONM program delivery.",
-  },
-  aTier: {
-    eyebrow: "Operational Services",
-    title: "Development & Operational Support",
-    description:
-      "Consulting to strengthen clinical operations, personnel development, equipment planning, and day-to-day program infrastructure.",
-  },
-  additional: {
-    eyebrow: "Advisory Services",
-    title: "Assessment & Strategic Consulting",
-    description:
-      "Targeted advisory for program assessments, physician partnerships, service line expansion, and neurophysiology market entry.",
-  },
+  priceNote:
+    "Figures are starting points from the current service catalog. A written scope confirms the fee before any work begins. Travel, when it is needed, is quoted separately.",
   engagement: {
-    eyebrow: "Engagement Model",
-    title: "Scoped to Your Program",
+    eyebrow: "Engagement",
+    title: "Scoped before it starts",
     description:
-      "Each engagement begins with an assessment of surgical volume, institutional objectives, and current infrastructure. Services are defined against specific clinical and operational outcomes.",
+      "Tell Brandon what you are building and the deadline. He will reply with a short scope. Nothing here is a standing offer to interpret studies or supervise a case as a physician.",
     points: [
-      "Engagements scoped individually — no public pricing",
-      "Advisory, development, and ongoing oversight models available",
-      "Remote and on-site support options",
-      "Vendor-neutral equipment and technology guidance",
-      "Long-term clinical partnership orientation",
+      "Starting prices are public. The fee is confirmed in writing",
+      "Feasibility before a hospital build-out or a full TMS launch",
+      "Remote by default. Travel is extra",
+      "Vendor-neutral equipment guidance",
+      "No patient data. Technical review uses de-identified material only",
+      "Physician oversight is outside the engagement",
     ],
   },
 };
@@ -538,33 +608,33 @@ export const servicesPage = {
 export const solutionsPage = {
   hero: {
     eyebrow: "Solutions",
-    title: "Program Pathways by Stage and Scale",
+    title: "Four ways to start",
     description:
-      "Structured solutions for new program launches, established program optimization, regional infrastructure development, and surgeon-aligned clinical support.",
+      "Expert advisory, a new IONM program, a TMS clinic launch, or training and technical review. Each one has its own scope and starting price.",
   },
   methodology: {
-    eyebrow: "Methodology",
-    title: "From Concept to Clinical Operations",
+    eyebrow: "Method",
+    title: "From a question to a written scope",
     description:
-      "A three-phase approach — assess readiness, build infrastructure, and provide ongoing clinical support — designed for sustainable program implementation.",
+      "The first step is an assessment or a defined call. Documents, training, and launch support follow only when that scope says they should.",
   },
   differentiation: {
-    eyebrow: "Our Approach",
-    title: "Infrastructure, Not General Advice",
+    eyebrow: "Limits that stay in place",
+    title: "What the work does not include",
     description:
-      "NeuroBridge engagements produce defined clinical systems — SOPs, training pathways, QA frameworks, and operational structures — built for institutions that require implementable infrastructure.",
+      "NeuroBridge is a technologist’s consulting practice. The limits below are part of every pathway on this page.",
     pillars: [
       {
-        title: "Clinical Credibility",
-        desc: "CNIM-certified leadership with direct experience in high-acuity hospital neurophysiology environments.",
+        title: "Not a physician service",
+        desc: "No diagnosis, no treatment advice, and no remote interpretation or oversight in the physician-of-record sense.",
       },
       {
-        title: "Operational Depth",
-        desc: "SOPs, training pathways, QA frameworks, and competency standards — developed for clinical use, not presentation.",
+        title: "No employer material",
+        desc: "Protocols, pricing, customer lists, and case data from any employer stay out of the work.",
       },
       {
-        title: "Global Experience",
-        desc: "Program development across domestic healthcare systems and emerging market regions.",
+        title: "No invented outcomes",
+        desc: "There is no signed client engagement to publish. Caribbean program work is in development only.",
       },
     ],
   },
@@ -573,35 +643,33 @@ export const solutionsPage = {
 export const aboutPage = {
   hero: {
     eyebrow: "About",
-    title: "Leadership in Neurophysiology Program Development",
+    title: "Brandon Garrison, CNIM, R. EP T.",
     description:
-      "NeuroBridge Healthcare Consulting is led by Brandon Garrison, CNIM — a surgical neurophysiologist with institutional experience in intraoperative neuromonitoring, clinical operations, and program infrastructure development for hospitals and healthcare systems.",
+      "Founder of NeuroBridge Healthcare Consulting. A practicing surgical neurophysiologist (technologist, not a physician) whose consulting, training, and ventures sit under this practice.",
     cta: { label: "Capability Statement", href: "/capability-statement" },
   },
-  founderStory: {
-    eyebrow: "Founder Story",
-    title: "Clinical Practice to Program Infrastructure",
-  },
   timeline: {
-    eyebrow: "Clinical Experience",
-    title: "Institutional Background",
+    eyebrow: "Experience",
+    title: "Where he has practiced",
     description:
-      "A clinical career in high-acuity hospital environments — extended into neurophysiology education, operational development, and institutional consulting.",
+      "Lenox Hill Hospital is listed with Neuro Protective Solutions. It was not a separate employer.",
+  },
+  specialties: {
+    eyebrow: "Case experience",
+    title: "What the resume supports",
+    description:
+      "These are specialties and modalities from his resume. They describe case experience, not a promise about any future engagement.",
   },
   areasOfFocus: {
-    eyebrow: "Areas of Focus",
-    title: "Where Clinical Experience Meets Institutional Need",
+    eyebrow: "Consulting focus",
+    title: "How that experience is used",
     description:
-      "NeuroBridge engagements are structured around the clinical and operational domains required to build and sustain reliable IONM programs.",
-  },
-  vision: {
-    eyebrow: "Vision",
-    title: "Sustainable Neurophysiology Infrastructure",
+      "NeuroBridge applies this background to advisory calls, program design, TMS launch planning, training, and technical review.",
   },
   capabilityLink: {
     title: "Capability Statement",
     description:
-      "A formal overview of NeuroBridge services, leadership credentials, and engagement model — prepared for hospital administrators and healthcare executives.",
+      "A one-document summary of the practice, credentials, offerings, and scope limits, for administrators and anyone comparing consultants.",
     href: "/capability-statement",
   },
 };
@@ -609,118 +677,131 @@ export const aboutPage = {
 export const capabilityStatement = {
   title: "Capability Statement",
   subtitle: "NeuroBridge Healthcare Consulting",
-  tagline: "Neurophysiology Program Development & Clinical Operations",
-  issued: "2025",
+  tagline: "Technical and operational consulting for IONM and related programs",
+  issued: "2026",
   sections: {
     overview: {
       title: "Firm Overview",
       content:
-        "NeuroBridge Healthcare Consulting is a healthcare operations and neurophysiology development firm. We partner with hospitals, surgeons, healthcare systems, universities, investors, and government health organizations to develop, implement, and sustain intraoperative neuromonitoring and neurophysiology programs — through clinical oversight, quality assurance, training pathway design, SOP development, and operational infrastructure.",
+        "NeuroBridge Healthcare Consulting is the professional practice of Brandon Garrison, CNIM, R. EP T. It is the umbrella for his expert consulting, IONM program development, TMS clinic launch support, training, de-identified technical review, and related ventures. The firm provides technical and operational consulting. It does not provide medical diagnosis or physician oversight.",
     },
     leadership: {
-      title: "Leadership",
-      name: "Brandon Garrison, CNIM",
-      role: "Founder & Principal Consultant",
-      bio: "CNIM-certified surgical neurophysiologist with clinical experience in high-acuity neurosurgical and spine environments, including Cleveland Clinic and Lenox Hill Hospital. Background in intraoperative neuromonitoring, neurophysiology education, clinical operations, and IONM program development.",
+      title: "Founder",
+      name: "Brandon Garrison, CNIM, R. EP T.",
+      role: "Founder",
+      bio: "Practicing IONM technologist since August 2019. B.S. Neuroscience, Baldwin Wallace University, 2019. Roles at National Neuromonitoring Services, Neuro Protective Solutions (including work at Lenox Hill Hospital), Cleveland Clinic, and Guardion Medical. Guardion Medical is a current employer and does not endorse NeuroBridge.",
     },
     capabilities: [
-      "Remote neurophysiology oversight",
-      "Quality assurance and clinical auditing",
-      "IONM program development and implementation",
-      "Standard operating procedure development",
-      "Clinical operations consulting",
-      "Personnel development and training programs",
-      "CNIM preparation programs",
-      "Equipment selection and implementation planning",
-      "Competency benchmark development",
-      "Hospital program assessments",
-      "Physician partnership development",
-      "Regional and emerging market infrastructure planning",
+      "IONM expert calls for expert networks, medtech teams, and investors",
+      "Device and software product reviews",
+      "IONM program feasibility and build-out, including international and Caribbean programs",
+      "SOPs, workflow design, training plans, and quality-assurance frameworks",
+      "Vendor-neutral equipment selection",
+      "TMS clinic feasibility and launch planning",
+      "Training modules and onboarding packs",
+      "De-identified technical case review",
+      "CNIM exam tutoring",
     ],
     audiences: [
-      "Hospitals and health systems",
-      "Spine surgeons and neurosurgeons",
-      "Neurophysiology trainees and educators",
-      "Universities and academic medical centers",
-      "Healthcare investors",
-      "Government healthcare systems",
-      "Existing neurophysiology organizations",
+      "Expert networks, investors, and consultants",
+      "Med-device and software companies",
+      "Hospitals and surgical programs",
+      "Psychiatry and behavioral-health practices",
+      "IONM companies and training programs",
+      "CNIM candidates",
     ],
     methodology: [
-      { step: "Assess", detail: "Surgical volume, staffing, equipment, workflow, and program readiness" },
-      { step: "Build", detail: "SOPs, training pathways, equipment plans, competency standards, operational structure" },
-      { step: "Support", detail: "Remote oversight, QA review, continuing education, long-term clinical guidance" },
+      {
+        step: "Assess",
+        detail: "Volume, case mix, staffing, equipment, workflow, or the product question at hand",
+      },
+      {
+        step: "Build",
+        detail: "SOPs, training, equipment shortlists, and other documents named in the scope",
+      },
+      {
+        step: "Support",
+        detail: "Launch support and technical review. Physician oversight is not included",
+      },
     ],
     engagement: [
-      "Engagements scoped individually to institutional objectives",
-      "Advisory, development, and ongoing oversight models",
-      "Remote and on-site support available",
-      "Vendor-neutral equipment and technology guidance",
-      "Confidential consultation process",
+      "Starting prices are published. The fee is confirmed in a written scope",
+      "Remote work by default. Travel is quoted separately",
+      "No patient data",
+      "No employer confidential material",
+      "No medical diagnosis and no physician oversight",
     ],
+    initiatives:
+      "Connectome.news is the media and research arm (https://connectome.news). FOCUS, the Functional Ocular Control Unit System, is a prototype-stage concept in development, with no clinical or regulatory claims. A Jamaica and Cayman Islands program-development effort is in development and has no signed client. No client case studies are published.",
   },
 };
 
-export const caseStudiesPage = {
+export const venturesPage = {
   hero: {
-    eyebrow: "Case Studies",
-    title: "Program Development Initiatives",
+    eyebrow: "Ventures",
+    title: "Projects alongside the consulting practice",
     description:
-      "Active and developing neurophysiology infrastructure projects — illustrating how NeuroBridge supports hospitals and healthcare systems in building sustainable IONM programs.",
+      "Connectome.news and FOCUS sit under NeuroBridge. They are not client engagements, and this page does not report clinical or commercial results for them.",
   },
-  cta: {
-    eyebrow: "Partner With Us",
-    title: "Discuss Your Program Development Needs",
-    description:
-      "NeuroBridge works with hospitals, healthcare systems, and investors on neurophysiology infrastructure development. Contact us to discuss your institution's objectives.",
-  },
+  note: "NeuroBridge does not publish client case studies. There is no signed client engagement to describe. Program development aimed at Jamaica and the Cayman Islands is in development only.",
 };
 
 export const contactPage = {
   hero: {
     eyebrow: "Contact",
-    title: "Schedule a Consultation",
+    title: "Email Brandon",
     description:
-      "Share your program objectives and institutional context. We will review your inquiry and schedule a consultation to discuss clinical infrastructure, implementation planning, and next steps.",
+      "The form opens a draft in your email app to garrison839@gmail.com. Nothing is delivered until you send that email. Do not include patient information.",
   },
   sidebar: {
     expect: {
-      title: "What to Expect",
-      text: "A structured conversation about your surgical volume, current infrastructure, and program objectives. Each engagement is scoped individually — there is no public pricing.",
+      title: "What happens next",
+      text: "You send the email. Brandon replies with a short scope or with a no, if the request is outside what NeuroBridge does. This is not a medical consultation.",
     },
     response: {
-      title: "Response Time",
-      text: "Consultation requests are reviewed within one to two business days. We respond with proposed next steps.",
+      title: "Timing",
+      text: "He is in clinical practice, so a reply may wait until he is out of the operating room. The site does not promise a specific turnaround.",
     },
     direct: {
-      title: "Direct Contact",
+      title: "Direct",
     },
     confidential: {
-      title: "Confidential",
-      text: "All inquiries are handled confidentially. We recognize the sensitivity of healthcare program development and institutional planning.",
+      title: "What not to send",
+      text: "Do not send patient names, medical record numbers, images, or identifiable case detail. Technical review, if you scope it later, uses de-identified material only.",
     },
   },
   form: {
-    title: "Request a Consultation",
-    description: "Provide your details and program context below.",
-    successTitle: "Consultation Request Received",
-    successMessage:
-      "Thank you for your inquiry. We will review your submission and respond within one to two business days.",
+    title: "Draft an email",
+    description:
+      "This does not submit to a server. It opens your email app with the message filled in. You still have to press send.",
     messagePlaceholder:
-      "Describe the program you are building or improving — including surgical volume, current infrastructure, and primary objectives.",
+      "What you are building or deciding, who it is for, and any deadline. No patient information.",
   },
+  interests: [
+    "IONM expert call",
+    "Device or software product review",
+    "IONM program feasibility or build-out",
+    "TMS Clinic Accelerator",
+    "Training or SOP package",
+    "De-identified technical case review",
+    "CNIM exam tutoring",
+    "Something else",
+  ],
 };
 
 export const ctaSection = {
-  eyebrow: "Next Step",
-  title: "Ready to Build or Strengthen a Neurophysiology Program?",
+  eyebrow: "Next step",
+  title: "Tell Brandon what you need scoped",
   description:
-    "Schedule a consultation to discuss your goals, current infrastructure, and next steps.",
-  primaryLabel: "Schedule Consultation",
+    "Email a short description of the call, product, program, or training question. He will reply with whether it fits and what it would cost.",
+  primaryLabel: "Email Brandon",
 };
 
 export const footerCopy = {
-  ctaTitle: "Begin a Conversation",
+  ctaTitle: "Start with an email",
   ctaText:
-    "Discuss your neurophysiology program objectives with our team. Consultations are scoped to your institution's clinical and operational requirements.",
+    "Describe the question and the deadline. The contact page opens a draft to Brandon. It is not sent until you send it.",
 };
+
+export const priceDisclaimer =
+  "Starting prices are catalog ranges. They are not a quote until a scope is confirmed in writing.";

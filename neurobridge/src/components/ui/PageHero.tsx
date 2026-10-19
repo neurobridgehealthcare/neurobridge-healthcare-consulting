@@ -87,7 +87,7 @@ export function CTASection({
                   size="lg"
                   className="w-full border-white/20 text-white hover:border-teal-400/50 hover:bg-white/5 md:w-auto"
                 >
-                  View Services
+                  View Offerings
                 </Button>
               )}
             </div>

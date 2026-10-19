@@ -75,7 +75,7 @@ export function Header() {
                 item.href === "/"
                   ? pathname === "/"
                   : pathname.startsWith(item.href);
-              const isCta = item.label === "Schedule Consultation";
+              const isCta = item.href === "/contact";
 
               if (isCta) return null;
 
@@ -95,7 +95,7 @@ export function Header() {
               );
             })}
             <Button href="/contact" size="sm" className="ml-3">
-              Schedule Consultation
+              Contact
             </Button>
           </nav>
 

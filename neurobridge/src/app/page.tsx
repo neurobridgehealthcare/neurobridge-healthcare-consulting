@@ -1,13 +1,12 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import {
-  aTierServices,
-  additionalServices,
+  additionalOfferings,
   audiences,
-  developmentNote,
+  featuredOfferings,
   homePage,
   processSteps,
-  sTierServices,
+  ventures,
 } from "@/lib/data";
 import {
   CredibilityStrip,
@@ -25,7 +24,8 @@ import { CTASection } from "@/components/ui/PageHero";
 import { Container, Section, SectionHeader } from "@/components/ui/Section";
 
 export default function HomePage() {
-  const { hero, coreServices, whoWeServe, approach, expanded } = homePage;
+  const { hero, coreServices, whoWeServe, approach, expanded, ventures: venturesCopy } =
+    homePage;
 
   return (
     <>
@@ -38,20 +38,23 @@ export default function HomePage() {
               {hero.badge}
             </div>
             <h1 className="animate-fade-up animation-delay-100 font-display text-4xl font-bold leading-[1.08] tracking-tight text-navy-900 sm:text-5xl lg:text-6xl xl:text-[3.75rem]">
-              Building{" "}
-              <span className="gradient-text">{hero.headlineAccent}</span> for
-              Hospitals, Surgeons, and Healthcare Systems.
+              {hero.headlineBefore}{" "}
+              <span className="gradient-text">{hero.headlineAccent}</span>{" "}
+              {hero.headlineAfter}
             </h1>
             <p className="animate-fade-up animation-delay-200 mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-navy-700/70 md:text-xl">
               {hero.subheadline}
             </p>
+            <p className="animate-fade-up animation-delay-200 mx-auto mt-4 max-w-2xl text-sm font-medium text-navy-700/70">
+              {hero.disclaimer}
+            </p>
             <div className="animate-fade-up animation-delay-300 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button href="/contact" size="lg">
-                Schedule Consultation
+                Email Brandon
                 <ArrowRight className="h-4 w-4" />
               </Button>
               <Button href="/services" variant="outline" size="lg">
-                View Services
+                View Offerings
               </Button>
             </div>
           </div>
@@ -64,7 +67,7 @@ export default function HomePage() {
 
       <WhyNeuroBridgeSection />
 
-      <Section className="bg-white">
+      <Section id="offerings" className="scroll-mt-28 bg-white">
         <Container>
           <SectionHeader
             eyebrow={coreServices.eyebrow}
@@ -72,13 +75,20 @@ export default function HomePage() {
             description={coreServices.description}
           />
           <div className="grid gap-6 md:grid-cols-3">
-            {sTierServices.map((service) => (
-              <ServiceCard key={service.title} {...service} tier="s" />
+            {featuredOfferings.map((service) => (
+              <ServiceCard
+                key={service.title}
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+                price={service.price}
+                tier="s"
+              />
             ))}
           </div>
           <div className="mt-12 text-center">
             <Button href="/services" variant="outline">
-              View All Services
+              View All Offerings
               <ArrowRight className="h-4 w-4" />
             </Button>
           </div>
@@ -92,7 +102,7 @@ export default function HomePage() {
             title={whoWeServe.title}
             description={whoWeServe.description}
           />
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {audiences.map((audience) => (
               <AudienceCard key={audience.title} {...audience} />
             ))}
@@ -128,38 +138,72 @@ export default function HomePage() {
               variant="outline"
               className="border-white/20 text-white hover:border-teal-400/50 hover:bg-white/5"
             >
-              View Program Pathways
+              View Pathways
               <ArrowRight className="h-4 w-4" />
             </Button>
           </div>
         </Container>
       </Section>
 
-      <Section>
+      <Section id="ventures" className="scroll-mt-28">
         <Container>
-          <div className="relative overflow-hidden rounded-[2rem] border border-teal-500/15 bg-gradient-to-br from-blue-500/5 via-white to-teal-500/5 p-8 md:p-12">
-            <div
-              className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-teal-500/10 blur-2xl"
-              aria-hidden
-            />
-            <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-              <div className="max-w-2xl">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-teal-500">
-                  Current Initiatives
-                </p>
-                <p className="mt-3 text-lg leading-relaxed text-navy-700/80">
-                  {developmentNote}
-                </p>
-              </div>
-              <Button
-                href="/case-studies"
-                variant="secondary"
-                className="shrink-0"
+          <SectionHeader
+            eyebrow={venturesCopy.eyebrow}
+            title={venturesCopy.title}
+            description={venturesCopy.description}
+          />
+          <div className="grid gap-6 md:grid-cols-2">
+            {ventures.map((venture) => (
+              <article
+                key={venture.id}
+                className="rounded-3xl border border-navy-900/5 bg-white p-8 shadow-sm"
               >
-                View Initiatives
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-            </div>
+                <div className="flex items-start justify-between gap-4">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500/10 to-teal-500/10 text-teal-600">
+                    <venture.icon className="h-5 w-5" />
+                  </div>
+                  <span
+                    className={
+                      venture.status === "In development"
+                        ? "rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-700"
+                        : "rounded-full bg-teal-500/10 px-3 py-1 text-xs font-semibold text-teal-700"
+                    }
+                  >
+                    {venture.status}
+                  </span>
+                </div>
+                <h3 className="mt-6 font-display text-2xl font-bold text-navy-900">
+                  {venture.title}
+                </h3>
+                <p className="mt-1 text-sm font-medium text-navy-700/60">
+                  {venture.kicker}
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-navy-700/75">
+                  {venture.summary}
+                </p>
+                <div className="mt-6">
+                  {venture.href ? (
+                    <a
+                      href={venture.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-600"
+                    >
+                      {venture.hrefLabel}
+                      <ArrowUpRight className="h-4 w-4" />
+                    </a>
+                  ) : (
+                    <Link
+                      href="/ventures#focus"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-600"
+                    >
+                      Read the scope limits
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  )}
+                </div>
+              </article>
+            ))}
           </div>
         </Container>
       </Section>
@@ -172,19 +216,22 @@ export default function HomePage() {
             description={expanded.description}
           />
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              ...aTierServices.slice(0, 3),
-              ...additionalServices.slice(0, 3),
-            ].map((service) => (
-              <ServiceCard key={service.title} {...service} />
+            {additionalOfferings.map((service) => (
+              <ServiceCard
+                key={service.title}
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+                price={service.price}
+              />
             ))}
           </div>
           <div className="mt-10 text-center">
             <Link
-              href="/solutions"
+              href="/services"
               className="inline-flex items-center gap-2 text-sm font-semibold text-teal-600 transition-colors hover:text-teal-500"
             >
-              Review program pathways
+              See scope and starting prices
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>

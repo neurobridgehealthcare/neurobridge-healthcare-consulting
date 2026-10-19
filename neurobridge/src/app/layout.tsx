@@ -19,12 +19,19 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
+    default: `${siteConfig.name} | Brandon Garrison, CNIM, R. EP T.`,
     template: `%s | ${siteConfig.shortName}`,
   },
   description: siteConfig.description,
   icons: {
     icon: "/favicon.svg",
+  },
+  openGraph: {
+    title: `${siteConfig.name} | Brandon Garrison, CNIM, R. EP T.`,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    type: "website",
+    locale: "en_US",
   },
 };
 

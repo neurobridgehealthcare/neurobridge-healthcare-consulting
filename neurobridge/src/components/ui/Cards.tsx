@@ -5,6 +5,8 @@ type ServiceCardProps = {
   title: string;
   description: string;
   icon: LucideIcon;
+  price?: string;
+  details?: string[];
   tier?: "s" | "a" | "additional";
   className?: string;
 };
@@ -13,6 +15,8 @@ export function ServiceCard({
   title,
   description,
   icon: Icon,
+  price,
+  details,
   tier,
   className,
 }: ServiceCardProps) {
@@ -25,7 +29,7 @@ export function ServiceCard({
     >
       {tier === "s" && (
         <span className="absolute right-5 top-5 rounded-full bg-gradient-to-r from-blue-500/10 to-teal-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-teal-600">
-          Primary
+          Start here
         </span>
       )}
       <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500/10 to-teal-500/10 text-teal-600 transition-colors group-hover:from-blue-500 group-hover:to-teal-500 group-hover:text-white">
@@ -35,6 +39,22 @@ export function ServiceCard({
       <p className="mt-3 flex-1 text-sm leading-relaxed text-navy-700/70">
         {description}
       </p>
+      {price && (
+        <p className="mt-4 text-sm font-semibold text-teal-700">{price}</p>
+      )}
+      {details && details.length > 0 && (
+        <ul className="mt-4 space-y-2">
+          {details.map((detail) => (
+            <li
+              key={detail}
+              className="flex items-start gap-2 text-sm text-navy-700/75"
+            >
+              <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-teal-500" />
+              {detail}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

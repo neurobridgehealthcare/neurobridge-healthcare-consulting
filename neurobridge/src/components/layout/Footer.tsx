@@ -2,12 +2,11 @@ import Link from "next/link";
 import { ArrowUpRight, Mail } from "lucide-react";
 import { navigation, siteConfig, footerCopy } from "@/lib/data";
 import { Button } from "@/components/ui/Button";
+import { Disclaimer } from "@/components/ui/Disclaimer";
 import { Container } from "@/components/ui/Section";
 
 export function Footer() {
-  const footerLinks = navigation.filter(
-    (item) => item.label !== "Schedule Consultation"
-  );
+  const footerLinks = navigation.filter((item) => item.href !== "/contact");
 
   return (
     <footer className="site-footer border-t border-navy-900/5 bg-navy-950 text-white">
@@ -41,7 +40,12 @@ export function Footer() {
             </p>
             <div className="mt-6 flex items-center gap-2 text-sm text-white/60">
               <Mail className="h-4 w-4 text-teal-400" />
-              <span>{siteConfig.email}</span>
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="hover:text-white"
+              >
+                {siteConfig.email}
+              </a>
             </div>
           </div>
 
@@ -79,20 +83,21 @@ export function Footer() {
               {footerCopy.ctaText}
             </p>
             <Button href="/contact" className="mt-6">
-              Schedule Consultation
+              Email Brandon
               <ArrowUpRight className="h-4 w-4" />
             </Button>
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
-          <p className="text-xs text-white/40">
-            &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
-            reserved.
-          </p>
-          <p className="text-xs text-white/40">
-            {siteConfig.tagline}
-          </p>
+        <div className="mt-14 border-t border-white/10 pt-8">
+          <Disclaimer light />
+          <div className="mt-6 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+            <p className="text-xs text-white/40">
+              &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
+              reserved.
+            </p>
+            <p className="text-xs text-white/40">{siteConfig.tagline}</p>
+          </div>
         </div>
       </Container>
     </footer>

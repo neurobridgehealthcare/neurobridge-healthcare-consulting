@@ -25,10 +25,18 @@ export function ExperienceTimeline() {
               <h3 className="mt-2 font-display text-lg font-bold text-navy-900">
                 {item.organization}
               </h3>
-              <p className="mt-1 text-sm font-medium text-navy-700/80">{item.role}</p>
+              <p className="mt-1 text-sm font-medium text-navy-700/80">
+                {item.role}
+                {item.location ? ` · ${item.location}` : ""}
+              </p>
               <p className="mt-3 text-sm leading-relaxed text-navy-700/65">
                 {item.description}
               </p>
+              {"note" in item && item.note && (
+                <p className="mt-4 rounded-xl bg-surface-muted px-4 py-3 text-sm leading-relaxed text-navy-800/80">
+                  {item.note}
+                </p>
+              )}
             </div>
           </div>
         ))}
