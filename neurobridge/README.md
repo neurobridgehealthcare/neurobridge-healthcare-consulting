@@ -25,12 +25,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | Route | Description |
 |-------|-------------|
 | `/` | Home |
-| `/services` | Service catalog |
-| `/solutions` | Tailored solution pathways |
-| `/about` | Founder & firm information |
-| `/capability-statement` | PDF-style capability statement |
-| `/case-studies` | Development initiatives |
-| `/contact` | Schedule consultation form |
+| `/services` | Offerings and starting prices |
+| `/solutions` | Engagement pathways |
+| `/about` | Founder, credentials, and career |
+| `/capability-statement` | Printable capability statement |
+| `/ventures` | Connectome.news and FOCUS |
+| `/case-studies` | Redirects to `/ventures` |
+| `/contact` | Email draft (mailto). Nothing is sent by the site |
 
 ## Project Structure
 
@@ -86,6 +87,17 @@ npm install
 npm run dev
 ```
 
+## Contact
+
+The contact form does not post to a server and it never shows a fake “received” state. Submitting it opens the visitor’s email app with a draft to `garrison839@gmail.com`. The message is delivered only when the visitor sends that email. With JavaScript disabled, the form still uses a `mailto:` submit.
+
+To replace this with server-side delivery later, add a provider such as Resend and set:
+
+- `CONTACT_TO` — destination inbox
+- `RESEND_API_KEY` — or the provider’s equivalent secret
+
+Do not show success unless the provider accepts the message. Do not deploy this site to production until Brandon approves the copy.
+
 ## Deploy to Vercel
 
 Vercel is the recommended host for this Next.js site. It provides a free public URL (e.g. `https://neurobridge.vercel.app`).
@@ -112,7 +124,7 @@ Vercel is the recommended host for this Next.js site. It provides a free public 
    - Vercel builds and assigns a public URL
 
 5. **Custom domain (optional)**
-   - In Vercel project settings → **Domains**, add your domain (e.g. `neurobridgehealth.com`)
+   - Confirm who controls the domain before attaching it. As of October 2026, `neurobridgehealth.com` was an expired Squarespace site and ownership was not confirmed.
 
 ### Option B — Deploy with Vercel CLI
 
@@ -122,7 +134,7 @@ cd neurobridge
 vercel
 ```
 
-Follow the prompts. Run `vercel --prod` for production deployment.
+Follow the prompts. Use a preview deployment until Brandon approves the copy. Do not run `vercel --prod` before that.
 
 ### After deployment — test these URLs
 
@@ -133,9 +145,10 @@ Replace `YOUR-URL` with your Vercel domain:
 - `https://YOUR-URL/capability-statement`
 - `https://YOUR-URL/services`
 - `https://YOUR-URL/solutions`
-- `https://YOUR-URL/case-studies`
+- `https://YOUR-URL/ventures`
+- `https://YOUR-URL/case-studies` (redirects to `/ventures`)
 - `https://YOUR-URL/contact`
 
 ## Environment Variables
 
-No environment variables are required for the current static marketing site. If you add form submission (e.g. Resend, Formspree), configure secrets in Vercel → **Settings → Environment Variables**.
+None are required. The contact path is a `mailto:` draft, described above. A future server-side form would need `CONTACT_TO` and a provider secret in Vercel → **Settings → Environment Variables**.

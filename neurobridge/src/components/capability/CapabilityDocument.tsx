@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
   capabilityStatement,
-  developmentNote,
   founder,
   siteConfig,
 } from "@/lib/data";
@@ -139,7 +138,7 @@ export function CapabilityDocument() {
           Current Initiatives
         </h2>
         <p className="mt-4 text-sm leading-[1.75] text-navy-800/85">
-          {developmentNote}
+          {capabilityStatement.sections.initiatives}
         </p>
       </section>
 
@@ -166,11 +165,10 @@ export function CapabilityDocument() {
             <p className="mt-1 text-xs text-white/50">{siteConfig.tagline}</p>
             <p className="mt-4 text-sm text-white/70">{siteConfig.email}</p>
           </div>
-          <div className="text-right text-xs text-white/40">
-            <p>{siteConfig.name}</p>
-            <p className="mt-1">Confidential — For institutional review</p>
+          <div className="max-w-sm text-left text-xs leading-relaxed text-white/55 sm:text-right">
+            <p>{siteConfig.disclaimer}</p>
             <Link href="/contact" className="mt-3 inline-block text-teal-400 print:hidden">
-              Schedule a Consultation →
+              Email Brandon →
             </Link>
           </div>
         </div>

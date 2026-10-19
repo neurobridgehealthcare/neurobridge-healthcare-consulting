@@ -8,7 +8,7 @@ import { Container, Section, SectionHeader } from "@/components/ui/Section";
 export const metadata = {
   title: "Solutions",
   description:
-    "Program pathways for new IONM launches, program optimization, regional infrastructure, and surgeon-aligned clinical support.",
+    "Four NeuroBridge pathways: expert advisory, IONM program development, the TMS Clinic Accelerator, and training with de-identified technical review.",
 };
 
 export default function SolutionsPage() {
@@ -20,7 +20,7 @@ export default function SolutionsPage() {
         eyebrow={hero.eyebrow}
         title={hero.title}
         description={hero.description}
-        cta={{ label: "Schedule Consultation", href: "/contact" }}
+        cta={{ label: "Email Brandon", href: "/contact" }}
       />
 
       <Section>
@@ -85,7 +85,7 @@ export default function SolutionsPage() {
           </div>
           <div className="mt-14 text-center">
             <Button href="/contact" size="lg">
-              Request an Assessment
+              Email Brandon
               <ArrowRight className="h-4 w-4" />
             </Button>
           </div>

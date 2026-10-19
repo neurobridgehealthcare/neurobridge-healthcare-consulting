@@ -1,23 +1,18 @@
 import { ArrowRight, Check } from "lucide-react";
-import {
-  aTierServices,
-  additionalServices,
-  servicesPage,
-  sTierServices,
-} from "@/lib/data";
+import { offeringGroups, servicesPage } from "@/lib/data";
 import { Button } from "@/components/ui/Button";
 import { ServiceCard } from "@/components/ui/Cards";
 import { CTASection, PageHero } from "@/components/ui/PageHero";
 import { Container, Section, SectionHeader } from "@/components/ui/Section";
 
 export const metadata = {
-  title: "Services",
+  title: "Offerings",
   description:
-    "Clinical oversight, quality assurance, and neurophysiology program development services for hospitals and healthcare systems.",
+    "IONM expert calls, device and software reviews, hospital program development, TMS Clinic Accelerator, training, de-identified technical review, and CNIM tutoring. Starting prices listed.",
 };
 
 export default function ServicesPage() {
-  const { hero, sTier, aTier, additional, engagement } = servicesPage;
+  const { hero, priceNote, engagement } = servicesPage;
 
   return (
     <>
@@ -25,56 +20,38 @@ export default function ServicesPage() {
         eyebrow={hero.eyebrow}
         title={hero.title}
         description={hero.description}
-        cta={{ label: "Schedule Consultation", href: "/contact" }}
+        cta={{ label: "Email Brandon", href: "/contact" }}
       />
 
-      <Section>
-        <Container>
-          <SectionHeader
-            eyebrow={sTier.eyebrow}
-            title={sTier.title}
-            description={sTier.description}
-            align="left"
-          />
-          <div className="grid gap-6 lg:grid-cols-3">
-            {sTierServices.map((service) => (
-              <ServiceCard key={service.title} {...service} tier="s" />
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      <Section className="bg-surface-muted">
-        <Container>
-          <SectionHeader
-            eyebrow={aTier.eyebrow}
-            title={aTier.title}
-            description={aTier.description}
-            align="left"
-          />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {aTierServices.map((service) => (
-              <ServiceCard key={service.title} {...service} />
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      <Section>
-        <Container>
-          <SectionHeader
-            eyebrow={additional.eyebrow}
-            title={additional.title}
-            description={additional.description}
-            align="left"
-          />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {additionalServices.map((service) => (
-              <ServiceCard key={service.title} {...service} />
-            ))}
-          </div>
-        </Container>
-      </Section>
+      {offeringGroups.map((group, index) => (
+        <Section
+          key={group.id}
+          id={group.id}
+          className={`scroll-mt-28 ${index % 2 === 1 ? "bg-surface-muted" : ""}`}
+        >
+          <Container>
+            <SectionHeader
+              eyebrow={group.eyebrow}
+              title={group.title}
+              description={group.description}
+              align="left"
+            />
+            <div
+              className={
+                group.items.length === 1
+                  ? "grid gap-6 lg:max-w-xl"
+                  : group.items.length === 2
+                    ? "grid gap-6 lg:grid-cols-2"
+                    : "grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+              }
+            >
+              {group.items.map((service) => (
+                <ServiceCard key={service.title} {...service} />
+              ))}
+            </div>
+          </Container>
+        </Section>
+      ))}
 
       <Section className="bg-navy-900">
         <Container>
@@ -89,8 +66,11 @@ export default function ServicesPage() {
               <p className="mt-5 text-lg leading-relaxed text-white/65">
                 {engagement.description}
               </p>
+              <p className="mt-4 text-sm leading-relaxed text-white/50">
+                {priceNote}
+              </p>
               <Button href="/contact" className="mt-8">
-                Schedule a Consultation
+                Email Brandon
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </div>

@@ -49,7 +49,7 @@ export function ProblemSection() {
               align="left"
             />
             <Button href="/contact" className="mt-2">
-              Schedule a Consultation
+              Email Brandon
             </Button>
           </div>
 
