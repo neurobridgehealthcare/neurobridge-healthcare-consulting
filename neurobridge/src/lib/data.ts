@@ -378,7 +378,7 @@ export const founder = {
     title: "Operating-room practice, then a consulting practice",
     paragraphs: [
       "Brandon has worked in intraoperative neuromonitoring since August 2019. Confirmed roles are National Neuromonitoring Services (August 2019–December 2020), Neuro Protective Solutions (August 2021–February 28, 2023), Cleveland Clinic (March 8, 2023–January 2025), and Guardion Medical (February 2025–present).",
-      "Case work on his resume includes neuro, vascular, and skull-base procedures; spine, including spinal cord tumors and scoliosis; peripheral-nerve cases; ECoG; awake and asleep brain mapping; and DBS neurophysiology. Modalities include SSEP, MEP, EMG, and EEG. At National Neuromonitoring Services he supervised and trained other practitioners across 250+ procedures, under real-time online physician supervision of the monitoring.",
+      "He is experienced in advanced and complex intraoperative neuromonitoring. Case work on his resume includes neuro and vascular procedures; spine, including spinal cord tumors and scoliosis; peripheral-nerve cases; ECoG; awake and asleep brain mapping; and DBS neurophysiology. Modalities include SSEP, MEP, EMG, and EEG. At National Neuromonitoring Services he supervised and trained other practitioners under real-time online physician supervision of the monitoring, and took part in performance reviews.",
       "Work at Lenox Hill Hospital was part of the Neuro Protective Solutions role. Lenox Hill is not a separate employer. Since February 2025 he has practiced IONM with Guardion Medical in Macon, Georgia. That employment is separate from NeuroBridge and is not an endorsement of this consulting practice.",
     ],
   },
@@ -415,7 +415,7 @@ export const founder = {
       role: "CNIM IOM Surgical Neurotechnologist",
       location: "Columbus, Ohio",
       description:
-        "Acquired and monitored data under real-time online IONM physician supervision. Supervised and trained other practitioners, took part in performance reviews, and supported compliance documentation across 250+ procedures.",
+        "Acquired and monitored data under real-time online IONM physician supervision. Supervised and trained other practitioners and took part in performance reviews.",
     },
     {
       period: "2019",
@@ -426,7 +426,8 @@ export const founder = {
     },
   ],
   specialties: [
-    "Neuro, vascular, and skull-base procedures",
+    "Advanced and complex intraoperative neuromonitoring",
+    "Neuro and vascular procedures",
     "Spine, including spinal cord tumors and scoliosis",
     "Peripheral nerve, including microdiscectomy and carpal tunnel release",
     "Electrocorticography (ECoG)",
@@ -508,7 +509,7 @@ export const whyNeuroBridge = [
   {
     title: "Still in the operating room",
     description:
-      "A practicing IONM technologist, with case work across brain, spine, vascular, skull-base, and peripheral-nerve surgery.",
+      "A practicing IONM technologist, experienced in advanced and complex intraoperative neuromonitoring, including brain, spine, vascular, and peripheral-nerve surgery.",
     icon: Activity,
   },
   {
