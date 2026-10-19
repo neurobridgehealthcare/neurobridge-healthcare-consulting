@@ -123,8 +123,7 @@ Vercel is the recommended host for this Next.js site. It provides a free public 
    - Click **Deploy**
    - Vercel builds and assigns a public URL
 
-5. **Custom domain (optional)**
-   - Confirm who controls the domain before attaching it. As of October 2026, `neurobridgehealth.com` was an expired Squarespace site and ownership was not confirmed.
+Custom-domain setup is not part of this site update.
 
 ### Option B — Deploy with Vercel CLI
 
