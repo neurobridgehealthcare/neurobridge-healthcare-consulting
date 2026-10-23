@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, Mail } from "lucide-react";
 import { navigation, siteConfig, footerCopy } from "@/lib/data";
+import { BrandLogo } from "@/components/brand/BrandLogo";
 import { Button } from "@/components/ui/Button";
 import { Disclaimer } from "@/components/ui/Disclaimer";
 import { Container } from "@/components/ui/Section";
@@ -13,27 +14,8 @@ export function Footer() {
       <Container className="py-16 md:py-20">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <Link href="/" className="inline-flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-teal-500">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-5 w-5 text-white"
-                  aria-hidden
-                >
-                  <path
-                    d="M4 16 L12 8 L20 16"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="font-display text-sm font-bold">NeuroBridge</p>
-                <p className="text-[11px] text-white/50">Healthcare Consulting</p>
-              </div>
+            <Link href="/" className="inline-flex rounded-lg bg-white p-2">
+              <BrandLogo className="h-10 w-auto sm:h-12" />
             </Link>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-white/60">
               {siteConfig.description}

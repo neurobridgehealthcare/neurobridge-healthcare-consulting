@@ -17,21 +17,30 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+const title = `${siteConfig.name} | Brandon Garrison, CNIM, R. EP T.`;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Brandon Garrison, CNIM, R. EP T.`,
+    default: title,
     template: `%s | ${siteConfig.shortName}`,
   },
   description: siteConfig.description,
-  icons: {
-    icon: "/favicon.svg",
+  alternates: {
+    canonical: "./",
   },
   openGraph: {
-    title: `${siteConfig.name} | Brandon Garrison, CNIM, R. EP T.`,
+    title,
     description: siteConfig.description,
     siteName: siteConfig.name,
     type: "website",
     locale: "en_US",
+    url: "./",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description: siteConfig.description,
   },
 };
 
