@@ -3,7 +3,6 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import {
   additionalOfferings,
   audiences,
-  featuredOfferings,
   homePage,
   processSteps,
   ventures,
@@ -13,6 +12,7 @@ import {
   ProblemSection,
   WhyNeuroBridgeSection,
 } from "@/components/home/HomeSections";
+import { ProductOfferings } from "@/components/products/ProductOfferings";
 import { Button } from "@/components/ui/Button";
 import { HeroBackground } from "@/components/ui/HeroBackground";
 import {
@@ -53,7 +53,7 @@ export default function HomePage() {
                 Email Brandon
                 <ArrowRight className="h-4 w-4" />
               </Button>
-              <Button href="/services" variant="outline" size="lg">
+              <Button href="/services#assessments" variant="outline" size="lg">
                 View Offerings
               </Button>
             </div>
@@ -63,10 +63,6 @@ export default function HomePage() {
 
       <CredibilityStrip />
 
-      <ProblemSection />
-
-      <WhyNeuroBridgeSection />
-
       <Section id="offerings" className="scroll-mt-28 bg-white">
         <Container>
           <SectionHeader
@@ -74,26 +70,19 @@ export default function HomePage() {
             title={coreServices.title}
             description={coreServices.description}
           />
-          <div className="grid gap-6 md:grid-cols-3">
-            {featuredOfferings.map((service) => (
-              <ServiceCard
-                key={service.title}
-                title={service.title}
-                description={service.description}
-                icon={service.icon}
-                price={service.price}
-                tier="s"
-              />
-            ))}
-          </div>
+          <ProductOfferings />
           <div className="mt-12 text-center">
             <Button href="/services" variant="outline">
-              View All Offerings
+              View the full catalog
               <ArrowRight className="h-4 w-4" />
             </Button>
           </div>
         </Container>
       </Section>
+
+      <ProblemSection />
+
+      <WhyNeuroBridgeSection />
 
       <Section className="bg-surface-muted">
         <Container>

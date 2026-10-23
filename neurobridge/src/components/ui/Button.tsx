@@ -3,6 +3,8 @@ import { cn } from "@/lib/utils";
 
 type ButtonProps = {
   href?: string;
+  /** Open http(s) links in a new tab. Ignored for in-site paths. */
+  external?: boolean;
   variant?: "primary" | "secondary" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
   className?: string;
@@ -29,6 +31,7 @@ const sizes = {
 
 export function Button({
   href,
+  external = false,
   variant = "primary",
   size = "md",
   className,
@@ -44,6 +47,20 @@ export function Button({
   );
 
   if (href) {
+    const isExternal =
+      external || href.startsWith("https://") || href.startsWith("http://");
+    if (isExternal) {
+      return (
+        <a
+          href={href}
+          className={classes}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      );
+    }
     return (
       <Link href={href} className={classes}>
         {children}
