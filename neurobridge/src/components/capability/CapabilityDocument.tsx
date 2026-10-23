@@ -5,6 +5,7 @@ import {
   siteConfig,
 } from "@/lib/data";
 import { CredentialBadgeRow } from "@/components/about/CredentialBadge";
+import { BrandLogo } from "@/components/brand/BrandLogo";
 
 export function CapabilityDocument() {
   const { sections } = capabilityStatement;
@@ -26,11 +27,7 @@ export function CapabilityDocument() {
             </p>
           </div>
           <div className="hidden shrink-0 text-right sm:block">
-            <div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-teal-500">
-              <svg viewBox="0 0 24 24" fill="none" className="h-7 w-7 text-white" aria-hidden>
-                <path d="M4 16 L12 8 L20 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
+            <BrandLogo variant="mark" alt="" className="h-14 w-14" />
           </div>
         </div>
         <div className="mt-10 flex flex-wrap gap-6 border-t border-navy-900/10 pt-8 text-xs text-navy-700/60">

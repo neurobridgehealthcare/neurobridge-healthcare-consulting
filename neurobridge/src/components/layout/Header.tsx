@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navigation } from "@/lib/data";
+import { BrandLogo } from "@/components/brand/BrandLogo";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
@@ -34,39 +35,11 @@ export function Header() {
     >
       <div className="container-custom">
         <div className="flex min-h-[4.5rem] items-center justify-between py-4 lg:min-h-20">
-          <Link href="/" className="group flex items-center gap-3">
-            <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-teal-500 shadow-lg shadow-blue-500/20">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="h-5 w-5 text-white"
-                aria-hidden
-              >
-                <path
-                  d="M4 16 L12 8 L20 16"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M8 16 L12 12 L16 16"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  opacity="0.7"
-                />
-              </svg>
-            </div>
-            <div className="hidden sm:block">
-              <p className="font-display text-sm font-bold leading-tight text-navy-900 transition-colors group-hover:text-navy-700">
-                NeuroBridge
-              </p>
-              <p className="text-[11px] font-medium tracking-wide text-navy-700/60">
-                Healthcare Consulting
-              </p>
-            </div>
+          <Link href="/" className="flex shrink-0 items-center">
+            <BrandLogo
+              priority
+              className="h-10 w-auto max-w-[11.5rem] sm:h-12 sm:max-w-none"
+            />
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">

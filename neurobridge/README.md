@@ -100,7 +100,7 @@ Do not show success unless the provider accepts the message. Do not deploy this 
 
 ## Deploy to Vercel
 
-Vercel is the recommended host for this Next.js site. It provides a free public URL (e.g. `https://neurobridge.vercel.app`).
+Vercel hosts this Next.js site. The public site is [https://neurobridgehealthcare.com](https://neurobridgehealthcare.com). `www` redirects to the apex domain.
 
 ### Option A — Deploy from GitHub (recommended)
 
@@ -121,9 +121,8 @@ Vercel is the recommended host for this Next.js site. It provides a free public 
 
 4. **Deploy**
    - Click **Deploy**
-   - Vercel builds and assigns a public URL
-
-Custom-domain setup is not part of this site update.
+   - Vercel builds and deploys the site
+   - The custom domain is `neurobridgehealthcare.com`
 
 ### Option B — Deploy with Vercel CLI
 
@@ -137,16 +136,14 @@ Follow the prompts. Use a preview deployment until Brandon approves the copy. Do
 
 ### After deployment — test these URLs
 
-Replace `YOUR-URL` with your Vercel domain:
-
-- `https://YOUR-URL/`
-- `https://YOUR-URL/about`
-- `https://YOUR-URL/capability-statement`
-- `https://YOUR-URL/services`
-- `https://YOUR-URL/solutions`
-- `https://YOUR-URL/ventures`
-- `https://YOUR-URL/case-studies` (redirects to `/ventures`)
-- `https://YOUR-URL/contact`
+- `https://neurobridgehealthcare.com/`
+- `https://neurobridgehealthcare.com/about`
+- `https://neurobridgehealthcare.com/capability-statement`
+- `https://neurobridgehealthcare.com/services`
+- `https://neurobridgehealthcare.com/solutions`
+- `https://neurobridgehealthcare.com/ventures`
+- `https://neurobridgehealthcare.com/case-studies` (redirects to `/ventures`)
+- `https://neurobridgehealthcare.com/contact`
 
 ## Environment Variables
 

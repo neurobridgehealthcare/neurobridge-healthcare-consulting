@@ -26,6 +26,7 @@ import {
 export const siteConfig = {
   name: "NeuroBridge Healthcare Consulting",
   shortName: "NeuroBridge",
+  url: "https://neurobridgehealthcare.com",
   tagline: "IONM consulting, program development, and related ventures",
   description:
     "NeuroBridge is Brandon Garrison’s practice (CNIM, R. EP T.) for IONM expert consulting, hospital program development, TMS clinic launches, and training. Not medical diagnosis or physician oversight.",
