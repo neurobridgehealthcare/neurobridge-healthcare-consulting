@@ -1,5 +1,6 @@
 import { ArrowRight, Check } from "lucide-react";
 import { offeringGroups, servicesPage } from "@/lib/data";
+import { ProductOfferings } from "@/components/products/ProductOfferings";
 import { Button } from "@/components/ui/Button";
 import { ServiceCard } from "@/components/ui/Cards";
 import { CTASection, PageHero } from "@/components/ui/PageHero";
@@ -8,7 +9,7 @@ import { Container, Section, SectionHeader } from "@/components/ui/Section";
 export const metadata = {
   title: "Offerings",
   description:
-    "IONM expert calls, device and software reviews, hospital program development, TMS Clinic Accelerator, training, de-identified technical review, CNIM tutoring, and secondary technical support for IONM teams.",
+    "Priced TMS and IONM feasibility assessments, a 60-minute strategy call, and a TMS startup ROI calculator, plus expert calls, program build-out, training, and technical review.",
 };
 
 export default function ServicesPage() {
@@ -22,6 +23,18 @@ export default function ServicesPage() {
         description={hero.description}
         cta={{ label: "Email Brandon", href: "/contact" }}
       />
+
+      <Section id="assessments" className="scroll-mt-28 bg-surface-muted">
+        <Container>
+          <SectionHeader
+            eyebrow="Paid offerings"
+            title="Assessments, a strategy call, and a calculator"
+            description="Request the offering that fits. Each button opens an inquiry with that product already selected, and the fee inside the published range is confirmed before work starts."
+            align="left"
+          />
+          <ProductOfferings />
+        </Container>
+      </Section>
 
       {offeringGroups.map((group, index) => (
         <Section

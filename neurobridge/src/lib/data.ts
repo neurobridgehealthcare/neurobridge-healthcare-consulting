@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import { productInterests } from "./products";
 import {
   Activity,
   Award,
@@ -99,20 +100,8 @@ export const offeringGroups: {
     eyebrow: "IONM Program Development",
     title: "Hospital programs, including international work",
     description:
-      "Feasibility first, then a build-out when the assessment supports one. International work, including Caribbean programs, covers SOPs, equipment selection, workflow, training, and quality assurance.",
+      "Build-out follows the paid IONM Program Feasibility Assessment when the report supports one. International work, including Caribbean programs, covers SOPs, equipment selection, workflow, training, and quality assurance.",
     items: [
-      {
-        title: "IONM program feasibility assessment",
-        description:
-          "A remote review of case volume and mix, staffing, in-house versus outsourced options, an equipment list, and the physician-oversight model a licensed physician would have to provide. The deliverable is a written report and a readout call.",
-        icon: Hospital,
-        price: "Starting at $1,500",
-        details: [
-          "Remote assessments are typically $1,500–$3,000. Travel is quoted separately",
-          "Licensing questions are flagged for local counsel. This is not legal advice",
-          "A Jamaica and Cayman Islands effort is in development and has no signed client",
-        ],
-      },
       {
         title: "IONM program build-out",
         description:
@@ -123,27 +112,6 @@ export const offeringGroups: {
           "Typically $3,000–$5,000 per month, plus travel. Contact for scope",
           "Physician interpretation and oversight are not included",
           "Those roles stay with a licensed physician, not with NeuroBridge",
-        ],
-      },
-    ],
-  },
-  {
-    id: "tms",
-    eyebrow: "TMS Clinic Accelerator",
-    title: "Help launching a TMS service",
-    description:
-      "For psychiatry and behavioral-health practices planning transcranial magnetic stimulation. The work draws on experience planning a TMS clinic launch. That clinic did not open, and this is not a claim of having operated one.",
-    items: [
-      {
-        title: "TMS feasibility",
-        description:
-          "A fixed assessment of room and workflow, device options, staffing, payer and prior-authorization basics, a referral plan, and a go or no-go model.",
-        icon: Brain,
-        price: "Starting at $1,500",
-        details: [
-          "Typically $1,500–$3,000",
-          "Training, billing setup, and launch support are quoted after this assessment",
-          "Draws on clinic-launch planning. Not a claim of having operated a TMS clinic",
         ],
       },
     ],
@@ -229,19 +197,12 @@ export const offeringGroups: {
   },
 ];
 
-export const featuredOfferings: Offering[] = [
-  offeringGroups[0].items[0],
-  offeringGroups[1].items[0],
-  offeringGroups[2].items[0],
-];
-
 export const additionalOfferings: Offering[] = [
+  offeringGroups[0].items[0],
   offeringGroups[0].items[1],
-  offeringGroups[1].items[1],
-  offeringGroups[3].items[0],
-  offeringGroups[3].items[1],
-  offeringGroups[3].items[2],
-  ...offeringGroups[4].items,
+  offeringGroups[1].items[0],
+  ...offeringGroups[2].items,
+  ...offeringGroups[3].items,
 ];
 
 export const audiences = [
@@ -583,10 +544,10 @@ export const homePage = {
       "Technical and operational consulting only. Not medical diagnosis or physician oversight.",
   },
   coreServices: {
-    eyebrow: "Offerings",
-    title: "What NeuroBridge does",
+    eyebrow: "Paid offerings",
+    title: "Feasibility assessments and tools",
     description:
-      "Three places to start. Every engagement is scoped in writing. Published prices are starting points, not a quote.",
+      "Four ways to find out whether TMS or intraoperative neuromonitoring fits your practice, hospital, or surgery center before you sign a lease or stand up a program.",
   },
   whoWeServe: {
     eyebrow: "Who it’s for",
@@ -604,7 +565,7 @@ export const homePage = {
     eyebrow: "Also offered",
     title: "Reviews, build-outs, training, and team support",
     description:
-      "Product reviews, program build-out, training packages, de-identified technical review, CNIM exam tutoring, and secondary support for IONM teams.",
+      "Expert calls, product reviews, program build-out, training packages, de-identified technical review, CNIM exam tutoring, and secondary support for IONM teams.",
   },
   ventures: {
     eyebrow: "Ventures",
@@ -623,9 +584,9 @@ export const homePage = {
 export const servicesPage = {
   hero: {
     eyebrow: "Offerings",
-    title: "Consulting, programs, training, and review",
+    title: "Assessments, tools, and consulting",
     description:
-      "Expert calls, device and software reviews, IONM program development, TMS clinic launch support, training packages, de-identified technical review, and CNIM tutoring.",
+      "Start with a priced TMS or IONM feasibility assessment, a 60-minute strategy call, or the TMS startup calculator. Expert calls, program build-out, training, and technical review follow below.",
   },
   priceNote:
     "Figures are starting points from the current service catalog. A written scope confirms the fee before any work begins. Travel, when it is needed, is quoted separately.",
@@ -738,6 +699,8 @@ export const capabilityStatement = {
       "SOPs, workflow design, training plans, and quality-assurance frameworks",
       "Vendor-neutral equipment selection",
       "TMS clinic feasibility and launch planning",
+      "TMS startup ROI calculator",
+      "60-minute strategy calls for TMS and neuromonitoring questions",
       "Training modules and onboarding packs",
       "De-identified technical case review",
       "CNIM exam tutoring",
@@ -818,6 +781,7 @@ export const contactPage = {
       "What you are building or deciding, who it is for, and any deadline. No patient information.",
   },
   interests: [
+    ...productInterests,
     "IONM expert call",
     "Device or software product review",
     "IONM program feasibility or build-out",

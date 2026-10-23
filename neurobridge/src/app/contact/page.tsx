@@ -1,5 +1,6 @@
 import { Clock, Mail, Phone, ShieldAlert } from "lucide-react";
 import { contactPage, siteConfig } from "@/lib/data";
+import { productByInterest } from "@/lib/products";
 import { ContactForm } from "@/components/ui/ContactForm";
 import { Disclaimer } from "@/components/ui/Disclaimer";
 import { Container, Section } from "@/components/ui/Section";
@@ -21,8 +22,12 @@ export default async function ContactPage({
   const requested = Array.isArray(params.interest)
     ? params.interest[0]
     : params.interest;
-  const defaultInterest = interests.includes(requested ?? "")
-    ? requested
+  const matchedProduct = requested ? productByInterest(requested) : undefined;
+  const defaultInterest =
+    matchedProduct?.interest ??
+    (interests.includes(requested ?? "") ? requested : undefined);
+  const defaultMessage = matchedProduct
+    ? `I’m interested in the ${matchedProduct.name} (${matchedProduct.price}).`
     : undefined;
 
   return (
@@ -137,10 +142,12 @@ export default async function ContactPage({
                 </p>
                 <div className="mt-8">
                   <ContactForm
+                    key={defaultInterest ?? "none"}
                     email={siteConfig.email}
                     interests={interests}
                     messagePlaceholder={form.messagePlaceholder}
                     defaultInterest={defaultInterest}
+                    defaultMessage={defaultMessage}
                   />
                 </div>
               </div>

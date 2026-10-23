@@ -9,6 +9,7 @@ type ContactFormProps = {
   interests: string[];
   messagePlaceholder: string;
   defaultInterest?: string;
+  defaultMessage?: string;
 };
 
 type Draft = {
@@ -50,6 +51,7 @@ export function ContactForm({
   interests,
   messagePlaceholder,
   defaultInterest,
+  defaultMessage,
 }: ContactFormProps) {
   const [draft, setDraft] = useState<Draft | null>(null);
   const [copied, setCopied] = useState(false);
@@ -218,6 +220,7 @@ export function ContactForm({
             rows={5}
             className="w-full resize-y rounded-xl border border-navy-900/10 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20"
             placeholder={messagePlaceholder}
+            defaultValue={defaultMessage}
           />
         </div>
 
