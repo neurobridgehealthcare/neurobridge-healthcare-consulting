@@ -12,7 +12,7 @@ import {
   ProblemSection,
   WhyNeuroBridgeSection,
 } from "@/components/home/HomeSections";
-import { ProductOfferings } from "@/components/products/ProductOfferings";
+import { ProductGrid, StrategyCallCard } from "@/components/products/ProductOfferings";
 import { Button } from "@/components/ui/Button";
 import { HeroBackground } from "@/components/ui/HeroBackground";
 import {
@@ -21,6 +21,7 @@ import {
   ServiceCard,
 } from "@/components/ui/Cards";
 import { CTASection } from "@/components/ui/PageHero";
+import { ionmProducts, productsNote, strategyCall, tmsProducts } from "@/lib/products";
 import { Container, Section, SectionHeader } from "@/components/ui/Section";
 
 export default function HomePage() {
@@ -39,8 +40,8 @@ export default function HomePage() {
             </div>
             <h1 className="animate-fade-up animation-delay-100 font-display text-4xl font-bold leading-[1.08] tracking-tight text-navy-900 sm:text-5xl lg:text-6xl xl:text-[3.75rem]">
               {hero.headlineBefore}{" "}
-              <span className="gradient-text">{hero.headlineAccent}</span>{" "}
-              {hero.headlineAfter}
+              <span className="gradient-text">{hero.headlineAccent}</span>
+              {hero.headlineAfter ? ` ${hero.headlineAfter}` : null}
             </h1>
             <p className="animate-fade-up animation-delay-200 mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-navy-700/70 md:text-xl">
               {hero.subheadline}
@@ -49,12 +50,15 @@ export default function HomePage() {
               {hero.disclaimer}
             </p>
             <div className="animate-fade-up animation-delay-300 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button href="/contact" size="lg">
-                Email Brandon
+              <Button
+                href="/contact?interest=60-Minute%20Strategy%20Call"
+                size="lg"
+              >
+                Start with a strategy call
                 <ArrowRight className="h-4 w-4" />
               </Button>
-              <Button href="/services#assessments" variant="outline" size="lg">
-                View Offerings
+              <Button href="/services#ionm" variant="outline" size="lg">
+                IONM offerings
               </Button>
             </div>
           </div>
@@ -70,13 +74,13 @@ export default function HomePage() {
             title={coreServices.title}
             description={coreServices.description}
           />
-          <ProductOfferings />
-          <div className="mt-12 text-center">
-            <Button href="/services" variant="outline">
-              View the full catalog
-              <ArrowRight className="h-4 w-4" />
-            </Button>
+          <StrategyCallCard product={strategyCall} />
+          <div className="mt-6">
+            <ProductGrid products={ionmProducts} />
           </div>
+          <p className="mx-auto mt-6 max-w-2xl text-center text-sm leading-relaxed text-navy-700/60">
+            {productsNote}
+          </p>
         </Container>
       </Section>
 
@@ -130,6 +134,23 @@ export default function HomePage() {
               View Pathways
               <ArrowRight className="h-4 w-4" />
             </Button>
+          </div>
+        </Container>
+      </Section>
+
+      <Section id="tms" className="scroll-mt-28 bg-surface-muted">
+        <Container>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="section-eyebrow text-teal-600">Also offered</p>
+            <h2 className="mt-3 font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+              TMS consulting
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-navy-700/70">
+              Planning help for a practice considering transcranial magnetic stimulation. Secondary to the IONM work above.
+            </p>
+          </div>
+          <div className="mt-8">
+            <ProductGrid products={tmsProducts} compact />
           </div>
         </Container>
       </Section>

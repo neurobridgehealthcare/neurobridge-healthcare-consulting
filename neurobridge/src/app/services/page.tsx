@@ -1,15 +1,22 @@
 import { ArrowRight, Check } from "lucide-react";
 import { offeringGroups, servicesPage } from "@/lib/data";
-import { ProductOfferings } from "@/components/products/ProductOfferings";
+import { ProductGrid, StrategyCallCard } from "@/components/products/ProductOfferings";
+import {
+  ionmCoverageNote,
+  ionmProducts,
+  productsNote,
+  strategyCall,
+  tmsProducts,
+} from "@/lib/products";
 import { Button } from "@/components/ui/Button";
 import { ServiceCard } from "@/components/ui/Cards";
 import { CTASection, PageHero } from "@/components/ui/PageHero";
 import { Container, Section, SectionHeader } from "@/components/ui/Section";
 
 export const metadata = {
-  title: "Offerings",
+  title: "IONM Offerings",
   description:
-    "Priced TMS and IONM feasibility assessments, a 60-minute strategy call, and a TMS startup ROI calculator, plus expert calls, program build-out, training, and technical review.",
+    "IONM program feasibility for hospitals, surgery centers, and surgeon groups ($1,500–$3,000), and a 60-minute strategy call. TMS feasibility and a startup calculator are also available.",
 };
 
 export default function ServicesPage() {
@@ -21,18 +28,48 @@ export default function ServicesPage() {
         eyebrow={hero.eyebrow}
         title={hero.title}
         description={hero.description}
-        cta={{ label: "Email Brandon", href: "/contact" }}
+        cta={{
+          label: "Start with a strategy call",
+          href: "/contact?interest=60-Minute%20Strategy%20Call",
+        }}
       />
 
-      <Section id="assessments" className="scroll-mt-28 bg-surface-muted">
+      <Section id="ionm" className="scroll-mt-28 bg-surface-muted">
         <Container>
           <SectionHeader
-            eyebrow="Paid offerings"
-            title="Assessments, a strategy call, and a calculator"
-            description="Request the offering that fits. Each button opens an inquiry with that product already selected, and the fee inside the published range is confirmed before work starts."
+            eyebrow="IONM"
+            title="Program feasibility for hospitals and surgery centers"
+            description="The main engagement. A strategy call is the way in, for this work or for TMS."
             align="left"
           />
-          <ProductOfferings />
+          <StrategyCallCard product={strategyCall} />
+          <div className="mt-6">
+            <ProductGrid products={ionmProducts} />
+          </div>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-navy-700/60">
+            <span className="font-semibold text-navy-800">Coming soon. </span>
+            {ionmCoverageNote}
+          </p>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-navy-700/60">
+            {productsNote}
+          </p>
+        </Container>
+      </Section>
+
+      <Section id="tms" className="scroll-mt-28">
+        <Container>
+          <div className="max-w-2xl">
+            <p className="section-eyebrow text-teal-600">Also offered</p>
+            <h2 className="mt-3 font-display text-2xl font-bold text-navy-900 sm:text-3xl">
+              TMS consulting
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-navy-700/70">
+              Feasibility and a calculator for practices considering TMS. Planning support only, not a claim of having run a clinic.
+            </p>
+          </div>
+          <div className="mt-8">
+            <ProductGrid products={tmsProducts} compact />
+          </div>
         </Container>
       </Section>
 

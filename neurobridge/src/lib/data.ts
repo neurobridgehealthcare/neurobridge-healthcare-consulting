@@ -29,7 +29,7 @@ export const siteConfig = {
   url: "https://neurobridgehealthcare.com",
   tagline: "IONM consulting, program development, and related ventures",
   description:
-    "NeuroBridge is Brandon Garrison’s practice (CNIM, R. EP T.) for IONM expert consulting, hospital program development, TMS clinic launches, and training. Not medical diagnosis or physician oversight.",
+    "Intraoperative neuromonitoring consulting for hospitals, surgery centers, and surgeon groups, from Brandon Garrison, CNIM, R. EP T. TMS planning support is also available. Not medical diagnosis or physician oversight.",
   email: "garrison839@gmail.com",
   phoneDisplay: "(678) 488-4288",
   phoneHref: "tel:+16784884288",
@@ -166,7 +166,7 @@ export const offeringGroups: {
     eyebrow: "Secondary",
     title: "Support for IONM teams",
     description:
-      "Part-time technical support and operations help for groups that already monitor. These sit behind the expert, program, TMS, and training work above. Brandon is a CNIM and R. EP T.",
+      "Part-time technical support for groups that already monitor. It sits behind program feasibility, training, and advisory work. Brandon is a CNIM and R. EP T.",
     items: [
       {
         title: "Remote Neurophysiology Support & Case Review",
@@ -208,40 +208,34 @@ export const additionalOfferings: Offering[] = [
 
 export const audiences = [
   {
-    title: "Expert networks and investors",
+    title: "Hospitals and surgery centers",
     description:
-      "Practitioner insight on IONM workflow, staffing, technology, and what the work looks like from the operating room.",
-    icon: LineChart,
-  },
-  {
-    title: "Med-device and software teams",
-    description:
-      "Workflow and usability reviews from someone who runs the modalities the product is meant to support.",
-    icon: Microscope,
-  },
-  {
-    title: "Hospitals and surgical programs",
-    description:
-      "Feasibility and build-out for new or expanding IONM services, including international and Caribbean programs.",
+      "Feasibility and build-out for a new or expanding intraoperative neuromonitoring service.",
     icon: Hospital,
   },
   {
-    title: "Psychiatry and behavioral health",
+    title: "Surgeon groups",
     description:
-      "Feasibility and launch support for practices adding transcranial magnetic stimulation.",
-    icon: Brain,
+      "A written comparison of in-house neuromonitoring and an outside service, before a program is stood up.",
+    icon: Users,
   },
   {
     title: "IONM teams and training programs",
     description:
       "SOP packages, onboarding materials, and de-identified technical review. Not medical opinions.",
-    icon: Users,
+    icon: BookOpen,
   },
   {
-    title: "CNIM candidates",
+    title: "Expert networks and investors",
     description:
-      "Exam tutoring and question review for people preparing for CNIM certification.",
-    icon: BookOpen,
+      "Practitioner insight on IONM workflow, staffing, and technology from the operating room.",
+    icon: LineChart,
+  },
+  {
+    title: "Med-device and software teams",
+    description:
+      "Workflow reviews from someone who runs the modalities the product is meant to support.",
+    icon: Microscope,
   },
 ];
 
@@ -250,7 +244,7 @@ export const processSteps = [
     step: "01",
     title: "Assess",
     description:
-      "Review volume, case mix, staffing, equipment, and workflow against the goal of the call, product, or program. Feasibility comes before a build-out or a full TMS launch.",
+      "Review volume, case mix, staffing, equipment, and workflow. Feasibility comes before a build-out.",
     icon: ClipboardCheck,
   },
   {
@@ -271,6 +265,19 @@ export const processSteps = [
 
 export const solutions = [
   {
+    title: "New IONM program",
+    description:
+      "A feasibility assessment, then a build-out if the report supports standing the service up. For hospitals, surgery centers, and surgeon groups.",
+    features: [
+      "Remote feasibility at $1,500–$3,000",
+      "SOPs, workflow, training, and QA",
+      "Vendor-neutral equipment selection",
+      "Physician oversight stays with a physician",
+      "Case coverage in the room is not offered yet",
+    ],
+    icon: Hospital,
+  },
+  {
     title: "Expert advisory",
     description:
       "Calls and written reviews for expert networks, investors, and teams building IONM devices or software.",
@@ -282,19 +289,6 @@ export const solutions = [
       "No diagnosis and no physician oversight",
     ],
     icon: MessagesSquare,
-  },
-  {
-    title: "New IONM program",
-    description:
-      "A feasibility assessment, then a build-out if the report supports standing the service up. Includes international and Caribbean programs.",
-    features: [
-      "Remote feasibility starting at $1,500",
-      "SOPs, workflow, training, and QA",
-      "Vendor-neutral equipment selection",
-      "Physician oversight identified as a physician’s role",
-      "Jamaica and Cayman Islands: in development, no signed client",
-    ],
-    icon: Hospital,
   },
   {
     title: "TMS Clinic Accelerator",
@@ -491,10 +485,10 @@ export const problemSection = {
   description:
     "Hospitals, device teams, and investors often need someone who has run the case, not only read about it. NeuroBridge is that consulting practice: technical and operational help, scoped in writing, without crossing into diagnosis or physician oversight.",
   painPoints: [
+    "A hospital or surgery center is choosing in-house neuromonitoring or an outside service without a staffing and cost picture",
     "A program is planned before the workflow, staffing, and SOPs exist",
     "A device or software team needs the case flow checked by someone who monitors",
-    "An investor or expert network needs field context without confidential employer information",
-    "A psychiatry practice wants a TMS launch plan and does not have the operating details yet",
+    "An investor or expert network needs field context without confidential information",
   ],
   callout:
     "Engagements are scoped before work starts. NeuroBridge does not provide medical diagnosis or physician oversight.",
@@ -536,25 +530,25 @@ export const whyNeuroBridge = [
 export const homePage = {
   hero: {
     badge: "Brandon Garrison, CNIM, R. EP T. · Founder",
-    headlineBefore: "Consulting for",
-    headlineAccent: "intraoperative neuromonitoring",
-    headlineAfter: "programs, products, and the people building them.",
+    headlineBefore: "Intraoperative neuromonitoring",
+    headlineAccent: "for hospitals, surgery centers, and surgeons.",
+    headlineAfter: "",
     subheadline:
-      "NeuroBridge Healthcare Consulting is the professional home for Brandon Garrison’s work: expert calls, device and software reviews, hospital IONM programs, TMS clinic launch support, training, and related ventures.",
+      "Program feasibility and design from a CNIM, R. EP T. Start with a one-hour call, or request an IONM assessment.",
     disclaimer:
       "Technical and operational consulting only. Not medical diagnosis or physician oversight.",
   },
   coreServices: {
-    eyebrow: "Paid offerings",
-    title: "Feasibility assessments and tools",
+    eyebrow: "IONM",
+    title: "Start with a call, or assess the program",
     description:
-      "Four ways to find out whether TMS or intraoperative neuromonitoring fits your practice, hospital, or surgery center before you sign a lease or stand up a program.",
+      "For hospitals, surgery centers, and surgeon groups. The call applies to IONM or TMS. The assessment below is the IONM engagement.",
   },
   whoWeServe: {
     eyebrow: "Who it’s for",
-    title: "Buyers who need operating-room context",
+    title: "Hospitals, surgery centers, and the people around the case",
     description:
-      "Expert networks, medtech teams, hospitals, psychiatry practices, training programs, and CNIM candidates.",
+      "Surgeon groups and monitoring teams first. Expert networks and device teams are part of the same practice.",
   },
   approach: {
     eyebrow: "How an engagement runs",
@@ -585,9 +579,9 @@ export const homePage = {
 export const servicesPage = {
   hero: {
     eyebrow: "Offerings",
-    title: "Assessments, tools, and consulting",
+    title: "IONM first",
     description:
-      "Start with a priced TMS or IONM feasibility assessment, a 60-minute strategy call, or the TMS startup calculator. Expert calls, program build-out, training, and technical review follow below.",
+      "Feasibility for hospitals, surgery centers, and surgeon groups. A 60-minute strategy call is the way to start. TMS consulting is further down.",
   },
   priceNote:
     "Figures are starting points from the current service catalog. A written scope confirms the fee before any work begins. Travel, when it is needed, is quoted separately.",
@@ -598,7 +592,7 @@ export const servicesPage = {
       "Tell Brandon what you are building and the deadline. He will reply with a short scope. Nothing here is a standing offer to interpret studies or supervise a case as a physician.",
     points: [
       "Starting prices are public. The fee is confirmed in writing",
-      "Feasibility before a hospital build-out or a full TMS launch",
+      "Feasibility before an IONM program build-out",
       "Remote by default. Travel is extra",
       "Vendor-neutral equipment guidance",
       "No patient data. Technical review uses de-identified material only",
@@ -610,9 +604,9 @@ export const servicesPage = {
 export const solutionsPage = {
   hero: {
     eyebrow: "Solutions",
-    title: "Four ways to start",
+    title: "IONM is the main pathway",
     description:
-      "Expert advisory, a new IONM program, a TMS clinic launch, or training and technical review. Each one has its own scope and starting price.",
+      "A new neuromonitoring program, then expert advisory and training. TMS planning is a smaller pathway on the same page.",
   },
   methodology: {
     eyebrow: "Method",

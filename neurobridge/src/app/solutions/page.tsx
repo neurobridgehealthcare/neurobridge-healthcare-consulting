@@ -8,7 +8,7 @@ import { Container, Section, SectionHeader } from "@/components/ui/Section";
 export const metadata = {
   title: "Solutions",
   description:
-    "Four NeuroBridge pathways: expert advisory, IONM program development, the TMS Clinic Accelerator, and training with de-identified technical review.",
+    "IONM program development for hospitals and surgery centers, plus expert advisory, training, and a secondary TMS pathway.",
 };
 
 export default function SolutionsPage() {

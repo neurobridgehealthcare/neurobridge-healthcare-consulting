@@ -9,7 +9,7 @@ import { PageHeroBackground } from "@/components/ui/HeroBackground";
 export const metadata = {
   title: "Contact",
   description:
-    "Email Brandon Garrison at garrison839@gmail.com about IONM consulting, program development, TMS launch support, or training. The form opens an email draft and does not send it for you.",
+    "Email Brandon Garrison about an IONM program assessment, a strategy call, or related consulting. The form opens an email draft and does not send it for you.",
 };
 
 export default async function ContactPage({
