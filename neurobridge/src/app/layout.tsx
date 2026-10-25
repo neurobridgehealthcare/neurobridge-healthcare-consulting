@@ -17,7 +17,7 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const title = `${siteConfig.name} | Brandon Garrison, CNIM, R. EP T.`;
+const title = `IONM Consulting | ${siteConfig.name}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),

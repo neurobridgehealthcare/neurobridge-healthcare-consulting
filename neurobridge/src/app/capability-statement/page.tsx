@@ -8,7 +8,7 @@ import { Container } from "@/components/ui/Section";
 export const metadata = {
   title: "Capability Statement",
   description:
-    "Capability statement for NeuroBridge Healthcare Consulting: Brandon Garrison, CNIM, R. EP T., offerings, and the limit that this is technical consulting, not physician oversight.",
+    "Capability statement for NeuroBridge: intraoperative neuromonitoring consulting by Brandon Garrison, CNIM, R. EP T. Technical consulting only, not physician oversight.",
 };
 
 export default function CapabilityStatementPage() {

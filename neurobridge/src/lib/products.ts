@@ -29,15 +29,15 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    id: "tms-feasibility",
-    name: "TMS Feasibility Assessment",
-    price: "$1,500–$3,000",
-    interest: "TMS Feasibility Assessment",
-    inquiryCtaLabel: "Request this assessment",
-    checkoutCtaLabel: "Purchase this assessment",
-    icon: Brain,
+    id: "strategy-call",
+    name: "60-Minute Strategy Call",
+    price: "$250–$400",
+    interest: "60-Minute Strategy Call",
+    inquiryCtaLabel: "Request this call",
+    checkoutCtaLabel: "Book this call",
+    icon: Phone,
     description:
-      "Thinking about adding TMS therapy to your practice? Before you sign an equipment lease, find out whether the numbers work. We look at your patient base, payer mix, space, staffing and local competition, then give you a clear written report with projected volume, revenue, startup costs and break-even timeline. You’ll come away with a go or no-go recommendation and a step-by-step launch plan if it makes sense.",
+      "The place to start, for an IONM or TMS question. Bring your situation. You’ll cover what is realistic, what it would take, and what to watch. Book a feasibility assessment within 30 days and the call is credited toward it.",
   },
   {
     id: "ionm-feasibility",
@@ -48,18 +48,18 @@ export const products: Product[] = [
     checkoutCtaLabel: "Purchase this assessment",
     icon: Hospital,
     description:
-      "For hospitals, surgery centers and surgeon groups deciding how to handle intraoperative neuromonitoring. We compare building an in-house program with outsourcing, covering case volume, staffing, equipment, credentialing, billing and risk. Delivered by a certified neuromonitoring professional (CNIM, R. EP T.) with hands-on experience at major hospital systems, the report shows what each option would cost, what it could earn, and which one fits your organization.",
+      "For hospitals, surgery centers, and surgeon groups choosing in-house neuromonitoring or an outside service. The written report covers volume, staffing, equipment, credentialing, billing, and risk, and recommends which option fits. From a CNIM, R. EP T.",
   },
   {
-    id: "strategy-call",
-    name: "60-Minute Strategy Call",
-    price: "$250–$400",
-    interest: "60-Minute Strategy Call",
-    inquiryCtaLabel: "Request this call",
-    checkoutCtaLabel: "Book this call",
-    icon: Phone,
+    id: "tms-feasibility",
+    name: "TMS Feasibility Assessment",
+    price: "$1,500–$3,000",
+    interest: "TMS Feasibility Assessment",
+    inquiryCtaLabel: "Request this assessment",
+    checkoutCtaLabel: "Purchase this assessment",
+    icon: Brain,
     description:
-      "Not sure where to start? Book a one-on-one call to talk through your TMS or neuromonitoring questions with someone who’s done the work. Bring your situation and we’ll cover what’s realistic, what it would take, and what to watch out for. If you go on to book a full feasibility assessment within 30 days, the cost of the call is credited toward it.",
+      "Before you lease TMS equipment, see whether the numbers work: patients, payers, space, staffing, and local competition. You get a written go or no-go, and a launch outline if it makes sense.",
   },
   {
     id: "tms-roi-calculator",
@@ -70,14 +70,22 @@ export const products: Product[] = [
     checkoutCtaLabel: "Buy the calculator",
     icon: Calculator,
     description:
-      "A ready-to-use spreadsheet that shows whether TMS would pay off at your practice. Enter your expected patients, reimbursement rates, equipment and staffing costs, and it calculates monthly revenue, profit and your break-even point. It includes instructions and example scenarios, and you can download it right after purchase.",
+      "A spreadsheet for expected patients, reimbursement, equipment, and staffing. It returns monthly revenue, profit, and break-even, with instructions and examples. Download follows purchase.",
   },
 ];
 
 export const productInterests = products.map((product) => product.interest);
 
+export const strategyCall = products[0];
+export const ionmProducts = [products[1]];
+export const tmsProducts = products.filter((product) => product.id.startsWith("tms"));
+
 export const productsNote =
-  "Prices are published ranges. The fee inside that range is confirmed before work starts. TMS planning draws on experience preparing a clinic launch; that clinic did not open, and these offerings are not a claim of having operated one. NeuroBridge does not diagnose patients or provide physician oversight.";
+  "Prices are published ranges. The fee is confirmed in writing before work starts. Not diagnosis or physician oversight.";
+
+/** Not a priced offer. No availability date and no claim that coverage is provided today. */
+export const ionmCoverageNote =
+  "Technologist coverage in the operating room is not offered yet. That service is in development. No price is listed.";
 
 export function productByInterest(interest: string): Product | undefined {
   return products.find((product) => product.interest === interest);
